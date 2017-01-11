@@ -1,0 +1,85 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	delay_us
+  18               	delay_us:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	/* epilogue start */
+  25               	.LM2:
+  26 0000 0895      		ret
+  27               	.LFE2:
+  29               	.global	main
+  31               	main:
+  32               	.LFB3:
+  33               	.LM3:
+  34               	/* prologue: function */
+  35               	/* frame size = 0 */
+  36               	.LM4:
+  37 0002 80EF      		ldi r24,lo8(-16)
+  38 0004 8ABB      		out 58-32,r24
+  39               	.LM5:
+  40 0006 8EB5      		in r24,78-32
+  41 0008 8360      		ori r24,lo8(3)
+  42 000a 8EBD      		out 78-32,r24
+  43               	.LM6:
+  44 000c 1BBA      		out 59-32,__zero_reg__
+  45 000e 20E0      		ldi r18,lo8(0)
+  46 0010 30E0      		ldi r19,hi8(0)
+  47               	.LVL1:
+  48               	.LM7:
+  49 0012 40E2      		ldi r20,lo8(32)
+  50               	.L9:
+  51               	.LM8:
+  52 0014 8CB5      		in r24,76-32
+  53 0016 9DB5      		in r25,(76)+1-32
+  54 0018 8950      		subi r24,lo8(15625)
+  55 001a 9D43      		sbci r25,hi8(15625)
+  56 001c 00F4      		brsh .L4
+  57               	.LM9:
+  58 001e DE9A      		sbi 59-32,6
+  59 0020 00C0      		rjmp .L9
+  60               	.L4:
+  61               	.LM10:
+  62 0022 1DBC      		out (76)+1-32,__zero_reg__
+  63 0024 1CBC      		out 76-32,__zero_reg__
+  64               	.LM11:
+  65 0026 8BB3      		in r24,59-32
+  66 0028 8058      		subi r24,lo8(-(-128))
+  67 002a 8BBB      		out 59-32,r24
+  68               	.LM12:
+  69 002c 2F5F      		subi r18,lo8(-(1))
+  70 002e 3F4F      		sbci r19,hi8(-(1))
+  71               	.LM13:
+  72 0030 2530      		cpi r18,5
+  73 0032 3105      		cpc r19,__zero_reg__
+  74 0034 04F0      		brlt .L9
+  75               	.LM14:
+  76 0036 8BB3      		in r24,59-32
+  77 0038 8427      		eor r24,r20
+  78 003a 8BBB      		out 59-32,r24
+  79 003c 20E0      		ldi r18,lo8(0)
+  80 003e 30E0      		ldi r19,hi8(0)
+  81 0040 00C0      		rjmp .L9
+  82               	.LFE3:
+ 116               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\JUANTO~1\AppData\Local\Temp/ccCVe3Jb.s:2      *ABS*:0000003f __SREG__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccCVe3Jb.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccCVe3Jb.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccCVe3Jb.s:5      *ABS*:00000034 __CCP__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccCVe3Jb.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccCVe3Jb.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccCVe3Jb.s:18     .text:00000000 delay_us
+C:\Users\JUANTO~1\AppData\Local\Temp/ccCVe3Jb.s:31     .text:00000002 main
+
+NO UNDEFINED SYMBOLS

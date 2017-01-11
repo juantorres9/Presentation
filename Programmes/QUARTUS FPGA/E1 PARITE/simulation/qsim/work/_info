@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\juantorres\TOTAL\QUARTUS\E1 PARITE\simulation\qsim
+vparite
+Z1 I0Zc?DfRTgZRbO8RbDXD@[0
+Z2 V8Y[NI]8eBiZ8NL]Z02Jbb3
+Z3 dC:\Users\juantorres\TOTAL\QUARTUS\E1 PARITE\simulation\qsim
+Z4 w1437050077
+Z5 8parite.vo
+Z6 Fparite.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 8;l72eVmLAO<VZj@Fd72_0
+!s85 0
+Z10 !s108 1437050089.122000
+Z11 !s107 parite.vo|
+Z12 !s90 -work|work|parite.vo|
+!s101 -O0
+vparite_vlg_check_tst
+!i10b 1
+!s100 =]`LB_L@<BEonka6VHbWL1
+IZCkEgNoO3fj;>SSYLAVB72
+VhWkWhoMT<b[_d9eEkCZ[<1
+R3
+Z13 w1437050072
+Z14 8parite.vt
+Z15 Fparite.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1437050090.528000
+Z17 !s107 parite.vt|
+Z18 !s90 -work|work|parite.vt|
+!s101 -O0
+R8
+vparite_vlg_sample_tst
+!i10b 1
+!s100 2o0>PoW2JImR9VAkQ8ik;1
+I37jhLB<ez[8Ef^3<JcA@]1
+V0Pb^^g`oaPO_i=mVXnBcE2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vparite_vlg_vec_tst
+!i10b 1
+!s100 UPXaL]T]UJC9LnhkFo;GN3
+If9]:PV:D4WhzofiIlz3eg0
+VEJHjAT;z=DGPbZLU5SK521
+R3
+R13
+R14
+R15
+L0 152
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

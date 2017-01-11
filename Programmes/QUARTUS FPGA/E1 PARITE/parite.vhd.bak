@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+
+ENTITY parite IS
+PORT(
+--ENTREES
+SW: IN STD_LOGIC_VECTOR(8 DOWNTO 0);--REGISTRE  8 bits a analyser parité répresenté par une  SWITCH Physique  SW
+
+--SORTIES
+HEX0: OUT STD_LOGIC_VECTOR(6 DOWNTO 0);--Afficheur 7 Segment  0-9
+S: OUT STD_LOGIC--Sortie du LED parité  "0"=pair   "1"=impair
+);
+END parite;

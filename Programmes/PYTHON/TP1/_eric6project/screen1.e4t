@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Tasks SYSTEM "Tasks-5.1.dtd">
+<!-- eric6 tasks file for project screen1 -->
+<!-- Saved: 2015-10-18, 20:16:53 -->
+<Tasks version="5.1">
+  <ProjectScanFilter></ProjectScanFilter>
+  <Task priority="1" completed="False" type="1">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2015-10-18, 20:15:55</Created>
+    <Resource>
+      <Filename>screenUI.py</Filename>
+      <Linenumber>34</Linenumber>
+    </Resource>
+  </Task>
+</Tasks>

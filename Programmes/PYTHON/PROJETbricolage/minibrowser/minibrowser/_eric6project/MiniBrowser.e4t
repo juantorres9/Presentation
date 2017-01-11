@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Tasks SYSTEM "Tasks-5.1.dtd">
+<!-- eric6 tasks file for project MiniBrowser -->
+<!-- Saved: 2015-09-20, 15:13:29 -->
+<Tasks version="5.1">
+  <ProjectScanFilter></ProjectScanFilter>
+  <Task priority="1" completed="False" type="1">
+    <Summary>TODO: check out this code, ensure it does cover all the posibilities</Summary>
+    <Description></Description>
+    <Created>2015-09-20, 15:12:22</Created>
+    <Resource>
+      <Filename>ui/mainwindow.py</Filename>
+      <Linenumber>28</Linenumber>
+    </Resource>
+  </Task>
+</Tasks>

@@ -1,0 +1,780 @@
+Simulator report for compteur59
+Mon Jul 06 10:17:19 2015
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 450 nodes    ;
+; Simulation Coverage         ;      50.22 % ;
+; Total Number of Transitions ; 10670        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                     ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                   ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                      ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                       ;               ;
+; Vector input source                                                                        ; C:/Users/juantorres/TOTAL Projects/QUARTUS/E1 COMPTEUR 59/SimulationCompteur59Vitesse.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                        ; On            ;
+; Check outputs                                                                              ; Off                                                                                       ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                        ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                        ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                        ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                        ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                       ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                       ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                       ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                       ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                       ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                       ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                        ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                       ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                       ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                      ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                                                 ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                                                 ; Transport     ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      50.22 % ;
+; Total nodes checked                                 ; 450          ;
+; Total output ports checked                          ; 450          ;
+; Total output ports with complete 1/0-value coverage ; 226          ;
+; Total output ports with no 1/0-value coverage       ; 166          ;
+; Total output ports with no 1-value coverage         ; 175          ;
+; Total output ports with no 0-value coverage         ; 215          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                            ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+; Node Name                                                        ; Output Port Name                                                 ; Output Port Type ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+; |compteur59|compt5~1                                             ; |compteur59|compt5~1                                             ; out              ;
+; |compteur59|compt5~2                                             ; |compteur59|compt5~2                                             ; out              ;
+; |compteur59|compt10~0                                            ; |compteur59|compt10~0                                            ; out              ;
+; |compteur59|compt10~1                                            ; |compteur59|compt10~1                                            ; out              ;
+; |compteur59|compt10~2                                            ; |compteur59|compt10~2                                            ; out              ;
+; |compteur59|compt10~3                                            ; |compteur59|compt10~3                                            ; out              ;
+; |compteur59|compt5~4                                             ; |compteur59|compt5~4                                             ; out              ;
+; |compteur59|compt5~5                                             ; |compteur59|compt5~5                                             ; out              ;
+; |compteur59|compt50~24                                           ; |compteur59|compt50~24                                           ; out              ;
+; |compteur59|compt50~25                                           ; |compteur59|compt50~25                                           ; out              ;
+; |compteur59|compt50~26                                           ; |compteur59|compt50~26                                           ; out              ;
+; |compteur59|compt50~27                                           ; |compteur59|compt50~27                                           ; out              ;
+; |compteur59|compt50~28                                           ; |compteur59|compt50~28                                           ; out              ;
+; |compteur59|compt50[3]                                           ; |compteur59|compt50[3]                                           ; regout           ;
+; |compteur59|compt50[2]                                           ; |compteur59|compt50[2]                                           ; regout           ;
+; |compteur59|compt50[1]                                           ; |compteur59|compt50[1]                                           ; regout           ;
+; |compteur59|compt50[0]                                           ; |compteur59|compt50[0]                                           ; regout           ;
+; |compteur59|compt10[3]                                           ; |compteur59|compt10[3]                                           ; regout           ;
+; |compteur59|compt10[2]                                           ; |compteur59|compt10[2]                                           ; regout           ;
+; |compteur59|compt10[1]                                           ; |compteur59|compt10[1]                                           ; regout           ;
+; |compteur59|compt10[0]                                           ; |compteur59|compt10[0]                                           ; regout           ;
+; |compteur59|compt5[0]                                            ; |compteur59|compt5[0]                                            ; regout           ;
+; |compteur59|SELECTOR[0]                                          ; |compteur59|SELECTOR[0]                                          ; out              ;
+; |compteur59|CLK                                                  ; |compteur59|CLK                                                  ; out              ;
+; |compteur59|oHEX0_D[0]                                           ; |compteur59|oHEX0_D[0]                                           ; pin_out          ;
+; |compteur59|oHEX0_D[1]                                           ; |compteur59|oHEX0_D[1]                                           ; pin_out          ;
+; |compteur59|oHEX0_D[2]                                           ; |compteur59|oHEX0_D[2]                                           ; pin_out          ;
+; |compteur59|oHEX0_D[3]                                           ; |compteur59|oHEX0_D[3]                                           ; pin_out          ;
+; |compteur59|oHEX0_D[4]                                           ; |compteur59|oHEX0_D[4]                                           ; pin_out          ;
+; |compteur59|oHEX0_D[5]                                           ; |compteur59|oHEX0_D[5]                                           ; pin_out          ;
+; |compteur59|oHEX0_D[6]                                           ; |compteur59|oHEX0_D[6]                                           ; pin_out          ;
+; |compteur59|oHEX1_D[0]                                           ; |compteur59|oHEX1_D[0]                                           ; pin_out          ;
+; |compteur59|oHEX1_D[1]                                           ; |compteur59|oHEX1_D[1]                                           ; pin_out          ;
+; |compteur59|oHEX1_D[2]                                           ; |compteur59|oHEX1_D[2]                                           ; pin_out          ;
+; |compteur59|oHEX1_D[3]                                           ; |compteur59|oHEX1_D[3]                                           ; pin_out          ;
+; |compteur59|oHEX1_D[4]                                           ; |compteur59|oHEX1_D[4]                                           ; pin_out          ;
+; |compteur59|oHEX1_D[6]                                           ; |compteur59|oHEX1_D[6]                                           ; pin_out          ;
+; |compteur59|afficheur:Afficheur5|HEXS~77                         ; |compteur59|afficheur:Afficheur5|HEXS~77                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~79                         ; |compteur59|afficheur:Afficheur5|HEXS~79                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~80                         ; |compteur59|afficheur:Afficheur5|HEXS~80                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~82                         ; |compteur59|afficheur:Afficheur5|HEXS~82                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~83                         ; |compteur59|afficheur:Afficheur5|HEXS~83                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~84                         ; |compteur59|afficheur:Afficheur5|HEXS~84                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~86                         ; |compteur59|afficheur:Afficheur5|HEXS~86                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~87                         ; |compteur59|afficheur:Afficheur5|HEXS~87                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~88                         ; |compteur59|afficheur:Afficheur5|HEXS~88                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~89                         ; |compteur59|afficheur:Afficheur5|HEXS~89                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~90                         ; |compteur59|afficheur:Afficheur5|HEXS~90                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEX[6]                          ; |compteur59|afficheur:Afficheur5|HEX[6]                          ; out              ;
+; |compteur59|afficheur:Afficheur5|HEX[4]                          ; |compteur59|afficheur:Afficheur5|HEX[4]                          ; out              ;
+; |compteur59|afficheur:Afficheur5|HEX[3]                          ; |compteur59|afficheur:Afficheur5|HEX[3]                          ; out              ;
+; |compteur59|afficheur:Afficheur5|HEX[2]                          ; |compteur59|afficheur:Afficheur5|HEX[2]                          ; out              ;
+; |compteur59|afficheur:Afficheur5|HEX[1]                          ; |compteur59|afficheur:Afficheur5|HEX[1]                          ; out              ;
+; |compteur59|afficheur:Afficheur5|HEX[0]                          ; |compteur59|afficheur:Afficheur5|HEX[0]                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~28                         ; |compteur59|afficheur:Afficheur9|HEXS~28                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~29                         ; |compteur59|afficheur:Afficheur9|HEXS~29                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~31                         ; |compteur59|afficheur:Afficheur9|HEXS~31                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~32                         ; |compteur59|afficheur:Afficheur9|HEXS~32                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~33                         ; |compteur59|afficheur:Afficheur9|HEXS~33                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~34                         ; |compteur59|afficheur:Afficheur9|HEXS~34                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~35                         ; |compteur59|afficheur:Afficheur9|HEXS~35                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~36                         ; |compteur59|afficheur:Afficheur9|HEXS~36                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~37                         ; |compteur59|afficheur:Afficheur9|HEXS~37                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~38                         ; |compteur59|afficheur:Afficheur9|HEXS~38                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~39                         ; |compteur59|afficheur:Afficheur9|HEXS~39                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~40                         ; |compteur59|afficheur:Afficheur9|HEXS~40                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~41                         ; |compteur59|afficheur:Afficheur9|HEXS~41                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~42                         ; |compteur59|afficheur:Afficheur9|HEXS~42                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~43                         ; |compteur59|afficheur:Afficheur9|HEXS~43                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~44                         ; |compteur59|afficheur:Afficheur9|HEXS~44                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~45                         ; |compteur59|afficheur:Afficheur9|HEXS~45                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~46                         ; |compteur59|afficheur:Afficheur9|HEXS~46                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~47                         ; |compteur59|afficheur:Afficheur9|HEXS~47                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~48                         ; |compteur59|afficheur:Afficheur9|HEXS~48                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~49                         ; |compteur59|afficheur:Afficheur9|HEXS~49                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~50                         ; |compteur59|afficheur:Afficheur9|HEXS~50                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~51                         ; |compteur59|afficheur:Afficheur9|HEXS~51                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~52                         ; |compteur59|afficheur:Afficheur9|HEXS~52                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~53                         ; |compteur59|afficheur:Afficheur9|HEXS~53                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~54                         ; |compteur59|afficheur:Afficheur9|HEXS~54                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~55                         ; |compteur59|afficheur:Afficheur9|HEXS~55                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~56                         ; |compteur59|afficheur:Afficheur9|HEXS~56                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~57                         ; |compteur59|afficheur:Afficheur9|HEXS~57                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~58                         ; |compteur59|afficheur:Afficheur9|HEXS~58                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~59                         ; |compteur59|afficheur:Afficheur9|HEXS~59                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~60                         ; |compteur59|afficheur:Afficheur9|HEXS~60                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~61                         ; |compteur59|afficheur:Afficheur9|HEXS~61                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~62                         ; |compteur59|afficheur:Afficheur9|HEXS~62                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~63                         ; |compteur59|afficheur:Afficheur9|HEXS~63                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~64                         ; |compteur59|afficheur:Afficheur9|HEXS~64                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~65                         ; |compteur59|afficheur:Afficheur9|HEXS~65                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~66                         ; |compteur59|afficheur:Afficheur9|HEXS~66                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~67                         ; |compteur59|afficheur:Afficheur9|HEXS~67                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~68                         ; |compteur59|afficheur:Afficheur9|HEXS~68                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~69                         ; |compteur59|afficheur:Afficheur9|HEXS~69                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~70                         ; |compteur59|afficheur:Afficheur9|HEXS~70                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~71                         ; |compteur59|afficheur:Afficheur9|HEXS~71                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~72                         ; |compteur59|afficheur:Afficheur9|HEXS~72                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~73                         ; |compteur59|afficheur:Afficheur9|HEXS~73                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~74                         ; |compteur59|afficheur:Afficheur9|HEXS~74                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~75                         ; |compteur59|afficheur:Afficheur9|HEXS~75                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~76                         ; |compteur59|afficheur:Afficheur9|HEXS~76                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~77                         ; |compteur59|afficheur:Afficheur9|HEXS~77                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~78                         ; |compteur59|afficheur:Afficheur9|HEXS~78                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~79                         ; |compteur59|afficheur:Afficheur9|HEXS~79                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~80                         ; |compteur59|afficheur:Afficheur9|HEXS~80                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~81                         ; |compteur59|afficheur:Afficheur9|HEXS~81                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~82                         ; |compteur59|afficheur:Afficheur9|HEXS~82                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~83                         ; |compteur59|afficheur:Afficheur9|HEXS~83                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~84                         ; |compteur59|afficheur:Afficheur9|HEXS~84                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~85                         ; |compteur59|afficheur:Afficheur9|HEXS~85                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~86                         ; |compteur59|afficheur:Afficheur9|HEXS~86                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~87                         ; |compteur59|afficheur:Afficheur9|HEXS~87                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~88                         ; |compteur59|afficheur:Afficheur9|HEXS~88                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~89                         ; |compteur59|afficheur:Afficheur9|HEXS~89                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~90                         ; |compteur59|afficheur:Afficheur9|HEXS~90                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEX[6]                          ; |compteur59|afficheur:Afficheur9|HEX[6]                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEX[5]                          ; |compteur59|afficheur:Afficheur9|HEX[5]                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEX[4]                          ; |compteur59|afficheur:Afficheur9|HEX[4]                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEX[3]                          ; |compteur59|afficheur:Afficheur9|HEX[3]                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEX[2]                          ; |compteur59|afficheur:Afficheur9|HEX[2]                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEX[1]                          ; |compteur59|afficheur:Afficheur9|HEX[1]                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEX[0]                          ; |compteur59|afficheur:Afficheur9|HEX[0]                          ; out              ;
+; |compteur59|LessThan0~0                                          ; |compteur59|LessThan0~0                                          ; out0             ;
+; |compteur59|LessThan0~1                                          ; |compteur59|LessThan0~1                                          ; out0             ;
+; |compteur59|LessThan0~2                                          ; |compteur59|LessThan0~2                                          ; out0             ;
+; |compteur59|LessThan0~3                                          ; |compteur59|LessThan0~3                                          ; out0             ;
+; |compteur59|LessThan0~4                                          ; |compteur59|LessThan0~4                                          ; out0             ;
+; |compteur59|LessThan0~5                                          ; |compteur59|LessThan0~5                                          ; out0             ;
+; |compteur59|LessThan0~6                                          ; |compteur59|LessThan0~6                                          ; out0             ;
+; |compteur59|LessThan0~7                                          ; |compteur59|LessThan0~7                                          ; out0             ;
+; |compteur59|LessThan0~8                                          ; |compteur59|LessThan0~8                                          ; out0             ;
+; |compteur59|LessThan0~9                                          ; |compteur59|LessThan0~9                                          ; out0             ;
+; |compteur59|LessThan0~10                                         ; |compteur59|LessThan0~10                                         ; out0             ;
+; |compteur59|LessThan0~11                                         ; |compteur59|LessThan0~11                                         ; out0             ;
+; |compteur59|LessThan0~13                                         ; |compteur59|LessThan0~13                                         ; out0             ;
+; |compteur59|LessThan0~15                                         ; |compteur59|LessThan0~15                                         ; out0             ;
+; |compteur59|LessThan0~17                                         ; |compteur59|LessThan0~17                                         ; out0             ;
+; |compteur59|LessThan0~19                                         ; |compteur59|LessThan0~19                                         ; out0             ;
+; |compteur59|LessThan0~21                                         ; |compteur59|LessThan0~21                                         ; out0             ;
+; |compteur59|LessThan0~23                                         ; |compteur59|LessThan0~23                                         ; out0             ;
+; |compteur59|LessThan0~24                                         ; |compteur59|LessThan0~24                                         ; out0             ;
+; |compteur59|LessThan0~25                                         ; |compteur59|LessThan0~25                                         ; out0             ;
+; |compteur59|LessThan0~26                                         ; |compteur59|LessThan0~26                                         ; out0             ;
+; |compteur59|LessThan0~27                                         ; |compteur59|LessThan0~27                                         ; out0             ;
+; |compteur59|LessThan0~28                                         ; |compteur59|LessThan0~28                                         ; out0             ;
+; |compteur59|LessThan0~30                                         ; |compteur59|LessThan0~30                                         ; out0             ;
+; |compteur59|LessThan0~32                                         ; |compteur59|LessThan0~32                                         ; out0             ;
+; |compteur59|LessThan0~34                                         ; |compteur59|LessThan0~34                                         ; out0             ;
+; |compteur59|LessThan0~36                                         ; |compteur59|LessThan0~36                                         ; out0             ;
+; |compteur59|LessThan0~38                                         ; |compteur59|LessThan0~38                                         ; out0             ;
+; |compteur59|LessThan0~40                                         ; |compteur59|LessThan0~40                                         ; out0             ;
+; |compteur59|LessThan0~42                                         ; |compteur59|LessThan0~42                                         ; out0             ;
+; |compteur59|LessThan0~44                                         ; |compteur59|LessThan0~44                                         ; out0             ;
+; |compteur59|LessThan0~45                                         ; |compteur59|LessThan0~45                                         ; out0             ;
+; |compteur59|LessThan0~47                                         ; |compteur59|LessThan0~47                                         ; out0             ;
+; |compteur59|LessThan0~49                                         ; |compteur59|LessThan0~49                                         ; out0             ;
+; |compteur59|LessThan0~50                                         ; |compteur59|LessThan0~50                                         ; out0             ;
+; |compteur59|LessThan0~52                                         ; |compteur59|LessThan0~52                                         ; out0             ;
+; |compteur59|LessThan0~54                                         ; |compteur59|LessThan0~54                                         ; out0             ;
+; |compteur59|LessThan0~56                                         ; |compteur59|LessThan0~56                                         ; out0             ;
+; |compteur59|LessThan0~58                                         ; |compteur59|LessThan0~58                                         ; out0             ;
+; |compteur59|LessThan0~60                                         ; |compteur59|LessThan0~60                                         ; out0             ;
+; |compteur59|LessThan0~62                                         ; |compteur59|LessThan0~62                                         ; out0             ;
+; |compteur59|LessThan0~64                                         ; |compteur59|LessThan0~64                                         ; out0             ;
+; |compteur59|LessThan0~66                                         ; |compteur59|LessThan0~66                                         ; out0             ;
+; |compteur59|LessThan0~68                                         ; |compteur59|LessThan0~68                                         ; out0             ;
+; |compteur59|LessThan0~70                                         ; |compteur59|LessThan0~70                                         ; out0             ;
+; |compteur59|LessThan0~71                                         ; |compteur59|LessThan0~71                                         ; out0             ;
+; |compteur59|LessThan0~73                                         ; |compteur59|LessThan0~73                                         ; out0             ;
+; |compteur59|LessThan0~75                                         ; |compteur59|LessThan0~75                                         ; out0             ;
+; |compteur59|LessThan0~76                                         ; |compteur59|LessThan0~76                                         ; out0             ;
+; |compteur59|LessThan0~77                                         ; |compteur59|LessThan0~77                                         ; out0             ;
+; |compteur59|LessThan0~78                                         ; |compteur59|LessThan0~78                                         ; out0             ;
+; |compteur59|LessThan1~0                                          ; |compteur59|LessThan1~0                                          ; out0             ;
+; |compteur59|LessThan1~1                                          ; |compteur59|LessThan1~1                                          ; out0             ;
+; |compteur59|LessThan1~2                                          ; |compteur59|LessThan1~2                                          ; out0             ;
+; |compteur59|LessThan1~3                                          ; |compteur59|LessThan1~3                                          ; out0             ;
+; |compteur59|Add0~0                                               ; |compteur59|Add0~0                                               ; out0             ;
+; |compteur59|Add0~1                                               ; |compteur59|Add0~1                                               ; out0             ;
+; |compteur59|Add0~2                                               ; |compteur59|Add0~2                                               ; out0             ;
+; |compteur59|Add0~3                                               ; |compteur59|Add0~3                                               ; out0             ;
+; |compteur59|Add0~4                                               ; |compteur59|Add0~4                                               ; out0             ;
+; |compteur59|Add0~5                                               ; |compteur59|Add0~5                                               ; out0             ;
+; |compteur59|Add0~6                                               ; |compteur59|Add0~6                                               ; out0             ;
+; |compteur59|Add1~0                                               ; |compteur59|Add1~0                                               ; out0             ;
+; |compteur59|Add1~1                                               ; |compteur59|Add1~1                                               ; out0             ;
+; |compteur59|Add1~2                                               ; |compteur59|Add1~2                                               ; out0             ;
+; |compteur59|Add1~3                                               ; |compteur59|Add1~3                                               ; out0             ;
+; |compteur59|Add1~4                                               ; |compteur59|Add1~4                                               ; out0             ;
+; |compteur59|Add2~0                                               ; |compteur59|Add2~0                                               ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal1~0                        ; |compteur59|afficheur:Afficheur5|Equal1~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal2~0                        ; |compteur59|afficheur:Afficheur5|Equal2~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal0~0                        ; |compteur59|afficheur:Afficheur9|Equal0~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal1~0                        ; |compteur59|afficheur:Afficheur9|Equal1~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal2~0                        ; |compteur59|afficheur:Afficheur9|Equal2~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal3~0                        ; |compteur59|afficheur:Afficheur9|Equal3~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal4~0                        ; |compteur59|afficheur:Afficheur9|Equal4~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal5~0                        ; |compteur59|afficheur:Afficheur9|Equal5~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal6~0                        ; |compteur59|afficheur:Afficheur9|Equal6~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal7~0                        ; |compteur59|afficheur:Afficheur9|Equal7~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal8~0                        ; |compteur59|afficheur:Afficheur9|Equal8~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal9~0                        ; |compteur59|afficheur:Afficheur9|Equal9~0                        ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~3              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~3              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~5              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~5              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~6              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~6              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~7              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~7              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~8              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~8              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~11             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~11             ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~13             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~13             ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~14             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~14             ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~15             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~15             ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~16             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~16             ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1 ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]   ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~3              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~3              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~5              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~5              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~6              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~6              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~7              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~7              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~8              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~8              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~11             ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~11             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~13             ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~13             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~14             ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~14             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~15             ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~15             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~16             ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~16             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~17             ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~17             ; out0             ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                               ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+; Node Name                                                        ; Output Port Name                                                 ; Output Port Type ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+; |compteur59|compt50[7]                                           ; |compteur59|compt50[7]                                           ; regout           ;
+; |compteur59|compt50[6]                                           ; |compteur59|compt50[6]                                           ; regout           ;
+; |compteur59|compt5~3                                             ; |compteur59|compt5~3                                             ; out              ;
+; |compteur59|compt50~0                                            ; |compteur59|compt50~0                                            ; out              ;
+; |compteur59|compt50~1                                            ; |compteur59|compt50~1                                            ; out              ;
+; |compteur59|compt50~2                                            ; |compteur59|compt50~2                                            ; out              ;
+; |compteur59|compt50~3                                            ; |compteur59|compt50~3                                            ; out              ;
+; |compteur59|compt50~4                                            ; |compteur59|compt50~4                                            ; out              ;
+; |compteur59|compt50~5                                            ; |compteur59|compt50~5                                            ; out              ;
+; |compteur59|compt50~6                                            ; |compteur59|compt50~6                                            ; out              ;
+; |compteur59|compt50~7                                            ; |compteur59|compt50~7                                            ; out              ;
+; |compteur59|compt50~8                                            ; |compteur59|compt50~8                                            ; out              ;
+; |compteur59|compt50~9                                            ; |compteur59|compt50~9                                            ; out              ;
+; |compteur59|compt50~10                                           ; |compteur59|compt50~10                                           ; out              ;
+; |compteur59|compt50~11                                           ; |compteur59|compt50~11                                           ; out              ;
+; |compteur59|compt50~12                                           ; |compteur59|compt50~12                                           ; out              ;
+; |compteur59|compt50~13                                           ; |compteur59|compt50~13                                           ; out              ;
+; |compteur59|compt50~14                                           ; |compteur59|compt50~14                                           ; out              ;
+; |compteur59|compt50~15                                           ; |compteur59|compt50~15                                           ; out              ;
+; |compteur59|compt50~16                                           ; |compteur59|compt50~16                                           ; out              ;
+; |compteur59|compt50~17                                           ; |compteur59|compt50~17                                           ; out              ;
+; |compteur59|compt50~18                                           ; |compteur59|compt50~18                                           ; out              ;
+; |compteur59|compt50~19                                           ; |compteur59|compt50~19                                           ; out              ;
+; |compteur59|compt50~20                                           ; |compteur59|compt50~20                                           ; out              ;
+; |compteur59|compt50~21                                           ; |compteur59|compt50~21                                           ; out              ;
+; |compteur59|compt50~22                                           ; |compteur59|compt50~22                                           ; out              ;
+; |compteur59|compt50~23                                           ; |compteur59|compt50~23                                           ; out              ;
+; |compteur59|compt50[5]                                           ; |compteur59|compt50[5]                                           ; regout           ;
+; |compteur59|compt50[4]                                           ; |compteur59|compt50[4]                                           ; regout           ;
+; |compteur59|compt5[2]                                            ; |compteur59|compt5[2]                                            ; regout           ;
+; |compteur59|compt50[8]                                           ; |compteur59|compt50[8]                                           ; regout           ;
+; |compteur59|compt50[9]                                           ; |compteur59|compt50[9]                                           ; regout           ;
+; |compteur59|compt50[10]                                          ; |compteur59|compt50[10]                                          ; regout           ;
+; |compteur59|compt50[11]                                          ; |compteur59|compt50[11]                                          ; regout           ;
+; |compteur59|compt50[12]                                          ; |compteur59|compt50[12]                                          ; regout           ;
+; |compteur59|compt50[13]                                          ; |compteur59|compt50[13]                                          ; regout           ;
+; |compteur59|compt50[14]                                          ; |compteur59|compt50[14]                                          ; regout           ;
+; |compteur59|compt50[15]                                          ; |compteur59|compt50[15]                                          ; regout           ;
+; |compteur59|compt50[16]                                          ; |compteur59|compt50[16]                                          ; regout           ;
+; |compteur59|compt50[17]                                          ; |compteur59|compt50[17]                                          ; regout           ;
+; |compteur59|compt50[18]                                          ; |compteur59|compt50[18]                                          ; regout           ;
+; |compteur59|compt50[19]                                          ; |compteur59|compt50[19]                                          ; regout           ;
+; |compteur59|compt50[20]                                          ; |compteur59|compt50[20]                                          ; regout           ;
+; |compteur59|compt50[21]                                          ; |compteur59|compt50[21]                                          ; regout           ;
+; |compteur59|compt50[22]                                          ; |compteur59|compt50[22]                                          ; regout           ;
+; |compteur59|compt50[23]                                          ; |compteur59|compt50[23]                                          ; regout           ;
+; |compteur59|compt50[24]                                          ; |compteur59|compt50[24]                                          ; regout           ;
+; |compteur59|compt50[25]                                          ; |compteur59|compt50[25]                                          ; regout           ;
+; |compteur59|compt50[26]                                          ; |compteur59|compt50[26]                                          ; regout           ;
+; |compteur59|compt50[27]                                          ; |compteur59|compt50[27]                                          ; regout           ;
+; |compteur59|compt50[28]                                          ; |compteur59|compt50[28]                                          ; regout           ;
+; |compteur59|SELECTOR[1]                                          ; |compteur59|SELECTOR[1]                                          ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~53                         ; |compteur59|afficheur:Afficheur5|HEXS~53                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~54                         ; |compteur59|afficheur:Afficheur5|HEXS~54                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~55                         ; |compteur59|afficheur:Afficheur5|HEXS~55                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~56                         ; |compteur59|afficheur:Afficheur5|HEXS~56                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~57                         ; |compteur59|afficheur:Afficheur5|HEXS~57                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~58                         ; |compteur59|afficheur:Afficheur5|HEXS~58                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~59                         ; |compteur59|afficheur:Afficheur5|HEXS~59                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~60                         ; |compteur59|afficheur:Afficheur5|HEXS~60                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~61                         ; |compteur59|afficheur:Afficheur5|HEXS~61                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~62                         ; |compteur59|afficheur:Afficheur5|HEXS~62                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~63                         ; |compteur59|afficheur:Afficheur5|HEXS~63                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~64                         ; |compteur59|afficheur:Afficheur5|HEXS~64                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~65                         ; |compteur59|afficheur:Afficheur5|HEXS~65                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~66                         ; |compteur59|afficheur:Afficheur5|HEXS~66                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~67                         ; |compteur59|afficheur:Afficheur5|HEXS~67                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~68                         ; |compteur59|afficheur:Afficheur5|HEXS~68                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~69                         ; |compteur59|afficheur:Afficheur5|HEXS~69                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~70                         ; |compteur59|afficheur:Afficheur5|HEXS~70                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~71                         ; |compteur59|afficheur:Afficheur5|HEXS~71                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~72                         ; |compteur59|afficheur:Afficheur5|HEXS~72                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~73                         ; |compteur59|afficheur:Afficheur5|HEXS~73                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~74                         ; |compteur59|afficheur:Afficheur5|HEXS~74                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~75                         ; |compteur59|afficheur:Afficheur5|HEXS~75                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~76                         ; |compteur59|afficheur:Afficheur5|HEXS~76                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~78                         ; |compteur59|afficheur:Afficheur5|HEXS~78                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~81                         ; |compteur59|afficheur:Afficheur5|HEXS~81                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~85                         ; |compteur59|afficheur:Afficheur5|HEXS~85                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~0                          ; |compteur59|afficheur:Afficheur9|HEXS~0                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~1                          ; |compteur59|afficheur:Afficheur9|HEXS~1                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~2                          ; |compteur59|afficheur:Afficheur9|HEXS~2                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~3                          ; |compteur59|afficheur:Afficheur9|HEXS~3                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~4                          ; |compteur59|afficheur:Afficheur9|HEXS~4                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~5                          ; |compteur59|afficheur:Afficheur9|HEXS~5                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~6                          ; |compteur59|afficheur:Afficheur9|HEXS~6                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~7                          ; |compteur59|afficheur:Afficheur9|HEXS~7                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~8                          ; |compteur59|afficheur:Afficheur9|HEXS~8                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~9                          ; |compteur59|afficheur:Afficheur9|HEXS~9                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~10                         ; |compteur59|afficheur:Afficheur9|HEXS~10                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~11                         ; |compteur59|afficheur:Afficheur9|HEXS~11                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~12                         ; |compteur59|afficheur:Afficheur9|HEXS~12                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~13                         ; |compteur59|afficheur:Afficheur9|HEXS~13                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~14                         ; |compteur59|afficheur:Afficheur9|HEXS~14                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~15                         ; |compteur59|afficheur:Afficheur9|HEXS~15                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~16                         ; |compteur59|afficheur:Afficheur9|HEXS~16                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~17                         ; |compteur59|afficheur:Afficheur9|HEXS~17                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~18                         ; |compteur59|afficheur:Afficheur9|HEXS~18                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~19                         ; |compteur59|afficheur:Afficheur9|HEXS~19                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~20                         ; |compteur59|afficheur:Afficheur9|HEXS~20                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~21                         ; |compteur59|afficheur:Afficheur9|HEXS~21                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~22                         ; |compteur59|afficheur:Afficheur9|HEXS~22                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~23                         ; |compteur59|afficheur:Afficheur9|HEXS~23                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~24                         ; |compteur59|afficheur:Afficheur9|HEXS~24                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~25                         ; |compteur59|afficheur:Afficheur9|HEXS~25                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~26                         ; |compteur59|afficheur:Afficheur9|HEXS~26                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~27                         ; |compteur59|afficheur:Afficheur9|HEXS~27                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~30                         ; |compteur59|afficheur:Afficheur9|HEXS~30                         ; out              ;
+; |compteur59|LessThan2~0                                          ; |compteur59|LessThan2~0                                          ; out0             ;
+; |compteur59|LessThan2~1                                          ; |compteur59|LessThan2~1                                          ; out0             ;
+; |compteur59|LessThan2~2                                          ; |compteur59|LessThan2~2                                          ; out0             ;
+; |compteur59|Add0~7                                               ; |compteur59|Add0~7                                               ; out0             ;
+; |compteur59|Add0~8                                               ; |compteur59|Add0~8                                               ; out0             ;
+; |compteur59|Add0~9                                               ; |compteur59|Add0~9                                               ; out0             ;
+; |compteur59|Add0~10                                              ; |compteur59|Add0~10                                              ; out0             ;
+; |compteur59|Add0~11                                              ; |compteur59|Add0~11                                              ; out0             ;
+; |compteur59|Add0~12                                              ; |compteur59|Add0~12                                              ; out0             ;
+; |compteur59|Add0~13                                              ; |compteur59|Add0~13                                              ; out0             ;
+; |compteur59|Add0~14                                              ; |compteur59|Add0~14                                              ; out0             ;
+; |compteur59|Add0~15                                              ; |compteur59|Add0~15                                              ; out0             ;
+; |compteur59|Add0~16                                              ; |compteur59|Add0~16                                              ; out0             ;
+; |compteur59|Add0~17                                              ; |compteur59|Add0~17                                              ; out0             ;
+; |compteur59|Add0~18                                              ; |compteur59|Add0~18                                              ; out0             ;
+; |compteur59|Add0~19                                              ; |compteur59|Add0~19                                              ; out0             ;
+; |compteur59|Add0~20                                              ; |compteur59|Add0~20                                              ; out0             ;
+; |compteur59|Add0~21                                              ; |compteur59|Add0~21                                              ; out0             ;
+; |compteur59|Add0~22                                              ; |compteur59|Add0~22                                              ; out0             ;
+; |compteur59|Add0~23                                              ; |compteur59|Add0~23                                              ; out0             ;
+; |compteur59|Add0~24                                              ; |compteur59|Add0~24                                              ; out0             ;
+; |compteur59|Add0~25                                              ; |compteur59|Add0~25                                              ; out0             ;
+; |compteur59|Add0~26                                              ; |compteur59|Add0~26                                              ; out0             ;
+; |compteur59|Add0~27                                              ; |compteur59|Add0~27                                              ; out0             ;
+; |compteur59|Add0~28                                              ; |compteur59|Add0~28                                              ; out0             ;
+; |compteur59|Add0~29                                              ; |compteur59|Add0~29                                              ; out0             ;
+; |compteur59|Add0~30                                              ; |compteur59|Add0~30                                              ; out0             ;
+; |compteur59|Add0~31                                              ; |compteur59|Add0~31                                              ; out0             ;
+; |compteur59|Add0~32                                              ; |compteur59|Add0~32                                              ; out0             ;
+; |compteur59|Add0~33                                              ; |compteur59|Add0~33                                              ; out0             ;
+; |compteur59|Add0~34                                              ; |compteur59|Add0~34                                              ; out0             ;
+; |compteur59|Add0~35                                              ; |compteur59|Add0~35                                              ; out0             ;
+; |compteur59|Add0~36                                              ; |compteur59|Add0~36                                              ; out0             ;
+; |compteur59|Add0~37                                              ; |compteur59|Add0~37                                              ; out0             ;
+; |compteur59|Add0~38                                              ; |compteur59|Add0~38                                              ; out0             ;
+; |compteur59|Add0~39                                              ; |compteur59|Add0~39                                              ; out0             ;
+; |compteur59|Add0~40                                              ; |compteur59|Add0~40                                              ; out0             ;
+; |compteur59|Add0~41                                              ; |compteur59|Add0~41                                              ; out0             ;
+; |compteur59|Add0~42                                              ; |compteur59|Add0~42                                              ; out0             ;
+; |compteur59|Add0~43                                              ; |compteur59|Add0~43                                              ; out0             ;
+; |compteur59|Add0~44                                              ; |compteur59|Add0~44                                              ; out0             ;
+; |compteur59|Add0~45                                              ; |compteur59|Add0~45                                              ; out0             ;
+; |compteur59|Add0~46                                              ; |compteur59|Add0~46                                              ; out0             ;
+; |compteur59|Add0~47                                              ; |compteur59|Add0~47                                              ; out0             ;
+; |compteur59|Add0~48                                              ; |compteur59|Add0~48                                              ; out0             ;
+; |compteur59|Add0~49                                              ; |compteur59|Add0~49                                              ; out0             ;
+; |compteur59|Add0~50                                              ; |compteur59|Add0~50                                              ; out0             ;
+; |compteur59|Add0~51                                              ; |compteur59|Add0~51                                              ; out0             ;
+; |compteur59|Add0~52                                              ; |compteur59|Add0~52                                              ; out0             ;
+; |compteur59|Add0~53                                              ; |compteur59|Add0~53                                              ; out0             ;
+; |compteur59|Add0~54                                              ; |compteur59|Add0~54                                              ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal0~0                        ; |compteur59|afficheur:Afficheur5|Equal0~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal4~0                        ; |compteur59|afficheur:Afficheur5|Equal4~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal5~0                        ; |compteur59|afficheur:Afficheur5|Equal5~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal6~0                        ; |compteur59|afficheur:Afficheur5|Equal6~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal7~0                        ; |compteur59|afficheur:Afficheur5|Equal7~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal10~0                       ; |compteur59|afficheur:Afficheur9|Equal10~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal11~0                       ; |compteur59|afficheur:Afficheur9|Equal11~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal12~0                       ; |compteur59|afficheur:Afficheur9|Equal12~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal13~0                       ; |compteur59|afficheur:Afficheur9|Equal13~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal14~0                       ; |compteur59|afficheur:Afficheur9|Equal14~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal15~0                       ; |compteur59|afficheur:Afficheur9|Equal15~0                       ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~17             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~17             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                               ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+; Node Name                                                        ; Output Port Name                                                 ; Output Port Type ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+; |compteur59|compt50[7]                                           ; |compteur59|compt50[7]                                           ; regout           ;
+; |compteur59|compt50[6]                                           ; |compteur59|compt50[6]                                           ; regout           ;
+; |compteur59|compt5~0                                             ; |compteur59|compt5~0                                             ; out              ;
+; |compteur59|compt5~3                                             ; |compteur59|compt5~3                                             ; out              ;
+; |compteur59|compt50~0                                            ; |compteur59|compt50~0                                            ; out              ;
+; |compteur59|compt50~1                                            ; |compteur59|compt50~1                                            ; out              ;
+; |compteur59|compt50~2                                            ; |compteur59|compt50~2                                            ; out              ;
+; |compteur59|compt50~3                                            ; |compteur59|compt50~3                                            ; out              ;
+; |compteur59|compt50~4                                            ; |compteur59|compt50~4                                            ; out              ;
+; |compteur59|compt50~5                                            ; |compteur59|compt50~5                                            ; out              ;
+; |compteur59|compt50~6                                            ; |compteur59|compt50~6                                            ; out              ;
+; |compteur59|compt50~7                                            ; |compteur59|compt50~7                                            ; out              ;
+; |compteur59|compt50~8                                            ; |compteur59|compt50~8                                            ; out              ;
+; |compteur59|compt50~9                                            ; |compteur59|compt50~9                                            ; out              ;
+; |compteur59|compt50~10                                           ; |compteur59|compt50~10                                           ; out              ;
+; |compteur59|compt50~11                                           ; |compteur59|compt50~11                                           ; out              ;
+; |compteur59|compt50~12                                           ; |compteur59|compt50~12                                           ; out              ;
+; |compteur59|compt50~13                                           ; |compteur59|compt50~13                                           ; out              ;
+; |compteur59|compt50~14                                           ; |compteur59|compt50~14                                           ; out              ;
+; |compteur59|compt50~15                                           ; |compteur59|compt50~15                                           ; out              ;
+; |compteur59|compt50~16                                           ; |compteur59|compt50~16                                           ; out              ;
+; |compteur59|compt50~17                                           ; |compteur59|compt50~17                                           ; out              ;
+; |compteur59|compt50~18                                           ; |compteur59|compt50~18                                           ; out              ;
+; |compteur59|compt50~19                                           ; |compteur59|compt50~19                                           ; out              ;
+; |compteur59|compt50~20                                           ; |compteur59|compt50~20                                           ; out              ;
+; |compteur59|compt50~21                                           ; |compteur59|compt50~21                                           ; out              ;
+; |compteur59|compt50~22                                           ; |compteur59|compt50~22                                           ; out              ;
+; |compteur59|compt50~23                                           ; |compteur59|compt50~23                                           ; out              ;
+; |compteur59|compt50[5]                                           ; |compteur59|compt50[5]                                           ; regout           ;
+; |compteur59|compt50[4]                                           ; |compteur59|compt50[4]                                           ; regout           ;
+; |compteur59|compt5[2]                                            ; |compteur59|compt5[2]                                            ; regout           ;
+; |compteur59|compt5[1]                                            ; |compteur59|compt5[1]                                            ; regout           ;
+; |compteur59|compt50[8]                                           ; |compteur59|compt50[8]                                           ; regout           ;
+; |compteur59|compt50[9]                                           ; |compteur59|compt50[9]                                           ; regout           ;
+; |compteur59|compt50[10]                                          ; |compteur59|compt50[10]                                          ; regout           ;
+; |compteur59|compt50[11]                                          ; |compteur59|compt50[11]                                          ; regout           ;
+; |compteur59|compt50[12]                                          ; |compteur59|compt50[12]                                          ; regout           ;
+; |compteur59|compt50[13]                                          ; |compteur59|compt50[13]                                          ; regout           ;
+; |compteur59|compt50[14]                                          ; |compteur59|compt50[14]                                          ; regout           ;
+; |compteur59|compt50[15]                                          ; |compteur59|compt50[15]                                          ; regout           ;
+; |compteur59|compt50[16]                                          ; |compteur59|compt50[16]                                          ; regout           ;
+; |compteur59|compt50[17]                                          ; |compteur59|compt50[17]                                          ; regout           ;
+; |compteur59|compt50[18]                                          ; |compteur59|compt50[18]                                          ; regout           ;
+; |compteur59|compt50[19]                                          ; |compteur59|compt50[19]                                          ; regout           ;
+; |compteur59|compt50[20]                                          ; |compteur59|compt50[20]                                          ; regout           ;
+; |compteur59|compt50[21]                                          ; |compteur59|compt50[21]                                          ; regout           ;
+; |compteur59|compt50[22]                                          ; |compteur59|compt50[22]                                          ; regout           ;
+; |compteur59|compt50[23]                                          ; |compteur59|compt50[23]                                          ; regout           ;
+; |compteur59|compt50[24]                                          ; |compteur59|compt50[24]                                          ; regout           ;
+; |compteur59|compt50[25]                                          ; |compteur59|compt50[25]                                          ; regout           ;
+; |compteur59|compt50[26]                                          ; |compteur59|compt50[26]                                          ; regout           ;
+; |compteur59|compt50[27]                                          ; |compteur59|compt50[27]                                          ; regout           ;
+; |compteur59|compt50[28]                                          ; |compteur59|compt50[28]                                          ; regout           ;
+; |compteur59|oHEX1_D[5]                                           ; |compteur59|oHEX1_D[5]                                           ; pin_out          ;
+; |compteur59|afficheur:Afficheur5|HEXS~53                         ; |compteur59|afficheur:Afficheur5|HEXS~53                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~54                         ; |compteur59|afficheur:Afficheur5|HEXS~54                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~55                         ; |compteur59|afficheur:Afficheur5|HEXS~55                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~56                         ; |compteur59|afficheur:Afficheur5|HEXS~56                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~57                         ; |compteur59|afficheur:Afficheur5|HEXS~57                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~58                         ; |compteur59|afficheur:Afficheur5|HEXS~58                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~59                         ; |compteur59|afficheur:Afficheur5|HEXS~59                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~60                         ; |compteur59|afficheur:Afficheur5|HEXS~60                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~61                         ; |compteur59|afficheur:Afficheur5|HEXS~61                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~62                         ; |compteur59|afficheur:Afficheur5|HEXS~62                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~63                         ; |compteur59|afficheur:Afficheur5|HEXS~63                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~64                         ; |compteur59|afficheur:Afficheur5|HEXS~64                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~65                         ; |compteur59|afficheur:Afficheur5|HEXS~65                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~66                         ; |compteur59|afficheur:Afficheur5|HEXS~66                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~67                         ; |compteur59|afficheur:Afficheur5|HEXS~67                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~68                         ; |compteur59|afficheur:Afficheur5|HEXS~68                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~69                         ; |compteur59|afficheur:Afficheur5|HEXS~69                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~71                         ; |compteur59|afficheur:Afficheur5|HEXS~71                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~72                         ; |compteur59|afficheur:Afficheur5|HEXS~72                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~78                         ; |compteur59|afficheur:Afficheur5|HEXS~78                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEXS~85                         ; |compteur59|afficheur:Afficheur5|HEXS~85                         ; out              ;
+; |compteur59|afficheur:Afficheur5|HEX[5]                          ; |compteur59|afficheur:Afficheur5|HEX[5]                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~0                          ; |compteur59|afficheur:Afficheur9|HEXS~0                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~1                          ; |compteur59|afficheur:Afficheur9|HEXS~1                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~2                          ; |compteur59|afficheur:Afficheur9|HEXS~2                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~3                          ; |compteur59|afficheur:Afficheur9|HEXS~3                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~4                          ; |compteur59|afficheur:Afficheur9|HEXS~4                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~5                          ; |compteur59|afficheur:Afficheur9|HEXS~5                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~6                          ; |compteur59|afficheur:Afficheur9|HEXS~6                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~7                          ; |compteur59|afficheur:Afficheur9|HEXS~7                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~8                          ; |compteur59|afficheur:Afficheur9|HEXS~8                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~9                          ; |compteur59|afficheur:Afficheur9|HEXS~9                          ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~10                         ; |compteur59|afficheur:Afficheur9|HEXS~10                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~11                         ; |compteur59|afficheur:Afficheur9|HEXS~11                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~12                         ; |compteur59|afficheur:Afficheur9|HEXS~12                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~13                         ; |compteur59|afficheur:Afficheur9|HEXS~13                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~14                         ; |compteur59|afficheur:Afficheur9|HEXS~14                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~15                         ; |compteur59|afficheur:Afficheur9|HEXS~15                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~16                         ; |compteur59|afficheur:Afficheur9|HEXS~16                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~17                         ; |compteur59|afficheur:Afficheur9|HEXS~17                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~18                         ; |compteur59|afficheur:Afficheur9|HEXS~18                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~19                         ; |compteur59|afficheur:Afficheur9|HEXS~19                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~20                         ; |compteur59|afficheur:Afficheur9|HEXS~20                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~21                         ; |compteur59|afficheur:Afficheur9|HEXS~21                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~22                         ; |compteur59|afficheur:Afficheur9|HEXS~22                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~23                         ; |compteur59|afficheur:Afficheur9|HEXS~23                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~24                         ; |compteur59|afficheur:Afficheur9|HEXS~24                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~25                         ; |compteur59|afficheur:Afficheur9|HEXS~25                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~26                         ; |compteur59|afficheur:Afficheur9|HEXS~26                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~27                         ; |compteur59|afficheur:Afficheur9|HEXS~27                         ; out              ;
+; |compteur59|afficheur:Afficheur9|HEXS~30                         ; |compteur59|afficheur:Afficheur9|HEXS~30                         ; out              ;
+; |compteur59|LessThan0~12                                         ; |compteur59|LessThan0~12                                         ; out0             ;
+; |compteur59|LessThan0~14                                         ; |compteur59|LessThan0~14                                         ; out0             ;
+; |compteur59|LessThan0~16                                         ; |compteur59|LessThan0~16                                         ; out0             ;
+; |compteur59|LessThan0~18                                         ; |compteur59|LessThan0~18                                         ; out0             ;
+; |compteur59|LessThan0~20                                         ; |compteur59|LessThan0~20                                         ; out0             ;
+; |compteur59|LessThan0~22                                         ; |compteur59|LessThan0~22                                         ; out0             ;
+; |compteur59|LessThan0~29                                         ; |compteur59|LessThan0~29                                         ; out0             ;
+; |compteur59|LessThan0~31                                         ; |compteur59|LessThan0~31                                         ; out0             ;
+; |compteur59|LessThan0~33                                         ; |compteur59|LessThan0~33                                         ; out0             ;
+; |compteur59|LessThan0~35                                         ; |compteur59|LessThan0~35                                         ; out0             ;
+; |compteur59|LessThan0~37                                         ; |compteur59|LessThan0~37                                         ; out0             ;
+; |compteur59|LessThan0~39                                         ; |compteur59|LessThan0~39                                         ; out0             ;
+; |compteur59|LessThan0~41                                         ; |compteur59|LessThan0~41                                         ; out0             ;
+; |compteur59|LessThan0~43                                         ; |compteur59|LessThan0~43                                         ; out0             ;
+; |compteur59|LessThan0~46                                         ; |compteur59|LessThan0~46                                         ; out0             ;
+; |compteur59|LessThan0~48                                         ; |compteur59|LessThan0~48                                         ; out0             ;
+; |compteur59|LessThan0~51                                         ; |compteur59|LessThan0~51                                         ; out0             ;
+; |compteur59|LessThan0~53                                         ; |compteur59|LessThan0~53                                         ; out0             ;
+; |compteur59|LessThan0~55                                         ; |compteur59|LessThan0~55                                         ; out0             ;
+; |compteur59|LessThan0~57                                         ; |compteur59|LessThan0~57                                         ; out0             ;
+; |compteur59|LessThan0~59                                         ; |compteur59|LessThan0~59                                         ; out0             ;
+; |compteur59|LessThan0~61                                         ; |compteur59|LessThan0~61                                         ; out0             ;
+; |compteur59|LessThan0~63                                         ; |compteur59|LessThan0~63                                         ; out0             ;
+; |compteur59|LessThan0~65                                         ; |compteur59|LessThan0~65                                         ; out0             ;
+; |compteur59|LessThan0~67                                         ; |compteur59|LessThan0~67                                         ; out0             ;
+; |compteur59|LessThan0~69                                         ; |compteur59|LessThan0~69                                         ; out0             ;
+; |compteur59|LessThan0~72                                         ; |compteur59|LessThan0~72                                         ; out0             ;
+; |compteur59|LessThan0~74                                         ; |compteur59|LessThan0~74                                         ; out0             ;
+; |compteur59|LessThan2~1                                          ; |compteur59|LessThan2~1                                          ; out0             ;
+; |compteur59|LessThan2~2                                          ; |compteur59|LessThan2~2                                          ; out0             ;
+; |compteur59|Add0~7                                               ; |compteur59|Add0~7                                               ; out0             ;
+; |compteur59|Add0~8                                               ; |compteur59|Add0~8                                               ; out0             ;
+; |compteur59|Add0~9                                               ; |compteur59|Add0~9                                               ; out0             ;
+; |compteur59|Add0~10                                              ; |compteur59|Add0~10                                              ; out0             ;
+; |compteur59|Add0~11                                              ; |compteur59|Add0~11                                              ; out0             ;
+; |compteur59|Add0~12                                              ; |compteur59|Add0~12                                              ; out0             ;
+; |compteur59|Add0~13                                              ; |compteur59|Add0~13                                              ; out0             ;
+; |compteur59|Add0~14                                              ; |compteur59|Add0~14                                              ; out0             ;
+; |compteur59|Add0~15                                              ; |compteur59|Add0~15                                              ; out0             ;
+; |compteur59|Add0~16                                              ; |compteur59|Add0~16                                              ; out0             ;
+; |compteur59|Add0~17                                              ; |compteur59|Add0~17                                              ; out0             ;
+; |compteur59|Add0~18                                              ; |compteur59|Add0~18                                              ; out0             ;
+; |compteur59|Add0~19                                              ; |compteur59|Add0~19                                              ; out0             ;
+; |compteur59|Add0~20                                              ; |compteur59|Add0~20                                              ; out0             ;
+; |compteur59|Add0~21                                              ; |compteur59|Add0~21                                              ; out0             ;
+; |compteur59|Add0~22                                              ; |compteur59|Add0~22                                              ; out0             ;
+; |compteur59|Add0~23                                              ; |compteur59|Add0~23                                              ; out0             ;
+; |compteur59|Add0~24                                              ; |compteur59|Add0~24                                              ; out0             ;
+; |compteur59|Add0~25                                              ; |compteur59|Add0~25                                              ; out0             ;
+; |compteur59|Add0~26                                              ; |compteur59|Add0~26                                              ; out0             ;
+; |compteur59|Add0~27                                              ; |compteur59|Add0~27                                              ; out0             ;
+; |compteur59|Add0~28                                              ; |compteur59|Add0~28                                              ; out0             ;
+; |compteur59|Add0~29                                              ; |compteur59|Add0~29                                              ; out0             ;
+; |compteur59|Add0~30                                              ; |compteur59|Add0~30                                              ; out0             ;
+; |compteur59|Add0~31                                              ; |compteur59|Add0~31                                              ; out0             ;
+; |compteur59|Add0~32                                              ; |compteur59|Add0~32                                              ; out0             ;
+; |compteur59|Add0~33                                              ; |compteur59|Add0~33                                              ; out0             ;
+; |compteur59|Add0~34                                              ; |compteur59|Add0~34                                              ; out0             ;
+; |compteur59|Add0~35                                              ; |compteur59|Add0~35                                              ; out0             ;
+; |compteur59|Add0~36                                              ; |compteur59|Add0~36                                              ; out0             ;
+; |compteur59|Add0~37                                              ; |compteur59|Add0~37                                              ; out0             ;
+; |compteur59|Add0~38                                              ; |compteur59|Add0~38                                              ; out0             ;
+; |compteur59|Add0~39                                              ; |compteur59|Add0~39                                              ; out0             ;
+; |compteur59|Add0~40                                              ; |compteur59|Add0~40                                              ; out0             ;
+; |compteur59|Add0~41                                              ; |compteur59|Add0~41                                              ; out0             ;
+; |compteur59|Add0~42                                              ; |compteur59|Add0~42                                              ; out0             ;
+; |compteur59|Add0~43                                              ; |compteur59|Add0~43                                              ; out0             ;
+; |compteur59|Add0~44                                              ; |compteur59|Add0~44                                              ; out0             ;
+; |compteur59|Add0~45                                              ; |compteur59|Add0~45                                              ; out0             ;
+; |compteur59|Add0~46                                              ; |compteur59|Add0~46                                              ; out0             ;
+; |compteur59|Add0~47                                              ; |compteur59|Add0~47                                              ; out0             ;
+; |compteur59|Add0~48                                              ; |compteur59|Add0~48                                              ; out0             ;
+; |compteur59|Add0~49                                              ; |compteur59|Add0~49                                              ; out0             ;
+; |compteur59|Add0~50                                              ; |compteur59|Add0~50                                              ; out0             ;
+; |compteur59|Add0~51                                              ; |compteur59|Add0~51                                              ; out0             ;
+; |compteur59|Add0~52                                              ; |compteur59|Add0~52                                              ; out0             ;
+; |compteur59|Add0~53                                              ; |compteur59|Add0~53                                              ; out0             ;
+; |compteur59|Add0~54                                              ; |compteur59|Add0~54                                              ; out0             ;
+; |compteur59|Add2~1                                               ; |compteur59|Add2~1                                               ; out0             ;
+; |compteur59|Add2~2                                               ; |compteur59|Add2~2                                               ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal3~0                        ; |compteur59|afficheur:Afficheur5|Equal3~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal4~0                        ; |compteur59|afficheur:Afficheur5|Equal4~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal5~0                        ; |compteur59|afficheur:Afficheur5|Equal5~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal6~0                        ; |compteur59|afficheur:Afficheur5|Equal6~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur5|Equal7~0                        ; |compteur59|afficheur:Afficheur5|Equal7~0                        ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal10~0                       ; |compteur59|afficheur:Afficheur9|Equal10~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal11~0                       ; |compteur59|afficheur:Afficheur9|Equal11~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal12~0                       ; |compteur59|afficheur:Afficheur9|Equal12~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal13~0                       ; |compteur59|afficheur:Afficheur9|Equal13~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal14~0                       ; |compteur59|afficheur:Afficheur9|Equal14~0                       ; out0             ;
+; |compteur59|afficheur:Afficheur9|Equal15~0                       ; |compteur59|afficheur:Afficheur9|Equal15~0                       ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~1              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~1              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~9              ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~9              ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; out0             ;
+; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~17             ; |compteur59|lpm_mux:Mux1|mux_7qc:auto_generated|_~17             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~1              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~1              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~9              ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~9              ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~1 ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]   ; |compteur59|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]   ; out0             ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon Jul 06 10:17:17 2015
+Info: Command: quartus_sim --simulation_results_format=VWF compteur59 -c compteur59
+Info (324025): Using vector source file "C:/Users/juantorres/TOTAL Projects/QUARTUS/E1 COMPTEUR 59/SimulationCompteur59Vitesse.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      50.22 %
+Info (328052): Number of transitions in simulation is 10670
+Info (324045): Vector file compteur59.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 317 megabytes
+    Info: Processing ended: Mon Jul 06 10:17:19 2015
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

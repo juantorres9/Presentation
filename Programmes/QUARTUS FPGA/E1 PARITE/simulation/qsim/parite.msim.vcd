@@ -1,0 +1,97 @@
+$comment
+	File created using the following command:
+		vcd file parite.msim.vcd -direction
+$end
+$date
+	Thu Jul 16 14:34:57 2015
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module parite_vlg_vec_tst $end
+$var reg 8 ! REG [7:0] $end
+$var wire 1 " S $end
+$var wire 1 # sampler $end
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * COMPT[0]~1_combout $end
+$var wire 1 + REG[6]~input_o $end
+$var wire 1 , S~output_o $end
+$var wire 1 - REG[2]~input_o $end
+$var wire 1 . REG[3]~input_o $end
+$var wire 1 / REG[1]~input_o $end
+$var wire 1 0 COMPT[1]~7_combout $end
+$var wire 1 1 REG[5]~input_o $end
+$var wire 1 2 REG[7]~input_o $end
+$var wire 1 3 REG[0]~input_o $end
+$var wire 1 4 COMPT[1]~6_combout $end
+$var wire 1 5 COMPT[1]~8_combout $end
+$var wire 1 6 REG[4]~input_o $end
+$var wire 1 7 COMPT[0]~2_combout $end
+$var wire 1 8 COMPT[0]~3_combout $end
+$var wire 1 9 COMPT[0]~4_combout $end
+$var wire 1 : COMPT[0]~0_combout $end
+$var wire 1 ; COMPT[0]~5_combout $end
+$var wire 1 < COMPT [3] $end
+$var wire 1 = COMPT [2] $end
+$var wire 1 > COMPT [1] $end
+$var wire 1 ? COMPT [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111000 !
+x"
+x#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+1+
+x,
+0-
+1.
+0/
+10
+11
+12
+03
+14
+15
+16
+07
+08
+19
+x:
+x;
+x?
+z>
+z=
+z<
+$end
+#180000
+b1111000 !
+b111000 !
+b11000 !
+b1000 !
+b0 !
+0.
+06
+01
+0+
+02
+0#
+09
+#1000000

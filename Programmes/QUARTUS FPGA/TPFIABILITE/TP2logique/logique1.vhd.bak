@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+
+ENTITY additioneur2 IS
+PORT(
+--ENTREES
+iSW: IN STD_LOGIC_VECTOR(4 DOWNTO 0);-- iSW(4)=MODE    (iSW=3-0)C2-C1-C0   
+iCLK_50: IN STD_LOGIC;
+--SORTIES
+oLEDG:  INOUT STD_LOGIC;--
+oLEDR:  OUT STD_LOGIC
+);
+

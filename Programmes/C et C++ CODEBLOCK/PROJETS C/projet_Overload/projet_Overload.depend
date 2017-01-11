@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1480326934 source:c:\users\juantorres\total\codeblock\projets c\projet_overload\main.cpp
+	<iostream>
+
+1480333262 source:c:\users\juantorres\total\codeblock\projets c\projet_overload\src\dure.cpp
+	<iostream>
+	"Dure.h"
+
+1480333249 c:\users\juantorres\total\codeblock\projets c\projet_overload\include\dure.h
+

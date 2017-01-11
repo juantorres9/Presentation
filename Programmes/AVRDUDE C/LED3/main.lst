@@ -1,0 +1,72 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 80B7      		in r24,80-32
+  25 0002 8B7F      		andi r24,lo8(-5)
+  26 0004 80BF      		out 80-32,r24
+  27               	.LM3:
+  28 0006 80EF      		ldi r24,lo8(-16)
+  29 0008 8ABB      		out 58-32,r24
+  30               	.LM4:
+  31 000a 8FE0      		ldi r24,lo8(15)
+  32 000c 8BBB      		out 59-32,r24
+  33               	.L9:
+  34               	.LM5:
+  35 000e 89B3      		in r24,57-32
+  36 0010 8F70      		andi r24,lo8(15)
+  37 0012 8F30      		cpi r24,lo8(15)
+  38 0014 01F4      		brne .L2
+  39               	.LM6:
+  40 0016 DF9A      		sbi 59-32,7
+  41               	.LM7:
+  42 0018 8BB3      		in r24,59-32
+  43 001a 8066      		ori r24,lo8(96)
+  44 001c 00C0      		rjmp .L10
+  45               	.L2:
+  46               	.LM8:
+  47 001e DF98      		cbi 59-32,7
+  48               	.LM9:
+  49 0020 8BB3      		in r24,59-32
+  50 0022 8F79      		andi r24,lo8(-97)
+  51               	.L10:
+  52 0024 8BBB      		out 59-32,r24
+  53               	.LM10:
+  54 0026 89B3      		in r24,57-32
+  55 0028 99B3      		in r25,57-32
+  56 002a 8E31      		cpi r24,lo8(30)
+  57 002c 01F0      		breq .L8
+  58 002e 9E30      		cpi r25,lo8(14)
+  59 0030 01F4      		brne .L4
+  60               	.L8:
+  61               	.LM11:
+  62 0032 DC98      		cbi 59-32,4
+  63 0034 00C0      		rjmp .L9
+  64               	.L4:
+  65               	.LM12:
+  66 0036 DC9A      		sbi 59-32,4
+  67 0038 00C0      		rjmp .L9
+  68               	.LFE2:
+  94               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\JUANTO~1\AppData\Local\Temp/ccMojOfe.s:2      *ABS*:0000003f __SREG__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccMojOfe.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccMojOfe.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccMojOfe.s:5      *ABS*:00000034 __CCP__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccMojOfe.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccMojOfe.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccMojOfe.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,7 @@
+Warning[205] C:\USERS\CARLOS\TOTAL\MAPLAB\TEST4\TEST4.ASM 2 : Found directive in column 1. (org)
+Warning[203] C:\USERS\CARLOS\TOTAL\MAPLAB\TEST4\TEST4.ASM 3 : Found opcode in column 1. (GOTO)
+Warning[205] C:\USERS\CARLOS\TOTAL\MAPLAB\TEST4\TEST4.ASM 5 : Found directive in column 1. (org)
+Warning[205] C:\USERS\CARLOS\TOTAL\MAPLAB\TEST4\TEST4.ASM 6 : Found directive in column 1. (org)
+Warning[203] C:\USERS\CARLOS\TOTAL\MAPLAB\TEST4\TEST4.ASM 8 : Found opcode in column 1. (MOVLW)
+Warning[203] C:\USERS\CARLOS\TOTAL\MAPLAB\TEST4\TEST4.ASM 9 : Found opcode in column 1. (ADDLW)
+Warning[205] C:\USERS\CARLOS\TOTAL\MAPLAB\TEST4\TEST4.ASM 10 : Found directive in column 1. (end)

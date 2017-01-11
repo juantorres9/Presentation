@@ -1,0 +1,58 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 84E0      		ldi r24,lo8(4)
+  25 0002 80BF      		out 80-32,r24
+  26               	.LM3:
+  27 0004 81E0      		ldi r24,lo8(1)
+  28 0006 84BB      		out 52-32,r24
+  29               	.LM4:
+  30 0008 85BB      		out 53-32,r24
+  31               	.L5:
+  32               	.LBB2:
+  33               	.LM5:
+  34 000a 0E94 0000 		call initUsart
+  35               	.LM6:
+  36 000e 82E0      		ldi r24,lo8(2)
+  37 0010 0E94 0000 		call ecrireByte
+  38               	.LM7:
+  39 0014 0E94 0000 		call readByte
+  40               	.LM8:
+  41 0018 8230      		cpi r24,lo8(2)
+  42 001a 01F4      		brne .L2
+  43               	.LM9:
+  44 001c A898      		cbi 53-32,0
+  45 001e 00C0      		rjmp .L5
+  46               	.L2:
+  47               	.LM10:
+  48 0020 A89A      		sbi 53-32,0
+  49 0022 00C0      		rjmp .L5
+  50               	.LBE2:
+  51               	.LFE6:
+  77               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\JUANTO~1\AppData\Local\Temp/ccss2mVd.s:2      *ABS*:0000003f __SREG__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccss2mVd.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccss2mVd.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccss2mVd.s:5      *ABS*:00000034 __CCP__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccss2mVd.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccss2mVd.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccss2mVd.s:18     .text:00000000 main
+
+UNDEFINED SYMBOLS
+initUsart
+ecrireByte
+readByte

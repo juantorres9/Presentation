@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1480616976 source:c:\users\juantorres\total\codeblock\projets c\projet_variables\main.c
+	<stdio.h>
+	<stdlib.h>
+	"complement.h"
+
+1480611584 c:\users\juantorres\total\codeblock\projets c\projet_variables\complement.h
+
+1480616968 source:c:\users\juantorres\total\codeblock\projets c\projet_variables\complement.c
+	"complement.h"
+

@@ -1,0 +1,581 @@
+Simulator report for compteur9
+Sun Jul 05 21:36:43 2015
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 278 nodes    ;
+; Simulation Coverage         ;      50.00 % ;
+; Total Number of Transitions ; 2129         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                    ;               ;
+; Vector input source                                                                        ; C:/Users/juantorres/TOTAL Projects/QUARTUS/E1 COMPTEUR 9/compteur9.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                   ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                              ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                              ; Transport     ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      50.00 % ;
+; Total nodes checked                                 ; 278          ;
+; Total output ports checked                          ; 278          ;
+; Total output ports with complete 1/0-value coverage ; 139          ;
+; Total output ports with no 1/0-value coverage       ; 139          ;
+; Total output ports with no 1-value coverage         ; 139          ;
+; Total output ports with no 0-value coverage         ; 139          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                          ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |compteur9|compt10~0                    ; |compteur9|compt10~0                    ; out              ;
+; |compteur9|compt10~1                    ; |compteur9|compt10~1                    ; out              ;
+; |compteur9|compt10~2                    ; |compteur9|compt10~2                    ; out              ;
+; |compteur9|compt10~3                    ; |compteur9|compt10~3                    ; out              ;
+; |compteur9|compt50~26                   ; |compteur9|compt50~26                   ; out              ;
+; |compteur9|compt50~27                   ; |compteur9|compt50~27                   ; out              ;
+; |compteur9|compt50~28                   ; |compteur9|compt50~28                   ; out              ;
+; |compteur9|compt10[0]                   ; |compteur9|compt10[0]                   ; regout           ;
+; |compteur9|compt10[1]                   ; |compteur9|compt10[1]                   ; regout           ;
+; |compteur9|compt10[2]                   ; |compteur9|compt10[2]                   ; regout           ;
+; |compteur9|compt10[3]                   ; |compteur9|compt10[3]                   ; regout           ;
+; |compteur9|compt50[0]                   ; |compteur9|compt50[0]                   ; regout           ;
+; |compteur9|compt50[1]                   ; |compteur9|compt50[1]                   ; regout           ;
+; |compteur9|compt50[2]                   ; |compteur9|compt50[2]                   ; regout           ;
+; |compteur9|CLK                          ; |compteur9|CLK                          ; out              ;
+; |compteur9|HEXclone[0]                  ; |compteur9|HEXclone[0]                  ; pin_out          ;
+; |compteur9|HEXclone[1]                  ; |compteur9|HEXclone[1]                  ; pin_out          ;
+; |compteur9|HEXclone[2]                  ; |compteur9|HEXclone[2]                  ; pin_out          ;
+; |compteur9|HEXclone[3]                  ; |compteur9|HEXclone[3]                  ; pin_out          ;
+; |compteur9|HEXclone[4]                  ; |compteur9|HEXclone[4]                  ; pin_out          ;
+; |compteur9|HEXclone[5]                  ; |compteur9|HEXclone[5]                  ; pin_out          ;
+; |compteur9|HEXclone[6]                  ; |compteur9|HEXclone[6]                  ; pin_out          ;
+; |compteur9|afficheur:instance1|HEXS~28  ; |compteur9|afficheur:instance1|HEXS~28  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~29  ; |compteur9|afficheur:instance1|HEXS~29  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~31  ; |compteur9|afficheur:instance1|HEXS~31  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~32  ; |compteur9|afficheur:instance1|HEXS~32  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~33  ; |compteur9|afficheur:instance1|HEXS~33  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~34  ; |compteur9|afficheur:instance1|HEXS~34  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~35  ; |compteur9|afficheur:instance1|HEXS~35  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~36  ; |compteur9|afficheur:instance1|HEXS~36  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~37  ; |compteur9|afficheur:instance1|HEXS~37  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~38  ; |compteur9|afficheur:instance1|HEXS~38  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~39  ; |compteur9|afficheur:instance1|HEXS~39  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~40  ; |compteur9|afficheur:instance1|HEXS~40  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~41  ; |compteur9|afficheur:instance1|HEXS~41  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~42  ; |compteur9|afficheur:instance1|HEXS~42  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~43  ; |compteur9|afficheur:instance1|HEXS~43  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~44  ; |compteur9|afficheur:instance1|HEXS~44  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~45  ; |compteur9|afficheur:instance1|HEXS~45  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~46  ; |compteur9|afficheur:instance1|HEXS~46  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~47  ; |compteur9|afficheur:instance1|HEXS~47  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~48  ; |compteur9|afficheur:instance1|HEXS~48  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~49  ; |compteur9|afficheur:instance1|HEXS~49  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~50  ; |compteur9|afficheur:instance1|HEXS~50  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~51  ; |compteur9|afficheur:instance1|HEXS~51  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~52  ; |compteur9|afficheur:instance1|HEXS~52  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~53  ; |compteur9|afficheur:instance1|HEXS~53  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~54  ; |compteur9|afficheur:instance1|HEXS~54  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~55  ; |compteur9|afficheur:instance1|HEXS~55  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~56  ; |compteur9|afficheur:instance1|HEXS~56  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~57  ; |compteur9|afficheur:instance1|HEXS~57  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~58  ; |compteur9|afficheur:instance1|HEXS~58  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~59  ; |compteur9|afficheur:instance1|HEXS~59  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~60  ; |compteur9|afficheur:instance1|HEXS~60  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~61  ; |compteur9|afficheur:instance1|HEXS~61  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~62  ; |compteur9|afficheur:instance1|HEXS~62  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~63  ; |compteur9|afficheur:instance1|HEXS~63  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~64  ; |compteur9|afficheur:instance1|HEXS~64  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~65  ; |compteur9|afficheur:instance1|HEXS~65  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~66  ; |compteur9|afficheur:instance1|HEXS~66  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~67  ; |compteur9|afficheur:instance1|HEXS~67  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~68  ; |compteur9|afficheur:instance1|HEXS~68  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~69  ; |compteur9|afficheur:instance1|HEXS~69  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~70  ; |compteur9|afficheur:instance1|HEXS~70  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~71  ; |compteur9|afficheur:instance1|HEXS~71  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~72  ; |compteur9|afficheur:instance1|HEXS~72  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~73  ; |compteur9|afficheur:instance1|HEXS~73  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~74  ; |compteur9|afficheur:instance1|HEXS~74  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~75  ; |compteur9|afficheur:instance1|HEXS~75  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~76  ; |compteur9|afficheur:instance1|HEXS~76  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~77  ; |compteur9|afficheur:instance1|HEXS~77  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~78  ; |compteur9|afficheur:instance1|HEXS~78  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~79  ; |compteur9|afficheur:instance1|HEXS~79  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~80  ; |compteur9|afficheur:instance1|HEXS~80  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~81  ; |compteur9|afficheur:instance1|HEXS~81  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~82  ; |compteur9|afficheur:instance1|HEXS~82  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~83  ; |compteur9|afficheur:instance1|HEXS~83  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~84  ; |compteur9|afficheur:instance1|HEXS~84  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~85  ; |compteur9|afficheur:instance1|HEXS~85  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~86  ; |compteur9|afficheur:instance1|HEXS~86  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~87  ; |compteur9|afficheur:instance1|HEXS~87  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~88  ; |compteur9|afficheur:instance1|HEXS~88  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~89  ; |compteur9|afficheur:instance1|HEXS~89  ; out              ;
+; |compteur9|afficheur:instance1|HEXS~90  ; |compteur9|afficheur:instance1|HEXS~90  ; out              ;
+; |compteur9|afficheur:instance1|HEX[6]   ; |compteur9|afficheur:instance1|HEX[6]   ; out              ;
+; |compteur9|afficheur:instance1|HEX[5]   ; |compteur9|afficheur:instance1|HEX[5]   ; out              ;
+; |compteur9|afficheur:instance1|HEX[4]   ; |compteur9|afficheur:instance1|HEX[4]   ; out              ;
+; |compteur9|afficheur:instance1|HEX[3]   ; |compteur9|afficheur:instance1|HEX[3]   ; out              ;
+; |compteur9|afficheur:instance1|HEX[2]   ; |compteur9|afficheur:instance1|HEX[2]   ; out              ;
+; |compteur9|afficheur:instance1|HEX[1]   ; |compteur9|afficheur:instance1|HEX[1]   ; out              ;
+; |compteur9|afficheur:instance1|HEX[0]   ; |compteur9|afficheur:instance1|HEX[0]   ; out              ;
+; |compteur9|LessThan0~0                  ; |compteur9|LessThan0~0                  ; out0             ;
+; |compteur9|LessThan0~1                  ; |compteur9|LessThan0~1                  ; out0             ;
+; |compteur9|LessThan0~2                  ; |compteur9|LessThan0~2                  ; out0             ;
+; |compteur9|LessThan0~3                  ; |compteur9|LessThan0~3                  ; out0             ;
+; |compteur9|LessThan0~4                  ; |compteur9|LessThan0~4                  ; out0             ;
+; |compteur9|LessThan0~5                  ; |compteur9|LessThan0~5                  ; out0             ;
+; |compteur9|LessThan0~6                  ; |compteur9|LessThan0~6                  ; out0             ;
+; |compteur9|LessThan0~7                  ; |compteur9|LessThan0~7                  ; out0             ;
+; |compteur9|LessThan0~8                  ; |compteur9|LessThan0~8                  ; out0             ;
+; |compteur9|LessThan0~9                  ; |compteur9|LessThan0~9                  ; out0             ;
+; |compteur9|LessThan0~10                 ; |compteur9|LessThan0~10                 ; out0             ;
+; |compteur9|LessThan0~11                 ; |compteur9|LessThan0~11                 ; out0             ;
+; |compteur9|LessThan0~12                 ; |compteur9|LessThan0~12                 ; out0             ;
+; |compteur9|LessThan0~13                 ; |compteur9|LessThan0~13                 ; out0             ;
+; |compteur9|LessThan0~14                 ; |compteur9|LessThan0~14                 ; out0             ;
+; |compteur9|LessThan0~15                 ; |compteur9|LessThan0~15                 ; out0             ;
+; |compteur9|LessThan0~16                 ; |compteur9|LessThan0~16                 ; out0             ;
+; |compteur9|LessThan0~17                 ; |compteur9|LessThan0~17                 ; out0             ;
+; |compteur9|LessThan0~18                 ; |compteur9|LessThan0~18                 ; out0             ;
+; |compteur9|LessThan0~19                 ; |compteur9|LessThan0~19                 ; out0             ;
+; |compteur9|LessThan0~20                 ; |compteur9|LessThan0~20                 ; out0             ;
+; |compteur9|LessThan0~21                 ; |compteur9|LessThan0~21                 ; out0             ;
+; |compteur9|LessThan0~22                 ; |compteur9|LessThan0~22                 ; out0             ;
+; |compteur9|LessThan0~23                 ; |compteur9|LessThan0~23                 ; out0             ;
+; |compteur9|LessThan0~24                 ; |compteur9|LessThan0~24                 ; out0             ;
+; |compteur9|LessThan0~25                 ; |compteur9|LessThan0~25                 ; out0             ;
+; |compteur9|LessThan1~0                  ; |compteur9|LessThan1~0                  ; out0             ;
+; |compteur9|LessThan1~1                  ; |compteur9|LessThan1~1                  ; out0             ;
+; |compteur9|LessThan1~2                  ; |compteur9|LessThan1~2                  ; out0             ;
+; |compteur9|LessThan1~3                  ; |compteur9|LessThan1~3                  ; out0             ;
+; |compteur9|Add0~0                       ; |compteur9|Add0~0                       ; out0             ;
+; |compteur9|Add0~1                       ; |compteur9|Add0~1                       ; out0             ;
+; |compteur9|Add0~2                       ; |compteur9|Add0~2                       ; out0             ;
+; |compteur9|Add1~0                       ; |compteur9|Add1~0                       ; out0             ;
+; |compteur9|Add1~1                       ; |compteur9|Add1~1                       ; out0             ;
+; |compteur9|Add1~2                       ; |compteur9|Add1~2                       ; out0             ;
+; |compteur9|Add1~3                       ; |compteur9|Add1~3                       ; out0             ;
+; |compteur9|Add1~4                       ; |compteur9|Add1~4                       ; out0             ;
+; |compteur9|afficheur:instance1|Equal0~0 ; |compteur9|afficheur:instance1|Equal0~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal1~0 ; |compteur9|afficheur:instance1|Equal1~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal2~0 ; |compteur9|afficheur:instance1|Equal2~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal3~0 ; |compteur9|afficheur:instance1|Equal3~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal4~0 ; |compteur9|afficheur:instance1|Equal4~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal5~0 ; |compteur9|afficheur:instance1|Equal5~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal6~0 ; |compteur9|afficheur:instance1|Equal6~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal7~0 ; |compteur9|afficheur:instance1|Equal7~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal8~0 ; |compteur9|afficheur:instance1|Equal8~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal9~0 ; |compteur9|afficheur:instance1|Equal9~0 ; out0             ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |compteur9|compt50~0                     ; |compteur9|compt50~0                     ; out              ;
+; |compteur9|compt50~1                     ; |compteur9|compt50~1                     ; out              ;
+; |compteur9|compt50~2                     ; |compteur9|compt50~2                     ; out              ;
+; |compteur9|compt50~3                     ; |compteur9|compt50~3                     ; out              ;
+; |compteur9|compt50~4                     ; |compteur9|compt50~4                     ; out              ;
+; |compteur9|compt50~5                     ; |compteur9|compt50~5                     ; out              ;
+; |compteur9|compt50~6                     ; |compteur9|compt50~6                     ; out              ;
+; |compteur9|compt50~7                     ; |compteur9|compt50~7                     ; out              ;
+; |compteur9|compt50~8                     ; |compteur9|compt50~8                     ; out              ;
+; |compteur9|compt50~9                     ; |compteur9|compt50~9                     ; out              ;
+; |compteur9|compt50~10                    ; |compteur9|compt50~10                    ; out              ;
+; |compteur9|compt50~11                    ; |compteur9|compt50~11                    ; out              ;
+; |compteur9|compt50~12                    ; |compteur9|compt50~12                    ; out              ;
+; |compteur9|compt50~13                    ; |compteur9|compt50~13                    ; out              ;
+; |compteur9|compt50~14                    ; |compteur9|compt50~14                    ; out              ;
+; |compteur9|compt50~15                    ; |compteur9|compt50~15                    ; out              ;
+; |compteur9|compt50~16                    ; |compteur9|compt50~16                    ; out              ;
+; |compteur9|compt50~17                    ; |compteur9|compt50~17                    ; out              ;
+; |compteur9|compt50~18                    ; |compteur9|compt50~18                    ; out              ;
+; |compteur9|compt50~19                    ; |compteur9|compt50~19                    ; out              ;
+; |compteur9|compt50~20                    ; |compteur9|compt50~20                    ; out              ;
+; |compteur9|compt50~21                    ; |compteur9|compt50~21                    ; out              ;
+; |compteur9|compt50~22                    ; |compteur9|compt50~22                    ; out              ;
+; |compteur9|compt50~23                    ; |compteur9|compt50~23                    ; out              ;
+; |compteur9|compt50~24                    ; |compteur9|compt50~24                    ; out              ;
+; |compteur9|compt50~25                    ; |compteur9|compt50~25                    ; out              ;
+; |compteur9|compt50[3]                    ; |compteur9|compt50[3]                    ; regout           ;
+; |compteur9|compt50[4]                    ; |compteur9|compt50[4]                    ; regout           ;
+; |compteur9|compt50[5]                    ; |compteur9|compt50[5]                    ; regout           ;
+; |compteur9|compt50[6]                    ; |compteur9|compt50[6]                    ; regout           ;
+; |compteur9|compt50[7]                    ; |compteur9|compt50[7]                    ; regout           ;
+; |compteur9|compt50[8]                    ; |compteur9|compt50[8]                    ; regout           ;
+; |compteur9|compt50[9]                    ; |compteur9|compt50[9]                    ; regout           ;
+; |compteur9|compt50[10]                   ; |compteur9|compt50[10]                   ; regout           ;
+; |compteur9|compt50[11]                   ; |compteur9|compt50[11]                   ; regout           ;
+; |compteur9|compt50[12]                   ; |compteur9|compt50[12]                   ; regout           ;
+; |compteur9|compt50[13]                   ; |compteur9|compt50[13]                   ; regout           ;
+; |compteur9|compt50[14]                   ; |compteur9|compt50[14]                   ; regout           ;
+; |compteur9|compt50[15]                   ; |compteur9|compt50[15]                   ; regout           ;
+; |compteur9|compt50[16]                   ; |compteur9|compt50[16]                   ; regout           ;
+; |compteur9|compt50[17]                   ; |compteur9|compt50[17]                   ; regout           ;
+; |compteur9|compt50[18]                   ; |compteur9|compt50[18]                   ; regout           ;
+; |compteur9|compt50[19]                   ; |compteur9|compt50[19]                   ; regout           ;
+; |compteur9|compt50[20]                   ; |compteur9|compt50[20]                   ; regout           ;
+; |compteur9|compt50[21]                   ; |compteur9|compt50[21]                   ; regout           ;
+; |compteur9|compt50[22]                   ; |compteur9|compt50[22]                   ; regout           ;
+; |compteur9|compt50[23]                   ; |compteur9|compt50[23]                   ; regout           ;
+; |compteur9|compt50[24]                   ; |compteur9|compt50[24]                   ; regout           ;
+; |compteur9|compt50[25]                   ; |compteur9|compt50[25]                   ; regout           ;
+; |compteur9|compt50[26]                   ; |compteur9|compt50[26]                   ; regout           ;
+; |compteur9|compt50[27]                   ; |compteur9|compt50[27]                   ; regout           ;
+; |compteur9|compt50[28]                   ; |compteur9|compt50[28]                   ; regout           ;
+; |compteur9|afficheur:instance1|HEXS~0    ; |compteur9|afficheur:instance1|HEXS~0    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~1    ; |compteur9|afficheur:instance1|HEXS~1    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~2    ; |compteur9|afficheur:instance1|HEXS~2    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~3    ; |compteur9|afficheur:instance1|HEXS~3    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~4    ; |compteur9|afficheur:instance1|HEXS~4    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~5    ; |compteur9|afficheur:instance1|HEXS~5    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~6    ; |compteur9|afficheur:instance1|HEXS~6    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~7    ; |compteur9|afficheur:instance1|HEXS~7    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~8    ; |compteur9|afficheur:instance1|HEXS~8    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~9    ; |compteur9|afficheur:instance1|HEXS~9    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~10   ; |compteur9|afficheur:instance1|HEXS~10   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~11   ; |compteur9|afficheur:instance1|HEXS~11   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~12   ; |compteur9|afficheur:instance1|HEXS~12   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~13   ; |compteur9|afficheur:instance1|HEXS~13   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~14   ; |compteur9|afficheur:instance1|HEXS~14   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~15   ; |compteur9|afficheur:instance1|HEXS~15   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~16   ; |compteur9|afficheur:instance1|HEXS~16   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~17   ; |compteur9|afficheur:instance1|HEXS~17   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~18   ; |compteur9|afficheur:instance1|HEXS~18   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~19   ; |compteur9|afficheur:instance1|HEXS~19   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~20   ; |compteur9|afficheur:instance1|HEXS~20   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~21   ; |compteur9|afficheur:instance1|HEXS~21   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~22   ; |compteur9|afficheur:instance1|HEXS~22   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~23   ; |compteur9|afficheur:instance1|HEXS~23   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~24   ; |compteur9|afficheur:instance1|HEXS~24   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~25   ; |compteur9|afficheur:instance1|HEXS~25   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~26   ; |compteur9|afficheur:instance1|HEXS~26   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~27   ; |compteur9|afficheur:instance1|HEXS~27   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~30   ; |compteur9|afficheur:instance1|HEXS~30   ; out              ;
+; |compteur9|Add0~3                        ; |compteur9|Add0~3                        ; out0             ;
+; |compteur9|Add0~4                        ; |compteur9|Add0~4                        ; out0             ;
+; |compteur9|Add0~5                        ; |compteur9|Add0~5                        ; out0             ;
+; |compteur9|Add0~6                        ; |compteur9|Add0~6                        ; out0             ;
+; |compteur9|Add0~7                        ; |compteur9|Add0~7                        ; out0             ;
+; |compteur9|Add0~8                        ; |compteur9|Add0~8                        ; out0             ;
+; |compteur9|Add0~9                        ; |compteur9|Add0~9                        ; out0             ;
+; |compteur9|Add0~10                       ; |compteur9|Add0~10                       ; out0             ;
+; |compteur9|Add0~11                       ; |compteur9|Add0~11                       ; out0             ;
+; |compteur9|Add0~12                       ; |compteur9|Add0~12                       ; out0             ;
+; |compteur9|Add0~13                       ; |compteur9|Add0~13                       ; out0             ;
+; |compteur9|Add0~14                       ; |compteur9|Add0~14                       ; out0             ;
+; |compteur9|Add0~15                       ; |compteur9|Add0~15                       ; out0             ;
+; |compteur9|Add0~16                       ; |compteur9|Add0~16                       ; out0             ;
+; |compteur9|Add0~17                       ; |compteur9|Add0~17                       ; out0             ;
+; |compteur9|Add0~18                       ; |compteur9|Add0~18                       ; out0             ;
+; |compteur9|Add0~19                       ; |compteur9|Add0~19                       ; out0             ;
+; |compteur9|Add0~20                       ; |compteur9|Add0~20                       ; out0             ;
+; |compteur9|Add0~21                       ; |compteur9|Add0~21                       ; out0             ;
+; |compteur9|Add0~22                       ; |compteur9|Add0~22                       ; out0             ;
+; |compteur9|Add0~23                       ; |compteur9|Add0~23                       ; out0             ;
+; |compteur9|Add0~24                       ; |compteur9|Add0~24                       ; out0             ;
+; |compteur9|Add0~25                       ; |compteur9|Add0~25                       ; out0             ;
+; |compteur9|Add0~26                       ; |compteur9|Add0~26                       ; out0             ;
+; |compteur9|Add0~27                       ; |compteur9|Add0~27                       ; out0             ;
+; |compteur9|Add0~28                       ; |compteur9|Add0~28                       ; out0             ;
+; |compteur9|Add0~29                       ; |compteur9|Add0~29                       ; out0             ;
+; |compteur9|Add0~30                       ; |compteur9|Add0~30                       ; out0             ;
+; |compteur9|Add0~31                       ; |compteur9|Add0~31                       ; out0             ;
+; |compteur9|Add0~32                       ; |compteur9|Add0~32                       ; out0             ;
+; |compteur9|Add0~33                       ; |compteur9|Add0~33                       ; out0             ;
+; |compteur9|Add0~34                       ; |compteur9|Add0~34                       ; out0             ;
+; |compteur9|Add0~35                       ; |compteur9|Add0~35                       ; out0             ;
+; |compteur9|Add0~36                       ; |compteur9|Add0~36                       ; out0             ;
+; |compteur9|Add0~37                       ; |compteur9|Add0~37                       ; out0             ;
+; |compteur9|Add0~38                       ; |compteur9|Add0~38                       ; out0             ;
+; |compteur9|Add0~39                       ; |compteur9|Add0~39                       ; out0             ;
+; |compteur9|Add0~40                       ; |compteur9|Add0~40                       ; out0             ;
+; |compteur9|Add0~41                       ; |compteur9|Add0~41                       ; out0             ;
+; |compteur9|Add0~42                       ; |compteur9|Add0~42                       ; out0             ;
+; |compteur9|Add0~43                       ; |compteur9|Add0~43                       ; out0             ;
+; |compteur9|Add0~44                       ; |compteur9|Add0~44                       ; out0             ;
+; |compteur9|Add0~45                       ; |compteur9|Add0~45                       ; out0             ;
+; |compteur9|Add0~46                       ; |compteur9|Add0~46                       ; out0             ;
+; |compteur9|Add0~47                       ; |compteur9|Add0~47                       ; out0             ;
+; |compteur9|Add0~48                       ; |compteur9|Add0~48                       ; out0             ;
+; |compteur9|Add0~49                       ; |compteur9|Add0~49                       ; out0             ;
+; |compteur9|Add0~50                       ; |compteur9|Add0~50                       ; out0             ;
+; |compteur9|Add0~51                       ; |compteur9|Add0~51                       ; out0             ;
+; |compteur9|Add0~52                       ; |compteur9|Add0~52                       ; out0             ;
+; |compteur9|Add0~53                       ; |compteur9|Add0~53                       ; out0             ;
+; |compteur9|Add0~54                       ; |compteur9|Add0~54                       ; out0             ;
+; |compteur9|afficheur:instance1|Equal10~0 ; |compteur9|afficheur:instance1|Equal10~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal11~0 ; |compteur9|afficheur:instance1|Equal11~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal12~0 ; |compteur9|afficheur:instance1|Equal12~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal13~0 ; |compteur9|afficheur:instance1|Equal13~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal14~0 ; |compteur9|afficheur:instance1|Equal14~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal15~0 ; |compteur9|afficheur:instance1|Equal15~0 ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |compteur9|compt50~0                     ; |compteur9|compt50~0                     ; out              ;
+; |compteur9|compt50~1                     ; |compteur9|compt50~1                     ; out              ;
+; |compteur9|compt50~2                     ; |compteur9|compt50~2                     ; out              ;
+; |compteur9|compt50~3                     ; |compteur9|compt50~3                     ; out              ;
+; |compteur9|compt50~4                     ; |compteur9|compt50~4                     ; out              ;
+; |compteur9|compt50~5                     ; |compteur9|compt50~5                     ; out              ;
+; |compteur9|compt50~6                     ; |compteur9|compt50~6                     ; out              ;
+; |compteur9|compt50~7                     ; |compteur9|compt50~7                     ; out              ;
+; |compteur9|compt50~8                     ; |compteur9|compt50~8                     ; out              ;
+; |compteur9|compt50~9                     ; |compteur9|compt50~9                     ; out              ;
+; |compteur9|compt50~10                    ; |compteur9|compt50~10                    ; out              ;
+; |compteur9|compt50~11                    ; |compteur9|compt50~11                    ; out              ;
+; |compteur9|compt50~12                    ; |compteur9|compt50~12                    ; out              ;
+; |compteur9|compt50~13                    ; |compteur9|compt50~13                    ; out              ;
+; |compteur9|compt50~14                    ; |compteur9|compt50~14                    ; out              ;
+; |compteur9|compt50~15                    ; |compteur9|compt50~15                    ; out              ;
+; |compteur9|compt50~16                    ; |compteur9|compt50~16                    ; out              ;
+; |compteur9|compt50~17                    ; |compteur9|compt50~17                    ; out              ;
+; |compteur9|compt50~18                    ; |compteur9|compt50~18                    ; out              ;
+; |compteur9|compt50~19                    ; |compteur9|compt50~19                    ; out              ;
+; |compteur9|compt50~20                    ; |compteur9|compt50~20                    ; out              ;
+; |compteur9|compt50~21                    ; |compteur9|compt50~21                    ; out              ;
+; |compteur9|compt50~22                    ; |compteur9|compt50~22                    ; out              ;
+; |compteur9|compt50~23                    ; |compteur9|compt50~23                    ; out              ;
+; |compteur9|compt50~24                    ; |compteur9|compt50~24                    ; out              ;
+; |compteur9|compt50~25                    ; |compteur9|compt50~25                    ; out              ;
+; |compteur9|compt50[3]                    ; |compteur9|compt50[3]                    ; regout           ;
+; |compteur9|compt50[4]                    ; |compteur9|compt50[4]                    ; regout           ;
+; |compteur9|compt50[5]                    ; |compteur9|compt50[5]                    ; regout           ;
+; |compteur9|compt50[6]                    ; |compteur9|compt50[6]                    ; regout           ;
+; |compteur9|compt50[7]                    ; |compteur9|compt50[7]                    ; regout           ;
+; |compteur9|compt50[8]                    ; |compteur9|compt50[8]                    ; regout           ;
+; |compteur9|compt50[9]                    ; |compteur9|compt50[9]                    ; regout           ;
+; |compteur9|compt50[10]                   ; |compteur9|compt50[10]                   ; regout           ;
+; |compteur9|compt50[11]                   ; |compteur9|compt50[11]                   ; regout           ;
+; |compteur9|compt50[12]                   ; |compteur9|compt50[12]                   ; regout           ;
+; |compteur9|compt50[13]                   ; |compteur9|compt50[13]                   ; regout           ;
+; |compteur9|compt50[14]                   ; |compteur9|compt50[14]                   ; regout           ;
+; |compteur9|compt50[15]                   ; |compteur9|compt50[15]                   ; regout           ;
+; |compteur9|compt50[16]                   ; |compteur9|compt50[16]                   ; regout           ;
+; |compteur9|compt50[17]                   ; |compteur9|compt50[17]                   ; regout           ;
+; |compteur9|compt50[18]                   ; |compteur9|compt50[18]                   ; regout           ;
+; |compteur9|compt50[19]                   ; |compteur9|compt50[19]                   ; regout           ;
+; |compteur9|compt50[20]                   ; |compteur9|compt50[20]                   ; regout           ;
+; |compteur9|compt50[21]                   ; |compteur9|compt50[21]                   ; regout           ;
+; |compteur9|compt50[22]                   ; |compteur9|compt50[22]                   ; regout           ;
+; |compteur9|compt50[23]                   ; |compteur9|compt50[23]                   ; regout           ;
+; |compteur9|compt50[24]                   ; |compteur9|compt50[24]                   ; regout           ;
+; |compteur9|compt50[25]                   ; |compteur9|compt50[25]                   ; regout           ;
+; |compteur9|compt50[26]                   ; |compteur9|compt50[26]                   ; regout           ;
+; |compteur9|compt50[27]                   ; |compteur9|compt50[27]                   ; regout           ;
+; |compteur9|compt50[28]                   ; |compteur9|compt50[28]                   ; regout           ;
+; |compteur9|afficheur:instance1|HEXS~0    ; |compteur9|afficheur:instance1|HEXS~0    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~1    ; |compteur9|afficheur:instance1|HEXS~1    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~2    ; |compteur9|afficheur:instance1|HEXS~2    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~3    ; |compteur9|afficheur:instance1|HEXS~3    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~4    ; |compteur9|afficheur:instance1|HEXS~4    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~5    ; |compteur9|afficheur:instance1|HEXS~5    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~6    ; |compteur9|afficheur:instance1|HEXS~6    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~7    ; |compteur9|afficheur:instance1|HEXS~7    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~8    ; |compteur9|afficheur:instance1|HEXS~8    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~9    ; |compteur9|afficheur:instance1|HEXS~9    ; out              ;
+; |compteur9|afficheur:instance1|HEXS~10   ; |compteur9|afficheur:instance1|HEXS~10   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~11   ; |compteur9|afficheur:instance1|HEXS~11   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~12   ; |compteur9|afficheur:instance1|HEXS~12   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~13   ; |compteur9|afficheur:instance1|HEXS~13   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~14   ; |compteur9|afficheur:instance1|HEXS~14   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~15   ; |compteur9|afficheur:instance1|HEXS~15   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~16   ; |compteur9|afficheur:instance1|HEXS~16   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~17   ; |compteur9|afficheur:instance1|HEXS~17   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~18   ; |compteur9|afficheur:instance1|HEXS~18   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~19   ; |compteur9|afficheur:instance1|HEXS~19   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~20   ; |compteur9|afficheur:instance1|HEXS~20   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~21   ; |compteur9|afficheur:instance1|HEXS~21   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~22   ; |compteur9|afficheur:instance1|HEXS~22   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~23   ; |compteur9|afficheur:instance1|HEXS~23   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~24   ; |compteur9|afficheur:instance1|HEXS~24   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~25   ; |compteur9|afficheur:instance1|HEXS~25   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~26   ; |compteur9|afficheur:instance1|HEXS~26   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~27   ; |compteur9|afficheur:instance1|HEXS~27   ; out              ;
+; |compteur9|afficheur:instance1|HEXS~30   ; |compteur9|afficheur:instance1|HEXS~30   ; out              ;
+; |compteur9|Add0~3                        ; |compteur9|Add0~3                        ; out0             ;
+; |compteur9|Add0~4                        ; |compteur9|Add0~4                        ; out0             ;
+; |compteur9|Add0~5                        ; |compteur9|Add0~5                        ; out0             ;
+; |compteur9|Add0~6                        ; |compteur9|Add0~6                        ; out0             ;
+; |compteur9|Add0~7                        ; |compteur9|Add0~7                        ; out0             ;
+; |compteur9|Add0~8                        ; |compteur9|Add0~8                        ; out0             ;
+; |compteur9|Add0~9                        ; |compteur9|Add0~9                        ; out0             ;
+; |compteur9|Add0~10                       ; |compteur9|Add0~10                       ; out0             ;
+; |compteur9|Add0~11                       ; |compteur9|Add0~11                       ; out0             ;
+; |compteur9|Add0~12                       ; |compteur9|Add0~12                       ; out0             ;
+; |compteur9|Add0~13                       ; |compteur9|Add0~13                       ; out0             ;
+; |compteur9|Add0~14                       ; |compteur9|Add0~14                       ; out0             ;
+; |compteur9|Add0~15                       ; |compteur9|Add0~15                       ; out0             ;
+; |compteur9|Add0~16                       ; |compteur9|Add0~16                       ; out0             ;
+; |compteur9|Add0~17                       ; |compteur9|Add0~17                       ; out0             ;
+; |compteur9|Add0~18                       ; |compteur9|Add0~18                       ; out0             ;
+; |compteur9|Add0~19                       ; |compteur9|Add0~19                       ; out0             ;
+; |compteur9|Add0~20                       ; |compteur9|Add0~20                       ; out0             ;
+; |compteur9|Add0~21                       ; |compteur9|Add0~21                       ; out0             ;
+; |compteur9|Add0~22                       ; |compteur9|Add0~22                       ; out0             ;
+; |compteur9|Add0~23                       ; |compteur9|Add0~23                       ; out0             ;
+; |compteur9|Add0~24                       ; |compteur9|Add0~24                       ; out0             ;
+; |compteur9|Add0~25                       ; |compteur9|Add0~25                       ; out0             ;
+; |compteur9|Add0~26                       ; |compteur9|Add0~26                       ; out0             ;
+; |compteur9|Add0~27                       ; |compteur9|Add0~27                       ; out0             ;
+; |compteur9|Add0~28                       ; |compteur9|Add0~28                       ; out0             ;
+; |compteur9|Add0~29                       ; |compteur9|Add0~29                       ; out0             ;
+; |compteur9|Add0~30                       ; |compteur9|Add0~30                       ; out0             ;
+; |compteur9|Add0~31                       ; |compteur9|Add0~31                       ; out0             ;
+; |compteur9|Add0~32                       ; |compteur9|Add0~32                       ; out0             ;
+; |compteur9|Add0~33                       ; |compteur9|Add0~33                       ; out0             ;
+; |compteur9|Add0~34                       ; |compteur9|Add0~34                       ; out0             ;
+; |compteur9|Add0~35                       ; |compteur9|Add0~35                       ; out0             ;
+; |compteur9|Add0~36                       ; |compteur9|Add0~36                       ; out0             ;
+; |compteur9|Add0~37                       ; |compteur9|Add0~37                       ; out0             ;
+; |compteur9|Add0~38                       ; |compteur9|Add0~38                       ; out0             ;
+; |compteur9|Add0~39                       ; |compteur9|Add0~39                       ; out0             ;
+; |compteur9|Add0~40                       ; |compteur9|Add0~40                       ; out0             ;
+; |compteur9|Add0~41                       ; |compteur9|Add0~41                       ; out0             ;
+; |compteur9|Add0~42                       ; |compteur9|Add0~42                       ; out0             ;
+; |compteur9|Add0~43                       ; |compteur9|Add0~43                       ; out0             ;
+; |compteur9|Add0~44                       ; |compteur9|Add0~44                       ; out0             ;
+; |compteur9|Add0~45                       ; |compteur9|Add0~45                       ; out0             ;
+; |compteur9|Add0~46                       ; |compteur9|Add0~46                       ; out0             ;
+; |compteur9|Add0~47                       ; |compteur9|Add0~47                       ; out0             ;
+; |compteur9|Add0~48                       ; |compteur9|Add0~48                       ; out0             ;
+; |compteur9|Add0~49                       ; |compteur9|Add0~49                       ; out0             ;
+; |compteur9|Add0~50                       ; |compteur9|Add0~50                       ; out0             ;
+; |compteur9|Add0~51                       ; |compteur9|Add0~51                       ; out0             ;
+; |compteur9|Add0~52                       ; |compteur9|Add0~52                       ; out0             ;
+; |compteur9|Add0~53                       ; |compteur9|Add0~53                       ; out0             ;
+; |compteur9|Add0~54                       ; |compteur9|Add0~54                       ; out0             ;
+; |compteur9|afficheur:instance1|Equal10~0 ; |compteur9|afficheur:instance1|Equal10~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal11~0 ; |compteur9|afficheur:instance1|Equal11~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal12~0 ; |compteur9|afficheur:instance1|Equal12~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal13~0 ; |compteur9|afficheur:instance1|Equal13~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal14~0 ; |compteur9|afficheur:instance1|Equal14~0 ; out0             ;
+; |compteur9|afficheur:instance1|Equal15~0 ; |compteur9|afficheur:instance1|Equal15~0 ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Sun Jul 05 21:36:41 2015
+Info: Command: quartus_sim --simulation_results_format=VWF compteur9 -c compteur9
+Info (324025): Using vector source file "C:/Users/juantorres/TOTAL Projects/QUARTUS/E1 COMPTEUR 9/compteur9.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      50.00 %
+Info (328052): Number of transitions in simulation is 2129
+Info (324045): Vector file compteur9.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 317 megabytes
+    Info: Processing ended: Sun Jul 05 21:36:43 2015
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

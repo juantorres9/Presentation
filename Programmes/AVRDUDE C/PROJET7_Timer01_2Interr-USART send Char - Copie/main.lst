@@ -1,0 +1,56 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21 0000 1F93      		push r17
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	.LM2:
+  25 0002 8FE0      		ldi r24,lo8(15)
+  26 0004 8ABB      		out 58-32,r24
+  27               	.LBB2:
+  28               	.LM3:
+  29 0006 1FE0      		ldi r17,lo8(15)
+  30               	.L5:
+  31               	.LM4:
+  32 0008 0E94 0000 		call initUsart
+  33               	.LM5:
+  34 000c 82E0      		ldi r24,lo8(2)
+  35 000e 0E94 0000 		call ecrireByte
+  36               	.LM6:
+  37 0012 0E94 0000 		call readByte
+  38               	.LM7:
+  39 0016 8230      		cpi r24,lo8(2)
+  40 0018 01F4      		brne .L2
+  41               	.LM8:
+  42 001a 1BBB      		out 59-32,r17
+  43 001c 00C0      		rjmp .L5
+  44               	.L2:
+  45               	.LM9:
+  46 001e 1BBA      		out 59-32,__zero_reg__
+  47 0020 00C0      		rjmp .L5
+  48               	.LBE2:
+  49               	.LFE6:
+  75               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBqlvQs.s:2      *ABS*:0000003f __SREG__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBqlvQs.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBqlvQs.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBqlvQs.s:5      *ABS*:00000034 __CCP__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBqlvQs.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBqlvQs.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBqlvQs.s:18     .text:00000000 main
+
+UNDEFINED SYMBOLS
+initUsart
+ecrireByte
+readByte

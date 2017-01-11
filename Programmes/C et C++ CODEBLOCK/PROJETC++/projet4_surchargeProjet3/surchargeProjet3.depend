@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1479065173 source:c:\users\juantorres\total\codeblock\surchargeprojet3\main.cpp
+	<iostream>
+	"Maison.h"
+	"MaisonPlage.h"
+
+1479061753 source:c:\users\juantorres\total\codeblock\surchargeprojet3\src\maison.cpp
+	"Maison.h"
+	<iostream>
+	<string>
+
+1479057035 c:\users\juantorres\total\codeblock\surchargeprojet3\include\maison.h
+	<string>
+
+1479065289 source:c:\users\juantorres\total\codeblock\surchargeprojet3\src\maisonplage.cpp
+	"MaisonPlage.h"
+	<string>
+	<iostream>
+
+1479065316 c:\users\juantorres\total\codeblock\surchargeprojet3\include\maisonplage.h
+	<string>
+	"Maison.h"
+

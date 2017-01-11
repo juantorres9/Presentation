@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1471646973 source:c:\users\juantorres\total\codeblock\montest1\main.cpp
+	<iostream>
+
+1472037507 source:c:\users\juantorres\total\codeblock\montest1\main2.cpp
+	"Personnage.h"
+	"Guerrier.h"
+
+1472208375 c:\users\juantorres\total\codeblock\montest1\include\personnage.h
+	<string>
+	<iostream>
+
+1472206945 source:c:\users\juantorres\total\codeblock\montest1\src\personnage.cpp
+	"Personnage.h"
+
+1472036059 source:c:\users\juantorres\total\codeblock\montest1\src\guerrier.cpp
+	"Guerrier.h"
+	<iostream>
+
+1472036973 c:\users\juantorres\total\codeblock\montest1\include\guerrier.h
+	<iostream>
+	<string>
+	"Personnage.h"
+
+1472208052 source:c:\users\juantorres\total\codeblock\montest1\src\magicien.cpp
+	"Magicien.h"
+
+1472208124 c:\users\juantorres\total\codeblock\montest1\include\magicien.h
+	"Personnage.h"
+
+1472207655 source:c:\users\juantorres\total\codeblock\montest1\main3.cpp
+	<stdio.h>
+	<iostream>
+	"Guerrier.h"
+	"Personnage.h"
+	"Magicien.h"
+

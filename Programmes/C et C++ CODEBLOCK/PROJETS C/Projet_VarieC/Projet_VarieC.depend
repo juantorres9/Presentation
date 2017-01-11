@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1480459730 source:c:\users\juantorres\total\codeblock\projets c\projet_variec\main2.c
+	<stdio.h>
+	<stdlib.h>
+
+1480459108 source:c:\users\juantorres\total\codeblock\projets c\projet_variec\main.c
+	<stdio.h>
+	<stdlib.h>
+

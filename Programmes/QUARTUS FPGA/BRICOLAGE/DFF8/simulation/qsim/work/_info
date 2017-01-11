@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\juantorres\TOTAL\QUARTUS\BRICOLAGE\DFF8\simulation\qsim
+vdff8
+Z1 InbkceWRmWfRiPlZBS0k2I2
+Z2 V[Sl@8BZgQKUIP]2MO_:WN0
+Z3 dC:\Users\juantorres\TOTAL\QUARTUS\BRICOLAGE\DFF8\simulation\qsim
+Z4 w1443175400
+Z5 8dff8.vo
+Z6 Fdff8.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 g]edm=5V1U]Ch6kcMz7HA0
+!s85 0
+Z10 !s108 1443175413.555000
+Z11 !s107 dff8.vo|
+Z12 !s90 -work|work|dff8.vo|
+!s101 -O0
+vdff8_vlg_check_tst
+!i10b 1
+!s100 =d?iYDP@[RDGdST9S1o:=2
+IjO=H5:@ZeNF<k>Ig8;_=60
+VGcYAP=PbhIa=CSlKHD4b_1
+R3
+Z13 w1443175394
+Z14 8dff8.vt
+Z15 Fdff8.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1443175414.511000
+Z17 !s107 dff8.vt|
+Z18 !s90 -work|work|dff8.vt|
+!s101 -O0
+R8
+vdff8_vlg_sample_tst
+!i10b 1
+!s100 BEL7iSEAE[GR:DKOo1H[O1
+IGmMdW:dJYR;RI]OGX9RD31
+VDLaW3]OT=8geOj;kka_NE2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vdff8_vlg_vec_tst
+!i10b 1
+!s100 8;zSCSf2Dh`QM=BlU[VeK3
+I2AA`M9@HXHNhcmi^FTo2E1
+VlPhoIV=6_e^SF9d3_YMhA0
+R3
+R13
+R14
+R15
+L0 279
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

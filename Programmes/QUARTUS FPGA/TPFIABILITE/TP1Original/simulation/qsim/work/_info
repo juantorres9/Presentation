@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\juantorres\TOTAL\QUARTUS\TPFIABILITE\TP1Original\simulation\qsim
+vfiabilitetp1
+Z1 IHJdd9z@AmE4D7`PMM`aTF0
+Z2 V^SdMU9ZId<96j:VNSW8LP3
+Z3 dC:\Users\juantorres\TOTAL\QUARTUS\TPFIABILITE\TP1Original\simulation\qsim
+Z4 w1451157903
+Z5 8fiabilitetp1.vo
+Z6 Ffiabilitetp1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 VWmdSdQI8F1TQk]V61<6;1
+!s85 0
+Z10 !s108 1451157928.105000
+Z11 !s107 fiabilitetp1.vo|
+Z12 !s90 -work|work|fiabilitetp1.vo|
+!s101 -O0
+vfiabilitetp1_vlg_check_tst
+!i10b 1
+!s100 e=AbN;QORKldQ3=TzN?F]2
+If3b>]ee;f4?RP04Re;K@f0
+VR?_9;3V>]f^@b@eU2S1Of2
+R3
+Z13 w1451157896
+Z14 8fiabilitetp1.vt
+Z15 Ffiabilitetp1.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z16 !s108 1451157929.071000
+Z17 !s107 fiabilitetp1.vt|
+Z18 !s90 -work|work|fiabilitetp1.vt|
+!s101 -O0
+R8
+vfiabilitetp1_vlg_sample_tst
+!i10b 1
+!s100 LPQ8g9Ld5RkeHo0^4eLmZ0
+IFUdQ]]E`hI<aMP85^JR681
+V0g]WNj`:AkE@74?:RkVTf0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vfiabilitetp1_vlg_vec_tst
+!i10b 1
+!s100 YE9RVlUDSk<_5f5I<:mSS2
+IiRAZmAkX`DcId`jORVRGJ3
+VZYLiTYM=2J<jQ4jN:jV:L0
+R3
+R13
+R14
+R15
+L0 227
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

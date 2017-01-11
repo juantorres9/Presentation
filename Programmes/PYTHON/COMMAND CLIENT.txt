@@ -1,0 +1,24 @@
+c:\Python34\python.exe TCPClient.py
+c:\Python34\python.exe TCPServer.py
+
+pour serveur 1
+cd C:\Users\juantorres\TOTAL\PYTHON\TP2FINAL
+
+c:\Python34\python.exe SERVEUR1.py
+
+pour serveur 2
+cd C:\Users\juantorres\TOTAL\PYTHON\TP2FINAL
+
+c:\Python34\python.exe SERVEUR2.py
+
+pour serveur 3
+cd C:\Users\juantorres\TOTAL\PYTHON\TP2FINAL
+c:\Python34\python.exe SERVEUR3.py
+
+
+
+Input commands Syntax:
+Get Temp Chambre="gettemp sys output" 
+Get Etat Valve="getvalve sys output"
+SetTemp Consigne="settemp 28 input" 
+

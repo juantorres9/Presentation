@@ -1,0 +1,46 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 80EF      		ldi r24,lo8(-16)
+  25 0002 8ABB      		out 58-32,r24
+  26               	.LM3:
+  27 0004 83E0      		ldi r24,lo8(3)
+  28 0006 8BBB      		out 59-32,r24
+  29               	.L5:
+  30               	.LM4:
+  31 0008 89B3      		in r24,57-32
+  32 000a 8370      		andi r24,lo8(3)
+  33 000c 8330      		cpi r24,lo8(3)
+  34 000e 01F4      		brne .L2
+  35               	.LM5:
+  36 0010 DF9A      		sbi 59-32,7
+  37 0012 00C0      		rjmp .L5
+  38               	.L2:
+  39               	.LM6:
+  40 0014 DF98      		cbi 59-32,7
+  41 0016 00C0      		rjmp .L5
+  42               	.LFE2:
+  68               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\JUANTO~1\AppData\Local\Temp/ccyfmRGd.s:2      *ABS*:0000003f __SREG__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccyfmRGd.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccyfmRGd.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccyfmRGd.s:5      *ABS*:00000034 __CCP__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccyfmRGd.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccyfmRGd.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccyfmRGd.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS

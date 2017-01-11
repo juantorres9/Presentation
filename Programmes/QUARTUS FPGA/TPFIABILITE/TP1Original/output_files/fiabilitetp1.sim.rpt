@@ -1,0 +1,359 @@
+Simulator report for fiabilitetp1
+Sat Dec 26 23:20:36 2015
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 159 nodes    ;
+; Simulation Coverage         ;      75.95 % ;
+; Total Number of Transitions ; 582          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                   ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                 ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                              ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                    ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                     ;               ;
+; Vector input source                                                                        ; C:/Users/juantorres/TOTAL/QUARTUS/TPFIABILITE/TP1Original/Waveform2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                      ; On            ;
+; Check outputs                                                                              ; Off                                                                     ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                      ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                      ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                      ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                      ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                     ; Off           ;
+; Detect glitches                                                                            ; Off                                                                     ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                     ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                     ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                     ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                     ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                      ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                              ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                     ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                    ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      75.95 % ;
+; Total nodes checked                                 ; 159          ;
+; Total output ports checked                          ; 158          ;
+; Total output ports with complete 1/0-value coverage ; 120          ;
+; Total output ports with no 1/0-value coverage       ; 38           ;
+; Total output ports with no 1-value coverage         ; 38           ;
+; Total output ports with no 0-value coverage         ; 38           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                  ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |fiabilitetp1|TOTAL[2]                      ; |fiabilitetp1|TOTAL[2]                      ; regout           ;
+; |fiabilitetp1|TOTAL[1]                      ; |fiabilitetp1|TOTAL[1]                      ; regout           ;
+; |fiabilitetp1|TOTAL[0]                      ; |fiabilitetp1|TOTAL[0]                      ; regout           ;
+; |fiabilitetp1|TOTAL[3]                      ; |fiabilitetp1|TOTAL[3]                      ; regout           ;
+; |fiabilitetp1|A[0]                          ; |fiabilitetp1|A[0]                          ; out              ;
+; |fiabilitetp1|A[1]                          ; |fiabilitetp1|A[1]                          ; out              ;
+; |fiabilitetp1|A[2]                          ; |fiabilitetp1|A[2]                          ; out              ;
+; |fiabilitetp1|B[0]                          ; |fiabilitetp1|B[0]                          ; out              ;
+; |fiabilitetp1|B[1]                          ; |fiabilitetp1|B[1]                          ; out              ;
+; |fiabilitetp1|B[2]                          ; |fiabilitetp1|B[2]                          ; out              ;
+; |fiabilitetp1|iCLK_50                       ; |fiabilitetp1|iCLK_50                       ; out              ;
+; |fiabilitetp1|oHEX0_D[1]                    ; |fiabilitetp1|oHEX0_D[1]                    ; pin_out          ;
+; |fiabilitetp1|oHEX0_D[2]                    ; |fiabilitetp1|oHEX0_D[2]                    ; pin_out          ;
+; |fiabilitetp1|oHEX0_D[3]                    ; |fiabilitetp1|oHEX0_D[3]                    ; pin_out          ;
+; |fiabilitetp1|oHEX0_D[4]                    ; |fiabilitetp1|oHEX0_D[4]                    ; pin_out          ;
+; |fiabilitetp1|oHEX0_D[5]                    ; |fiabilitetp1|oHEX0_D[5]                    ; pin_out          ;
+; |fiabilitetp1|oHEX0_D[6]                    ; |fiabilitetp1|oHEX0_D[6]                    ; pin_out          ;
+; |fiabilitetp1|S[0]                          ; |fiabilitetp1|S[0]                          ; pin_out          ;
+; |fiabilitetp1|S[1]                          ; |fiabilitetp1|S[1]                          ; pin_out          ;
+; |fiabilitetp1|S[2]                          ; |fiabilitetp1|S[2]                          ; pin_out          ;
+; |fiabilitetp1|Rout                          ; |fiabilitetp1|Rout                          ; pin_out          ;
+; |fiabilitetp1|afficheur:instance1|HEXS~0    ; |fiabilitetp1|afficheur:instance1|HEXS~0    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~1    ; |fiabilitetp1|afficheur:instance1|HEXS~1    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~2    ; |fiabilitetp1|afficheur:instance1|HEXS~2    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~3    ; |fiabilitetp1|afficheur:instance1|HEXS~3    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~4    ; |fiabilitetp1|afficheur:instance1|HEXS~4    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~5    ; |fiabilitetp1|afficheur:instance1|HEXS~5    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~6    ; |fiabilitetp1|afficheur:instance1|HEXS~6    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~7    ; |fiabilitetp1|afficheur:instance1|HEXS~7    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~10   ; |fiabilitetp1|afficheur:instance1|HEXS~10   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~11   ; |fiabilitetp1|afficheur:instance1|HEXS~11   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~12   ; |fiabilitetp1|afficheur:instance1|HEXS~12   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~13   ; |fiabilitetp1|afficheur:instance1|HEXS~13   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~16   ; |fiabilitetp1|afficheur:instance1|HEXS~16   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~17   ; |fiabilitetp1|afficheur:instance1|HEXS~17   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~18   ; |fiabilitetp1|afficheur:instance1|HEXS~18   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~19   ; |fiabilitetp1|afficheur:instance1|HEXS~19   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~23   ; |fiabilitetp1|afficheur:instance1|HEXS~23   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~24   ; |fiabilitetp1|afficheur:instance1|HEXS~24   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~25   ; |fiabilitetp1|afficheur:instance1|HEXS~25   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~26   ; |fiabilitetp1|afficheur:instance1|HEXS~26   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~30   ; |fiabilitetp1|afficheur:instance1|HEXS~30   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~31   ; |fiabilitetp1|afficheur:instance1|HEXS~31   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~32   ; |fiabilitetp1|afficheur:instance1|HEXS~32   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~33   ; |fiabilitetp1|afficheur:instance1|HEXS~33   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~37   ; |fiabilitetp1|afficheur:instance1|HEXS~37   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~38   ; |fiabilitetp1|afficheur:instance1|HEXS~38   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~39   ; |fiabilitetp1|afficheur:instance1|HEXS~39   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~40   ; |fiabilitetp1|afficheur:instance1|HEXS~40   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~41   ; |fiabilitetp1|afficheur:instance1|HEXS~41   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~42   ; |fiabilitetp1|afficheur:instance1|HEXS~42   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~44   ; |fiabilitetp1|afficheur:instance1|HEXS~44   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~45   ; |fiabilitetp1|afficheur:instance1|HEXS~45   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~46   ; |fiabilitetp1|afficheur:instance1|HEXS~46   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~47   ; |fiabilitetp1|afficheur:instance1|HEXS~47   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~48   ; |fiabilitetp1|afficheur:instance1|HEXS~48   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~49   ; |fiabilitetp1|afficheur:instance1|HEXS~49   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~51   ; |fiabilitetp1|afficheur:instance1|HEXS~51   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~52   ; |fiabilitetp1|afficheur:instance1|HEXS~52   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~53   ; |fiabilitetp1|afficheur:instance1|HEXS~53   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~54   ; |fiabilitetp1|afficheur:instance1|HEXS~54   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~55   ; |fiabilitetp1|afficheur:instance1|HEXS~55   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~56   ; |fiabilitetp1|afficheur:instance1|HEXS~56   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~58   ; |fiabilitetp1|afficheur:instance1|HEXS~58   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~59   ; |fiabilitetp1|afficheur:instance1|HEXS~59   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~60   ; |fiabilitetp1|afficheur:instance1|HEXS~60   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~61   ; |fiabilitetp1|afficheur:instance1|HEXS~61   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~62   ; |fiabilitetp1|afficheur:instance1|HEXS~62   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~63   ; |fiabilitetp1|afficheur:instance1|HEXS~63   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~65   ; |fiabilitetp1|afficheur:instance1|HEXS~65   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~66   ; |fiabilitetp1|afficheur:instance1|HEXS~66   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~67   ; |fiabilitetp1|afficheur:instance1|HEXS~67   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~68   ; |fiabilitetp1|afficheur:instance1|HEXS~68   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~69   ; |fiabilitetp1|afficheur:instance1|HEXS~69   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~70   ; |fiabilitetp1|afficheur:instance1|HEXS~70   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~72   ; |fiabilitetp1|afficheur:instance1|HEXS~72   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~73   ; |fiabilitetp1|afficheur:instance1|HEXS~73   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~74   ; |fiabilitetp1|afficheur:instance1|HEXS~74   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~75   ; |fiabilitetp1|afficheur:instance1|HEXS~75   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~76   ; |fiabilitetp1|afficheur:instance1|HEXS~76   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~77   ; |fiabilitetp1|afficheur:instance1|HEXS~77   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~79   ; |fiabilitetp1|afficheur:instance1|HEXS~79   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~80   ; |fiabilitetp1|afficheur:instance1|HEXS~80   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~81   ; |fiabilitetp1|afficheur:instance1|HEXS~81   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~82   ; |fiabilitetp1|afficheur:instance1|HEXS~82   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~83   ; |fiabilitetp1|afficheur:instance1|HEXS~83   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~84   ; |fiabilitetp1|afficheur:instance1|HEXS~84   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~86   ; |fiabilitetp1|afficheur:instance1|HEXS~86   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~87   ; |fiabilitetp1|afficheur:instance1|HEXS~87   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~88   ; |fiabilitetp1|afficheur:instance1|HEXS~88   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~89   ; |fiabilitetp1|afficheur:instance1|HEXS~89   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~90   ; |fiabilitetp1|afficheur:instance1|HEXS~90   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~91   ; |fiabilitetp1|afficheur:instance1|HEXS~91   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEX[6]    ; |fiabilitetp1|afficheur:instance1|HEX[6]    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEX[5]    ; |fiabilitetp1|afficheur:instance1|HEX[5]    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEX[4]    ; |fiabilitetp1|afficheur:instance1|HEX[4]    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEX[3]    ; |fiabilitetp1|afficheur:instance1|HEX[3]    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEX[2]    ; |fiabilitetp1|afficheur:instance1|HEX[2]    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEX[1]    ; |fiabilitetp1|afficheur:instance1|HEX[1]    ; out              ;
+; |fiabilitetp1|Add0~0                        ; |fiabilitetp1|Add0~0                        ; out0             ;
+; |fiabilitetp1|Add0~1                        ; |fiabilitetp1|Add0~1                        ; out0             ;
+; |fiabilitetp1|Add0~2                        ; |fiabilitetp1|Add0~2                        ; out0             ;
+; |fiabilitetp1|Add0~3                        ; |fiabilitetp1|Add0~3                        ; out0             ;
+; |fiabilitetp1|Add0~4                        ; |fiabilitetp1|Add0~4                        ; out0             ;
+; |fiabilitetp1|Add0~5                        ; |fiabilitetp1|Add0~5                        ; out0             ;
+; |fiabilitetp1|Add0~6                        ; |fiabilitetp1|Add0~6                        ; out0             ;
+; |fiabilitetp1|Add0~7                        ; |fiabilitetp1|Add0~7                        ; out0             ;
+; |fiabilitetp1|Add0~8                        ; |fiabilitetp1|Add0~8                        ; out0             ;
+; |fiabilitetp1|Add0~9                        ; |fiabilitetp1|Add0~9                        ; out0             ;
+; |fiabilitetp1|Add0~10                       ; |fiabilitetp1|Add0~10                       ; out0             ;
+; |fiabilitetp1|Add0~11                       ; |fiabilitetp1|Add0~11                       ; out0             ;
+; |fiabilitetp1|Add1~0                        ; |fiabilitetp1|Add1~0                        ; out0             ;
+; |fiabilitetp1|Add1~2                        ; |fiabilitetp1|Add1~2                        ; out0             ;
+; |fiabilitetp1|Add1~4                        ; |fiabilitetp1|Add1~4                        ; out0             ;
+; |fiabilitetp1|Add1~6                        ; |fiabilitetp1|Add1~6                        ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal0~0  ; |fiabilitetp1|afficheur:instance1|Equal0~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal3~0  ; |fiabilitetp1|afficheur:instance1|Equal3~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal7~0  ; |fiabilitetp1|afficheur:instance1|Equal7~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal8~0  ; |fiabilitetp1|afficheur:instance1|Equal8~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal14~0 ; |fiabilitetp1|afficheur:instance1|Equal14~0 ; out0             ;
++---------------------------------------------+---------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                     ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |fiabilitetp1|Rin                           ; |fiabilitetp1|Rin                           ; out              ;
+; |fiabilitetp1|oHEX0_D[0]                    ; |fiabilitetp1|oHEX0_D[0]                    ; pin_out          ;
+; |fiabilitetp1|afficheur:instance1|HEXS~8    ; |fiabilitetp1|afficheur:instance1|HEXS~8    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~9    ; |fiabilitetp1|afficheur:instance1|HEXS~9    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~14   ; |fiabilitetp1|afficheur:instance1|HEXS~14   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~15   ; |fiabilitetp1|afficheur:instance1|HEXS~15   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~20   ; |fiabilitetp1|afficheur:instance1|HEXS~20   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~21   ; |fiabilitetp1|afficheur:instance1|HEXS~21   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~22   ; |fiabilitetp1|afficheur:instance1|HEXS~22   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~27   ; |fiabilitetp1|afficheur:instance1|HEXS~27   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~28   ; |fiabilitetp1|afficheur:instance1|HEXS~28   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~29   ; |fiabilitetp1|afficheur:instance1|HEXS~29   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~34   ; |fiabilitetp1|afficheur:instance1|HEXS~34   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~35   ; |fiabilitetp1|afficheur:instance1|HEXS~35   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~36   ; |fiabilitetp1|afficheur:instance1|HEXS~36   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~43   ; |fiabilitetp1|afficheur:instance1|HEXS~43   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~50   ; |fiabilitetp1|afficheur:instance1|HEXS~50   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~57   ; |fiabilitetp1|afficheur:instance1|HEXS~57   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~64   ; |fiabilitetp1|afficheur:instance1|HEXS~64   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~71   ; |fiabilitetp1|afficheur:instance1|HEXS~71   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~78   ; |fiabilitetp1|afficheur:instance1|HEXS~78   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~85   ; |fiabilitetp1|afficheur:instance1|HEXS~85   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~92   ; |fiabilitetp1|afficheur:instance1|HEXS~92   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEX[0]    ; |fiabilitetp1|afficheur:instance1|HEX[0]    ; out              ;
+; |fiabilitetp1|Add1~1                        ; |fiabilitetp1|Add1~1                        ; out0             ;
+; |fiabilitetp1|Add1~3                        ; |fiabilitetp1|Add1~3                        ; out0             ;
+; |fiabilitetp1|Add1~5                        ; |fiabilitetp1|Add1~5                        ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal1~0  ; |fiabilitetp1|afficheur:instance1|Equal1~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal2~0  ; |fiabilitetp1|afficheur:instance1|Equal2~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal4~0  ; |fiabilitetp1|afficheur:instance1|Equal4~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal5~0  ; |fiabilitetp1|afficheur:instance1|Equal5~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal6~0  ; |fiabilitetp1|afficheur:instance1|Equal6~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal9~0  ; |fiabilitetp1|afficheur:instance1|Equal9~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal10~0 ; |fiabilitetp1|afficheur:instance1|Equal10~0 ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal11~0 ; |fiabilitetp1|afficheur:instance1|Equal11~0 ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal12~0 ; |fiabilitetp1|afficheur:instance1|Equal12~0 ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal13~0 ; |fiabilitetp1|afficheur:instance1|Equal13~0 ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal15~0 ; |fiabilitetp1|afficheur:instance1|Equal15~0 ; out0             ;
++---------------------------------------------+---------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                     ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |fiabilitetp1|Rin                           ; |fiabilitetp1|Rin                           ; out              ;
+; |fiabilitetp1|oHEX0_D[0]                    ; |fiabilitetp1|oHEX0_D[0]                    ; pin_out          ;
+; |fiabilitetp1|afficheur:instance1|HEXS~8    ; |fiabilitetp1|afficheur:instance1|HEXS~8    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~9    ; |fiabilitetp1|afficheur:instance1|HEXS~9    ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~14   ; |fiabilitetp1|afficheur:instance1|HEXS~14   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~15   ; |fiabilitetp1|afficheur:instance1|HEXS~15   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~20   ; |fiabilitetp1|afficheur:instance1|HEXS~20   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~21   ; |fiabilitetp1|afficheur:instance1|HEXS~21   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~22   ; |fiabilitetp1|afficheur:instance1|HEXS~22   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~27   ; |fiabilitetp1|afficheur:instance1|HEXS~27   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~28   ; |fiabilitetp1|afficheur:instance1|HEXS~28   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~29   ; |fiabilitetp1|afficheur:instance1|HEXS~29   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~34   ; |fiabilitetp1|afficheur:instance1|HEXS~34   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~35   ; |fiabilitetp1|afficheur:instance1|HEXS~35   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~36   ; |fiabilitetp1|afficheur:instance1|HEXS~36   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~43   ; |fiabilitetp1|afficheur:instance1|HEXS~43   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~50   ; |fiabilitetp1|afficheur:instance1|HEXS~50   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~57   ; |fiabilitetp1|afficheur:instance1|HEXS~57   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~64   ; |fiabilitetp1|afficheur:instance1|HEXS~64   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~71   ; |fiabilitetp1|afficheur:instance1|HEXS~71   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~78   ; |fiabilitetp1|afficheur:instance1|HEXS~78   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~85   ; |fiabilitetp1|afficheur:instance1|HEXS~85   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEXS~92   ; |fiabilitetp1|afficheur:instance1|HEXS~92   ; out              ;
+; |fiabilitetp1|afficheur:instance1|HEX[0]    ; |fiabilitetp1|afficheur:instance1|HEX[0]    ; out              ;
+; |fiabilitetp1|Add1~1                        ; |fiabilitetp1|Add1~1                        ; out0             ;
+; |fiabilitetp1|Add1~3                        ; |fiabilitetp1|Add1~3                        ; out0             ;
+; |fiabilitetp1|Add1~5                        ; |fiabilitetp1|Add1~5                        ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal1~0  ; |fiabilitetp1|afficheur:instance1|Equal1~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal2~0  ; |fiabilitetp1|afficheur:instance1|Equal2~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal4~0  ; |fiabilitetp1|afficheur:instance1|Equal4~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal5~0  ; |fiabilitetp1|afficheur:instance1|Equal5~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal6~0  ; |fiabilitetp1|afficheur:instance1|Equal6~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal9~0  ; |fiabilitetp1|afficheur:instance1|Equal9~0  ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal10~0 ; |fiabilitetp1|afficheur:instance1|Equal10~0 ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal11~0 ; |fiabilitetp1|afficheur:instance1|Equal11~0 ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal12~0 ; |fiabilitetp1|afficheur:instance1|Equal12~0 ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal13~0 ; |fiabilitetp1|afficheur:instance1|Equal13~0 ; out0             ;
+; |fiabilitetp1|afficheur:instance1|Equal15~0 ; |fiabilitetp1|afficheur:instance1|Equal15~0 ; out0             ;
++---------------------------------------------+---------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Sat Dec 26 23:20:34 2015
+Info: Command: quartus_sim --simulation_results_format=VWF fiabilitetp1 -c fiabilitetp1
+Info (324025): Using vector source file "C:/Users/juantorres/TOTAL/QUARTUS/TPFIABILITE/TP1Original/Waveform2.vwf"
+Warning (328012): Can't find signal in vector source file for input pin "|fiabilitetp1|iCLK_50_2"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      75.95 %
+Info (328052): Number of transitions in simulation is 582
+Info (324045): Vector file fiabilitetp1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 327 megabytes
+    Info: Processing ended: Sat Dec 26 23:20:36 2015
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

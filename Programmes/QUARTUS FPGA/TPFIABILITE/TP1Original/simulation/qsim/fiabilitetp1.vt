@@ -1,0 +1,325 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/26/2015 20:24:54"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    fiabilitetp1
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module fiabilitetp1_vlg_sample_tst(
+	A,
+	B,
+	iCLK_50,
+	iCLK_50_2,
+	Rin,
+	sampler_tx
+);
+input [2:0] A;
+input [2:0] B;
+input  iCLK_50;
+input  iCLK_50_2;
+input  Rin;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(A or B or iCLK_50 or iCLK_50_2 or Rin)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module fiabilitetp1_vlg_check_tst (
+	oHEX0_D,
+	oLEDG,
+	Rout,
+	sampler_rx
+);
+input [6:0] oHEX0_D;
+input [2:0] oLEDG;
+input  Rout;
+input sampler_rx;
+
+reg [6:0] oHEX0_D_expected;
+reg [2:0] oLEDG_expected;
+reg  Rout_expected;
+
+reg [6:0] oHEX0_D_prev;
+reg [2:0] oLEDG_prev;
+reg  Rout_prev;
+
+reg [2:0] oLEDG_expected_prev;
+reg  Rout_expected_prev;
+
+reg [2:0] last_oLEDG_exp;
+reg  last_Rout_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	oHEX0_D_prev = oHEX0_D;
+	oLEDG_prev = oLEDG;
+	Rout_prev = Rout;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	oLEDG_expected_prev = oLEDG_expected;
+	Rout_expected_prev = Rout_expected;
+end
+
+
+// expected oLEDG[ 2 ]
+initial
+begin
+	oLEDG_expected[2] = 1'bX;
+end 
+// expected oLEDG[ 1 ]
+initial
+begin
+	oLEDG_expected[1] = 1'bX;
+end 
+// expected oLEDG[ 0 ]
+initial
+begin
+	oLEDG_expected[0] = 1'bX;
+end 
+
+// expected Rout
+initial
+begin
+	Rout_expected = 1'bX;
+end 
+// generate trigger
+always @(oHEX0_D_expected or oHEX0_D or oLEDG_expected or oLEDG or Rout_expected or Rout)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected oHEX0_D = %b | expected oLEDG = %b | expected Rout = %b | ",oHEX0_D_expected_prev,oLEDG_expected_prev,Rout_expected_prev);
+	$display("| real oHEX0_D = %b | real oLEDG = %b | real Rout = %b | ",oHEX0_D_prev,oLEDG_prev,Rout_prev);
+`endif
+	if (
+		( oLEDG_expected_prev[0] !== 1'bx ) && ( oLEDG_prev[0] !== oLEDG_expected_prev[0] )
+		&& ((oLEDG_expected_prev[0] !== last_oLEDG_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port oLEDG[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", oLEDG_expected_prev);
+		$display ("     Real value = %b", oLEDG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_oLEDG_exp[0] = oLEDG_expected_prev[0];
+	end
+	if (
+		( oLEDG_expected_prev[1] !== 1'bx ) && ( oLEDG_prev[1] !== oLEDG_expected_prev[1] )
+		&& ((oLEDG_expected_prev[1] !== last_oLEDG_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port oLEDG[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", oLEDG_expected_prev);
+		$display ("     Real value = %b", oLEDG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_oLEDG_exp[1] = oLEDG_expected_prev[1];
+	end
+	if (
+		( oLEDG_expected_prev[2] !== 1'bx ) && ( oLEDG_prev[2] !== oLEDG_expected_prev[2] )
+		&& ((oLEDG_expected_prev[2] !== last_oLEDG_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port oLEDG[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", oLEDG_expected_prev);
+		$display ("     Real value = %b", oLEDG_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_oLEDG_exp[2] = oLEDG_expected_prev[2];
+	end
+	if (
+		( Rout_expected_prev !== 1'bx ) && ( Rout_prev !== Rout_expected_prev )
+		&& ((Rout_expected_prev !== last_Rout_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Rout :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Rout_expected_prev);
+		$display ("     Real value = %b", Rout_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_Rout_exp = Rout_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module fiabilitetp1_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [2:0] A;
+reg [2:0] B;
+reg iCLK_50;
+reg iCLK_50_2;
+reg Rin;
+// wires                                               
+wire [6:0] oHEX0_D;
+wire [2:0] oLEDG;
+wire Rout;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+fiabilitetp1 i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.B(B),
+	.iCLK_50(iCLK_50),
+	.iCLK_50_2(iCLK_50_2),
+	.oHEX0_D(oHEX0_D),
+	.oLEDG(oLEDG),
+	.Rin(Rin),
+	.Rout(Rout)
+);
+// A[ 2 ]
+initial
+begin
+	A[2] = 1'b0;
+	A[2] = #20000 1'b1;
+	A[2] = #120000 1'b0;
+end 
+// A[ 1 ]
+initial
+begin
+	A[1] = 1'b0;
+	A[1] = #20000 1'b1;
+	A[1] = #120000 1'b0;
+end 
+// A[ 0 ]
+initial
+begin
+	A[0] = 1'b0;
+	A[0] = #20000 1'b1;
+	A[0] = #120000 1'b0;
+	A[0] = #120000 1'b1;
+	A[0] = #100000 1'b0;
+end 
+// B[ 2 ]
+initial
+begin
+	B[2] = 1'b0;
+end 
+// B[ 1 ]
+initial
+begin
+	B[1] = 1'b0;
+end 
+// B[ 0 ]
+initial
+begin
+	B[0] = 1'b0;
+	B[0] = #20000 1'b1;
+	B[0] = #100000 1'b0;
+	B[0] = #140000 1'b1;
+	B[0] = #100000 1'b0;
+end 
+
+// iCLK_50
+initial
+begin
+	iCLK_50 = 1'b0;
+end 
+
+// Rin
+initial
+begin
+	Rin = 1'b0;
+end 
+
+fiabilitetp1_vlg_sample_tst tb_sample (
+	.A(A),
+	.B(B),
+	.iCLK_50(iCLK_50),
+	.iCLK_50_2(iCLK_50_2),
+	.Rin(Rin),
+	.sampler_tx(sampler)
+);
+
+fiabilitetp1_vlg_check_tst tb_out(
+	.oHEX0_D(oHEX0_D),
+	.oLEDG(oLEDG),
+	.Rout(Rout),
+	.sampler_rx(sampler)
+);
+endmodule
+

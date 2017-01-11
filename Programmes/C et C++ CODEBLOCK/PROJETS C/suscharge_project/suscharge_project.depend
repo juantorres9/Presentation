@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1446667744 source:c:\users\juantorres\total\codeblock\projets c\suscharge_project\main.cpp
+	<iostream>
+
+1478987600 source:c:\users\juantorres\total\codeblock\projets c\suscharge_project\src\maison.cpp
+	"Maison.h"
+	<iostream>
+
+1478988186 c:\users\juantorres\total\codeblock\projets c\suscharge_project\include\maison.h
+	<string>
+

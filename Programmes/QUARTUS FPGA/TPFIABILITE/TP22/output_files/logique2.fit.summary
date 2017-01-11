@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Nov 23 23:31:50 2015
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : logique2
+Top-level Entity Name : logique2
+Family : Cyclone II
+Device : EP2C70F896C6
+Timing Models : Final
+Total logic elements : 77 / 68,416 ( < 1 % )
+    Total combinational functions : 76 / 68,416 ( < 1 % )
+    Dedicated logic registers : 40 / 68,416 ( < 1 % )
+Total registers : 40
+Total pins : 15 / 622 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,152,000 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 300 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

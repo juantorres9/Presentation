@@ -1,0 +1,117 @@
+   1               		.file	"Fonc1.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	affichePortA
+  18               	affichePortA:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	.LM2:
+  25 0000 8031      		cpi r24,16
+  26 0002 9105      		cpc r25,__zero_reg__
+  27 0004 04F0      		brlt .L2
+  28               	.LM3:
+  29 0006 1BBA      		out 59-32,__zero_reg__
+  30 0008 0895      		ret
+  31               	.L2:
+  32               	.LM4:
+  33 000a 8BBB      		out 59-32,r24
+  34 000c 0895      		ret
+  35               	.LFE6:
+  37               	.global	comptage
+  39               	comptage:
+  40               	.LFB7:
+  41               	.LM5:
+  42               	.LVL1:
+  43               	/* prologue: function */
+  44               	/* frame size = 0 */
+  45               	.LM6:
+  46 000e 40E0      		ldi r20,lo8(0)
+  47 0010 50E0      		ldi r21,hi8(0)
+  48               	.LVL2:
+  49               	.LBB15:
+  50               	.LBB16:
+  51               	.LBB17:
+  52               	.LBB18:
+  53               	.LBB19:
+  54               	.LM7:
+  55 0012 69E1      		ldi r22,lo8(25)
+  56 0014 70E0      		ldi r23,hi8(25)
+  57 0016 00C0      		rjmp .L6
+  58               	.LVL3:
+  59               	.L9:
+  60               	.LBE19:
+  61               	.LBE18:
+  62               	.LBE17:
+  63               	.LBE16:
+  64               	.LBB23:
+  65               	.LBB24:
+  66               	.LM8:
+  67 0018 4031      		cpi r20,16
+  68 001a 5105      		cpc r21,__zero_reg__
+  69 001c 04F0      		brlt .L7
+  70               	.LM9:
+  71 001e 1BBA      		out 59-32,__zero_reg__
+  72 0020 00C0      		rjmp .L13
+  73               	.L7:
+  74               	.LM10:
+  75 0022 4BBB      		out 59-32,r20
+  76               	.L13:
+  77 0024 20E2      		ldi r18,lo8(20000)
+  78 0026 3EE4      		ldi r19,hi8(20000)
+  79               	.L11:
+  80               	.LBE24:
+  81               	.LBE23:
+  82               	.LBB25:
+  83               	.LBB22:
+  84               	.LBB21:
+  85               	.LBB20:
+  86               	.LM11:
+  87 0028 FB01      		movw r30,r22
+  88               	/* #APP */
+  89               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  90 002a 3197      		1: sbiw r30,1
+  91 002c 01F4      		brne 1b
+  92               	 ;  0 "" 2
+  93               	/* #NOAPP */
+  94               	.LBE20:
+  95               	.LBE21:
+  96               	.LM12:
+  97 002e 2150      		subi r18,lo8(-(-1))
+  98 0030 3040      		sbci r19,hi8(-(-1))
+  99               	.LM13:
+ 100 0032 01F4      		brne .L11
+ 101               	.LBE22:
+ 102               	.LBE25:
+ 103               	.LM14:
+ 104 0034 4F5F      		subi r20,lo8(-(1))
+ 105 0036 5F4F      		sbci r21,hi8(-(1))
+ 106               	.L6:
+ 107 0038 8417      		cp r24,r20
+ 108 003a 9507      		cpc r25,r21
+ 109 003c 04F4      		brge .L9
+ 110               	/* epilogue start */
+ 111               	.LBE15:
+ 112               	.LM15:
+ 113 003e 0895      		ret
+ 114               	.LFE7:
+ 148               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 Fonc1.c
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBss8Vg.s:2      *ABS*:0000003f __SREG__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBss8Vg.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBss8Vg.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBss8Vg.s:5      *ABS*:00000034 __CCP__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBss8Vg.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBss8Vg.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBss8Vg.s:18     .text:00000000 affichePortA
+C:\Users\JUANTO~1\AppData\Local\Temp/ccBss8Vg.s:39     .text:0000000e comptage
+
+NO UNDEFINED SYMBOLS

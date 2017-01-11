@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1478901213 source:c:\users\juantorres\total\codeblock\projets c\castetvariables\src\typevargroupe.cpp
+	<stdio.h>
+	<iostream>
+	"TypeVarGroupe.h"
+
+1478900659 c:\users\juantorres\total\codeblock\projets c\castetvariables\include\typevargroupe.h
+
+1478971510 source:c:\users\juantorres\total\codeblock\projets c\castetvariables\main.cpp
+	<iostream>
+	<vector>
+	"TypeVarGroupe.h"
+

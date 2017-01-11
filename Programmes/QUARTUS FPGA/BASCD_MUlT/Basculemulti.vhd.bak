@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+
+ENTITY bascmult IS
+GENERIC(
+N: INTEGER :=9
+)
+PORT(
+--ENTREES
+CLK: IN STD_LOGIC;
+D:    IN STD_LOGIC;
+--SORTIES
+Q:   OUT STD_LOGIC
+);
+
+
+
+ARCHITECTURE arch3 OF bascmult IS  
+SIGNAL QS : STD_LOGIC
+BEGIN
+
+PROCESS
+BEGIN
+WAIT UNTIL CLK 'EVENT AND CLK ='1';
+QS<=D;
+END PROCESS
+Q <= QS;
+END arch3;

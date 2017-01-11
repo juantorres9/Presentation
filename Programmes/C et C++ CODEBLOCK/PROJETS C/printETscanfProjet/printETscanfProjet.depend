@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1479553398 source:c:\users\juantorres\total\codeblock\projets c\printetscanfprojet\main.cpp
+	<iostream>
+	<stdio.h>
+
+1479557682 source:c:\users\juantorres\total\codeblock\projets c\printetscanfprojet\main2.cpp
+	<stdio.h>
+

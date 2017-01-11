@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1480269514 source:c:\users\juantorres\total\codeblock\polymorphisme\main.cpp
+	<iostream>
+	"Vehicule.h"
+	"Voiture.h"
+	"Moto.h"
+
+1478893133 c:\users\juantorres\total\codeblock\polymorphisme\include\vehicule.h
+
+1472394364 c:\users\juantorres\total\codeblock\polymorphisme\include\voiture.h
+	"Vehicule.h"
+
+1480271343 c:\users\juantorres\total\codeblock\polymorphisme\include\moto.h
+	"Vehicule.h"
+
+1480271710 source:c:\users\juantorres\total\codeblock\polymorphisme\src\moto.cpp
+	<stdio.h>
+	<iostream>
+	"Moto.h"
+
+1480271042 source:c:\users\juantorres\total\codeblock\polymorphisme\src\vehicule.cpp
+	<stdio.h>
+	<iostream>
+	"Vehicule.h"
+
+1472384523 source:c:\users\juantorres\total\codeblock\polymorphisme\src\voiture.cpp
+	<stdio.h>
+	<iostream>
+	"Voiture.h"
+
+1480271858 source:c:\users\juantorres\total\codeblock\polymorphisme\main2.cpp
+	<iostream>
+	"Moto.h"
+

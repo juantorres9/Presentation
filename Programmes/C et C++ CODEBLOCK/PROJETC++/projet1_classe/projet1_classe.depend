@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1483358817 source:c:\users\juantorres\total\codeblock\projetc++\projet1_classe\main.cpp
+	<iostream>
+	"Maison.h"
+
+1483368921 c:\users\juantorres\total\codeblock\projetc++\projet1_classe\include\maison.h
+	<string>
+
+1483368921 source:c:\users\juantorres\total\codeblock\projetc++\projet1_classe\src\maison.cpp
+	<iostream>
+	"Maison.h"
+
+1483368921 source:c:\users\juantorres\total\codeblock\projetc++\projet1_classe\src\mcampagne.cpp
+	<iostream>
+	"MCampagne.h"
+
+1483368673 c:\users\juantorres\total\codeblock\projetc++\projet1_classe\include\mcampagne.h
+	<string>
+	"Maison.h"
+

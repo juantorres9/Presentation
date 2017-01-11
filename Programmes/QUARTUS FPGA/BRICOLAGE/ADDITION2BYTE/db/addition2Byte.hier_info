@@ -1,0 +1,96 @@
+|addition2Byte
+pin_name1 <= <GND>
+Q[0] <= dff8:inst3.Q[0]
+Q[1] <= dff8:inst3.Q[1]
+Q[2] <= dff8:inst3.Q[2]
+Q[3] <= dff8:inst3.Q[3]
+Q[4] <= dff8:inst3.Q[4]
+Q[5] <= dff8:inst3.Q[5]
+Q[6] <= dff8:inst3.Q[6]
+Q[7] <= dff8:inst3.Q[7]
+CLK => dff8:inst3.CLK
+CLK => additioneur:inst.CLK
+Rin => additioneur:inst.Rin
+A[0] => additioneur:inst.A[0]
+A[1] => additioneur:inst.A[1]
+A[2] => additioneur:inst.A[2]
+A[3] => additioneur:inst.A[3]
+A[4] => additioneur:inst.A[4]
+A[5] => additioneur:inst.A[5]
+A[6] => additioneur:inst.A[6]
+A[7] => additioneur:inst.A[7]
+B[0] => additioneur:inst.B[0]
+B[1] => additioneur:inst.B[1]
+B[2] => additioneur:inst.B[2]
+B[3] => additioneur:inst.B[3]
+B[4] => additioneur:inst.B[4]
+B[5] => additioneur:inst.B[5]
+B[6] => additioneur:inst.B[6]
+B[7] => additioneur:inst.B[7]
+
+
+|addition2Byte|dff8:inst3
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addition2Byte|additioneur:inst
+A[0] => Add0.IN8
+A[1] => Add0.IN7
+A[2] => Add0.IN6
+A[3] => Add0.IN5
+A[4] => Add0.IN4
+A[5] => Add0.IN3
+A[6] => Add0.IN2
+A[7] => Add0.IN1
+B[0] => Add0.IN16
+B[1] => Add0.IN15
+B[2] => Add0.IN14
+B[3] => Add0.IN13
+B[4] => Add0.IN12
+B[5] => Add0.IN11
+B[6] => Add0.IN10
+B[7] => Add0.IN9
+Rin => Add1.IN18
+CLK => TOTAL[0].CLK
+CLK => TOTAL[1].CLK
+CLK => TOTAL[2].CLK
+CLK => TOTAL[3].CLK
+CLK => TOTAL[4].CLK
+CLK => TOTAL[5].CLK
+CLK => TOTAL[6].CLK
+CLK => TOTAL[7].CLK
+CLK => TOTAL[8].CLK
+S[0] <= TOTAL[0].DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= TOTAL[1].DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= TOTAL[2].DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= TOTAL[3].DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= TOTAL[4].DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= TOTAL[5].DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= TOTAL[6].DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= TOTAL[7].DB_MAX_OUTPUT_PORT_TYPE
+Rout <= TOTAL[8].DB_MAX_OUTPUT_PORT_TYPE
+
+

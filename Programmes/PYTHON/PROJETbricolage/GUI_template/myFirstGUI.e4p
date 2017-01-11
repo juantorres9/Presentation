@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-5.1.dtd">
+<!-- eric project file for project myFirstGUI -->
+<!-- Saved: 2015-09-14, 01:58:01 -->
+<!-- Copyright (C) 2015 M.ADDOUCHE,  -->
+<Project version="5.1">
+  <Language>en_US</Language>
+  <Hash>6c5af1ba8de1d5d2256415af85aae0005d8f462c</Hash>
+  <ProgLanguage mixed="0">Python3</ProgLanguage>
+  <ProjectType>PyQt5</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author>M.ADDOUCHE</Author>
+  <Email></Email>
+  <Sources>
+    <Source>mainWindow.py</Source>
+    <Source>mymain.py</Source>
+    <Source>Ui_mainWindow.py</Source>
+  </Sources>
+  <Forms>
+    <Form>mainWindow.ui</Form>
+  </Forms>
+  <Translations/>
+  <Resources/>
+  <Interfaces/>
+  <Others/>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES"/>
+    <FiletypeAssociation pattern="*.py" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.py3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.pyw3" type="SOURCES"/>
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES"/>
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS"/>
+    <FiletypeAssociation pattern="*.ui" type="FORMS"/>
+  </FiletypeAssociations>
+</Project>

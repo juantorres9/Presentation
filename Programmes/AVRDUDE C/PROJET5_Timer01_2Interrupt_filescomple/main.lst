@@ -1,0 +1,180 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	t0_overflow_init
+  18               	t0_overflow_init:
+  19               	.LFB2:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 83B7      		in r24,83-32
+  25 0002 8560      		ori r24,lo8(5)
+  26 0004 83BF      		out 83-32,r24
+  27               	.LM3:
+  28 0006 89B7      		in r24,89-32
+  29 0008 8160      		ori r24,lo8(1)
+  30 000a 89BF      		out 89-32,r24
+  31               	/* epilogue start */
+  32               	.LM4:
+  33 000c 0895      		ret
+  34               	.LFE2:
+  36               	.global	__vector_11
+  38               	__vector_11:
+  39               	.LFB3:
+  40               	.LM5:
+  41 000e 1F92      		push __zero_reg__
+  42 0010 0F92      		push r0
+  43 0012 0FB6      		in r0,__SREG__
+  44 0014 0F92      		push r0
+  45 0016 1124      		clr __zero_reg__
+  46 0018 8F93      		push r24
+  47 001a 9F93      		push r25
+  48               	/* prologue: Signal */
+  49               	/* frame size = 0 */
+  50               	.LM6:
+  51 001c 88B3      		in r24,56-32
+  52 001e 91E0      		ldi r25,lo8(1)
+  53 0020 8927      		eor r24,r25
+  54 0022 88BB      		out 56-32,r24
+  55               	/* epilogue start */
+  56               	.LM7:
+  57 0024 9F91      		pop r25
+  58 0026 8F91      		pop r24
+  59 0028 0F90      		pop r0
+  60 002a 0FBE      		out __SREG__,r0
+  61 002c 0F90      		pop r0
+  62 002e 1F90      		pop __zero_reg__
+  63 0030 1895      		reti
+  64               	.LFE3:
+  66               	.global	t1_compareA_init
+  68               	t1_compareA_init:
+  69               	.LFB4:
+  70               	.LM8:
+  71               	/* prologue: function */
+  72               	/* frame size = 0 */
+  73               	.LM9:
+  74 0032 8EB5      		in r24,78-32
+  75 0034 8B60      		ori r24,lo8(11)
+  76 0036 8EBD      		out 78-32,r24
+  77               	.LM10:
+  78 0038 89B7      		in r24,89-32
+  79 003a 8061      		ori r24,lo8(16)
+  80 003c 89BF      		out 89-32,r24
+  81               	.LM11:
+  82 003e 89E0      		ldi r24,lo8(15625)
+  83 0040 9DE3      		ldi r25,hi8(15625)
+  84 0042 9BBD      		out (74)+1-32,r25
+  85 0044 8ABD      		out 74-32,r24
+  86               	/* epilogue start */
+  87               	.LM12:
+  88 0046 0895      		ret
+  89               	.LFE4:
+  91               	.global	__vector_7
+  93               	__vector_7:
+  94               	.LFB5:
+  95               	.LM13:
+  96 0048 1F92      		push __zero_reg__
+  97 004a 0F92      		push r0
+  98 004c 0FB6      		in r0,__SREG__
+  99 004e 0F92      		push r0
+ 100 0050 1124      		clr __zero_reg__
+ 101 0052 8F93      		push r24
+ 102 0054 9F93      		push r25
+ 103               	/* prologue: Signal */
+ 104               	/* frame size = 0 */
+ 105               	.LM14:
+ 106 0056 88B3      		in r24,56-32
+ 107 0058 92E0      		ldi r25,lo8(2)
+ 108 005a 8927      		eor r24,r25
+ 109 005c 88BB      		out 56-32,r24
+ 110               	/* epilogue start */
+ 111               	.LM15:
+ 112 005e 9F91      		pop r25
+ 113 0060 8F91      		pop r24
+ 114 0062 0F90      		pop r0
+ 115 0064 0FBE      		out __SREG__,r0
+ 116 0066 0F90      		pop r0
+ 117 0068 1F90      		pop __zero_reg__
+ 118 006a 1895      		reti
+ 119               	.LFE5:
+ 121               	.global	main
+ 123               	main:
+ 124               	.LFB6:
+ 125               	.LM16:
+ 126               	/* prologue: function */
+ 127               	/* frame size = 0 */
+ 128               	.LM17:
+ 129 006c 83E0      		ldi r24,lo8(3)
+ 130 006e 87BB      		out 55-32,r24
+ 131               	.LM18:
+ 132 0070 8FE0      		ldi r24,lo8(15)
+ 133 0072 8ABB      		out 58-32,r24
+ 134               	.LM19:
+ 135               	/* #APP */
+ 136               	 ;  41 "main.c" 1
+ 137 0074 7894      		sei
+ 138               	 ;  0 "" 2
+ 139               	/* #NOAPP */
+ 140               	.LBB6:
+ 141               	.LBB7:
+ 142               	.LM20:
+ 143 0076 83B7      		in r24,83-32
+ 144 0078 8560      		ori r24,lo8(5)
+ 145 007a 83BF      		out 83-32,r24
+ 146               	.LM21:
+ 147 007c 89B7      		in r24,89-32
+ 148 007e 8160      		ori r24,lo8(1)
+ 149 0080 89BF      		out 89-32,r24
+ 150               	.LBE7:
+ 151               	.LBE6:
+ 152               	.LBB8:
+ 153               	.LBB9:
+ 154               	.LM22:
+ 155 0082 8EB5      		in r24,78-32
+ 156 0084 8B60      		ori r24,lo8(11)
+ 157 0086 8EBD      		out 78-32,r24
+ 158               	.LM23:
+ 159 0088 89B7      		in r24,89-32
+ 160 008a 8061      		ori r24,lo8(16)
+ 161 008c 89BF      		out 89-32,r24
+ 162               	.LM24:
+ 163 008e 89E0      		ldi r24,lo8(15625)
+ 164 0090 9DE3      		ldi r25,hi8(15625)
+ 165 0092 9BBD      		out (74)+1-32,r25
+ 166 0094 8ABD      		out 74-32,r24
+ 167               	.L10:
+ 168               	.LBE9:
+ 169               	.LBE8:
+ 170               	.LM25:
+ 171 0096 87E0      		ldi r24,lo8(7)
+ 172 0098 90E0      		ldi r25,hi8(7)
+ 173 009a 0E94 0000 		call comptage
+ 174               	.LM26:
+ 175 009e 8FE0      		ldi r24,lo8(15)
+ 176 00a0 90E0      		ldi r25,hi8(15)
+ 177 00a2 0E94 0000 		call comptage
+ 178 00a6 00C0      		rjmp .L10
+ 179               	.LFE6:
+ 237               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:2      *ABS*:0000003f __SREG__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:5      *ABS*:00000034 __CCP__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:18     .text:00000000 t0_overflow_init
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:38     .text:0000000e __vector_11
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:68     .text:00000032 t1_compareA_init
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:93     .text:00000048 __vector_7
+C:\Users\JUANTO~1\AppData\Local\Temp/ccZ0DdWb.s:123    .text:0000006c main
+
+UNDEFINED SYMBOLS
+comptage

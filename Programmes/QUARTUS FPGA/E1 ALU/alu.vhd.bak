@@ -1,0 +1,12 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY alu IS
+PORT(
+CLK:      IN STD_LOGIC;--Horloge de 50MHZ
+
+
+oHEX0_D:  OUT STD_LOGIC_VECTOR(6 downto 0)
+);
+END compteur9;

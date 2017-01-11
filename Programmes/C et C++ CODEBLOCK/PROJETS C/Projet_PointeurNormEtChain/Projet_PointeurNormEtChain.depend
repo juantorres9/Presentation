@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1480589067 source:c:\users\juantorres\total\codeblock\projets c\projet_pointeurnormetchain\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,458 @@
+Simulator report for alu
+Wed Jul 15 22:37:36 2015
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 242 nodes    ;
+; Simulation Coverage         ;      74.38 % ;
+; Total Number of Transitions ; 693          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                 ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                       ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                        ;               ;
+; Vector input source                                                                        ; C:/Users/juantorres/TOTAL/QUARTUS/E1 ALU/AluSimulation.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                         ; On            ;
+; Check outputs                                                                              ; Off                                                        ; Off           ;
+; Report simulation coverage                                                                 ; On                                                         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                         ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                         ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                         ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                        ; Off           ;
+; Detect glitches                                                                            ; Off                                                        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                        ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                 ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      74.38 % ;
+; Total nodes checked                                 ; 242          ;
+; Total output ports checked                          ; 242          ;
+; Total output ports with complete 1/0-value coverage ; 180          ;
+; Total output ports with no 1/0-value coverage       ; 52           ;
+; Total output ports with no 1-value coverage         ; 62           ;
+; Total output ports with no 0-value coverage         ; 52           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                              ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; Node Name                                                 ; Output Port Name                                          ; Output Port Type ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; |alu|RESULTAT~0                                           ; |alu|RESULTAT~0                                           ; out0             ;
+; |alu|RESULTAT~1                                           ; |alu|RESULTAT~1                                           ; out0             ;
+; |alu|RESULTAT~2                                           ; |alu|RESULTAT~2                                           ; out0             ;
+; |alu|RESULTAT~5                                           ; |alu|RESULTAT~5                                           ; out0             ;
+; |alu|RESULTAT[0]                                          ; |alu|RESULTAT[0]                                          ; regout           ;
+; |alu|RESULTAT[1]                                          ; |alu|RESULTAT[1]                                          ; regout           ;
+; |alu|RESULTAT[2]                                          ; |alu|RESULTAT[2]                                          ; regout           ;
+; |alu|RESULTAT[3]                                          ; |alu|RESULTAT[3]                                          ; regout           ;
+; |alu|CLK                                                  ; |alu|CLK                                                  ; out              ;
+; |alu|SELEC[0]                                             ; |alu|SELEC[0]                                             ; out              ;
+; |alu|SELEC[1]                                             ; |alu|SELEC[1]                                             ; out              ;
+; |alu|A[0]                                                 ; |alu|A[0]                                                 ; out              ;
+; |alu|A[2]                                                 ; |alu|A[2]                                                 ; out              ;
+; |alu|B[0]                                                 ; |alu|B[0]                                                 ; out              ;
+; |alu|B[1]                                                 ; |alu|B[1]                                                 ; out              ;
+; |alu|B[2]                                                 ; |alu|B[2]                                                 ; out              ;
+; |alu|LEDG[0]                                              ; |alu|LEDG[0]                                              ; pin_out          ;
+; |alu|LEDG[1]                                              ; |alu|LEDG[1]                                              ; pin_out          ;
+; |alu|LEDG[2]                                              ; |alu|LEDG[2]                                              ; pin_out          ;
+; |alu|LEDG[3]                                              ; |alu|LEDG[3]                                              ; pin_out          ;
+; |alu|HEX0[1]                                              ; |alu|HEX0[1]                                              ; pin_out          ;
+; |alu|HEX0[2]                                              ; |alu|HEX0[2]                                              ; pin_out          ;
+; |alu|HEX0[3]                                              ; |alu|HEX0[3]                                              ; pin_out          ;
+; |alu|HEX0[4]                                              ; |alu|HEX0[4]                                              ; pin_out          ;
+; |alu|HEX0[5]                                              ; |alu|HEX0[5]                                              ; pin_out          ;
+; |alu|HEX0[6]                                              ; |alu|HEX0[6]                                              ; pin_out          ;
+; |alu|afficheur:AffichLEDS|HEXS~0                          ; |alu|afficheur:AffichLEDS|HEXS~0                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~1                          ; |alu|afficheur:AffichLEDS|HEXS~1                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~2                          ; |alu|afficheur:AffichLEDS|HEXS~2                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~3                          ; |alu|afficheur:AffichLEDS|HEXS~3                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~4                          ; |alu|afficheur:AffichLEDS|HEXS~4                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~5                          ; |alu|afficheur:AffichLEDS|HEXS~5                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~6                          ; |alu|afficheur:AffichLEDS|HEXS~6                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~7                          ; |alu|afficheur:AffichLEDS|HEXS~7                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~10                         ; |alu|afficheur:AffichLEDS|HEXS~10                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~11                         ; |alu|afficheur:AffichLEDS|HEXS~11                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~12                         ; |alu|afficheur:AffichLEDS|HEXS~12                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~13                         ; |alu|afficheur:AffichLEDS|HEXS~13                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~16                         ; |alu|afficheur:AffichLEDS|HEXS~16                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~17                         ; |alu|afficheur:AffichLEDS|HEXS~17                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~18                         ; |alu|afficheur:AffichLEDS|HEXS~18                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~19                         ; |alu|afficheur:AffichLEDS|HEXS~19                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~23                         ; |alu|afficheur:AffichLEDS|HEXS~23                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~24                         ; |alu|afficheur:AffichLEDS|HEXS~24                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~25                         ; |alu|afficheur:AffichLEDS|HEXS~25                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~26                         ; |alu|afficheur:AffichLEDS|HEXS~26                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~30                         ; |alu|afficheur:AffichLEDS|HEXS~30                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~31                         ; |alu|afficheur:AffichLEDS|HEXS~31                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~32                         ; |alu|afficheur:AffichLEDS|HEXS~32                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~33                         ; |alu|afficheur:AffichLEDS|HEXS~33                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~37                         ; |alu|afficheur:AffichLEDS|HEXS~37                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~38                         ; |alu|afficheur:AffichLEDS|HEXS~38                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~39                         ; |alu|afficheur:AffichLEDS|HEXS~39                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~40                         ; |alu|afficheur:AffichLEDS|HEXS~40                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~44                         ; |alu|afficheur:AffichLEDS|HEXS~44                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~45                         ; |alu|afficheur:AffichLEDS|HEXS~45                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~46                         ; |alu|afficheur:AffichLEDS|HEXS~46                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~47                         ; |alu|afficheur:AffichLEDS|HEXS~47                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~48                         ; |alu|afficheur:AffichLEDS|HEXS~48                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~49                         ; |alu|afficheur:AffichLEDS|HEXS~49                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~51                         ; |alu|afficheur:AffichLEDS|HEXS~51                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~52                         ; |alu|afficheur:AffichLEDS|HEXS~52                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~53                         ; |alu|afficheur:AffichLEDS|HEXS~53                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~54                         ; |alu|afficheur:AffichLEDS|HEXS~54                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~55                         ; |alu|afficheur:AffichLEDS|HEXS~55                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~56                         ; |alu|afficheur:AffichLEDS|HEXS~56                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~58                         ; |alu|afficheur:AffichLEDS|HEXS~58                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~59                         ; |alu|afficheur:AffichLEDS|HEXS~59                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~60                         ; |alu|afficheur:AffichLEDS|HEXS~60                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~61                         ; |alu|afficheur:AffichLEDS|HEXS~61                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~62                         ; |alu|afficheur:AffichLEDS|HEXS~62                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~63                         ; |alu|afficheur:AffichLEDS|HEXS~63                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~65                         ; |alu|afficheur:AffichLEDS|HEXS~65                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~66                         ; |alu|afficheur:AffichLEDS|HEXS~66                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~67                         ; |alu|afficheur:AffichLEDS|HEXS~67                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~68                         ; |alu|afficheur:AffichLEDS|HEXS~68                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~69                         ; |alu|afficheur:AffichLEDS|HEXS~69                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~70                         ; |alu|afficheur:AffichLEDS|HEXS~70                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~72                         ; |alu|afficheur:AffichLEDS|HEXS~72                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~73                         ; |alu|afficheur:AffichLEDS|HEXS~73                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~74                         ; |alu|afficheur:AffichLEDS|HEXS~74                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~75                         ; |alu|afficheur:AffichLEDS|HEXS~75                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~76                         ; |alu|afficheur:AffichLEDS|HEXS~76                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~77                         ; |alu|afficheur:AffichLEDS|HEXS~77                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~79                         ; |alu|afficheur:AffichLEDS|HEXS~79                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~80                         ; |alu|afficheur:AffichLEDS|HEXS~80                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~81                         ; |alu|afficheur:AffichLEDS|HEXS~81                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~82                         ; |alu|afficheur:AffichLEDS|HEXS~82                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~83                         ; |alu|afficheur:AffichLEDS|HEXS~83                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~84                         ; |alu|afficheur:AffichLEDS|HEXS~84                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~86                         ; |alu|afficheur:AffichLEDS|HEXS~86                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~87                         ; |alu|afficheur:AffichLEDS|HEXS~87                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~88                         ; |alu|afficheur:AffichLEDS|HEXS~88                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~89                         ; |alu|afficheur:AffichLEDS|HEXS~89                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~90                         ; |alu|afficheur:AffichLEDS|HEXS~90                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~91                         ; |alu|afficheur:AffichLEDS|HEXS~91                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEX[6]                          ; |alu|afficheur:AffichLEDS|HEX[6]                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEX[5]                          ; |alu|afficheur:AffichLEDS|HEX[5]                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEX[4]                          ; |alu|afficheur:AffichLEDS|HEX[4]                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEX[3]                          ; |alu|afficheur:AffichLEDS|HEX[3]                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEX[2]                          ; |alu|afficheur:AffichLEDS|HEX[2]                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEX[1]                          ; |alu|afficheur:AffichLEDS|HEX[1]                          ; out              ;
+; |alu|Add0~1                                               ; |alu|Add0~1                                               ; out0             ;
+; |alu|Add0~2                                               ; |alu|Add0~2                                               ; out0             ;
+; |alu|Add0~3                                               ; |alu|Add0~3                                               ; out0             ;
+; |alu|Add0~4                                               ; |alu|Add0~4                                               ; out0             ;
+; |alu|Add0~5                                               ; |alu|Add0~5                                               ; out0             ;
+; |alu|Add0~6                                               ; |alu|Add0~6                                               ; out0             ;
+; |alu|Add0~7                                               ; |alu|Add0~7                                               ; out0             ;
+; |alu|Add0~8                                               ; |alu|Add0~8                                               ; out0             ;
+; |alu|Add0~9                                               ; |alu|Add0~9                                               ; out0             ;
+; |alu|Add0~10                                              ; |alu|Add0~10                                              ; out0             ;
+; |alu|Add0~11                                              ; |alu|Add0~11                                              ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal0~0                        ; |alu|afficheur:AffichLEDS|Equal0~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal2~0                        ; |alu|afficheur:AffichLEDS|Equal2~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal6~0                        ; |alu|afficheur:AffichLEDS|Equal6~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal7~0                        ; |alu|afficheur:AffichLEDS|Equal7~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal14~0                       ; |alu|afficheur:AffichLEDS|Equal14~0                       ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~0              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~0              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~1              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~1              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~3              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~3              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~5              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~5              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~6              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~6              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~7              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~7              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~8              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~8              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~0 ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~9              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~9              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~11             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~11             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~13             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~13             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~14             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~14             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~15             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~15             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~16             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~16             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~17             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~17             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]   ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~1              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~1              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~3              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~3              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~5              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~5              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~6              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~6              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~7              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~7              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~8              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~8              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~9              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~9              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~11             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~11             ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~13             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~13             ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~14             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~14             ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~15             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~15             ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~16             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~16             ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~1 ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]   ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~1              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~1              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~3              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~3              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~6              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~6              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~7              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~7              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~8              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~8              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~9              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~9              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~11             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~11             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~14             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~14             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~15             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~15             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~16             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~16             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~17             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~17             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1 ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]   ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~1              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~1              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~3              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~3              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~5              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~5              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~6              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~6              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~7              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~7              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~8              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~8              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~9              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~9              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~11             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~11             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~13             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~13             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~14             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~14             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~15             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~15             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~16             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~16             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~17             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~17             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~1 ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]   ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]   ; out0             ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                 ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; Node Name                                                 ; Output Port Name                                          ; Output Port Type ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; |alu|RESULTAT~3                                           ; |alu|RESULTAT~3                                           ; out0             ;
+; |alu|RESULTAT~4                                           ; |alu|RESULTAT~4                                           ; out0             ;
+; |alu|A[1]                                                 ; |alu|A[1]                                                 ; out              ;
+; |alu|HEX0[0]                                              ; |alu|HEX0[0]                                              ; pin_out          ;
+; |alu|afficheur:AffichLEDS|HEXS~8                          ; |alu|afficheur:AffichLEDS|HEXS~8                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~9                          ; |alu|afficheur:AffichLEDS|HEXS~9                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~14                         ; |alu|afficheur:AffichLEDS|HEXS~14                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~15                         ; |alu|afficheur:AffichLEDS|HEXS~15                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~20                         ; |alu|afficheur:AffichLEDS|HEXS~20                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~21                         ; |alu|afficheur:AffichLEDS|HEXS~21                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~22                         ; |alu|afficheur:AffichLEDS|HEXS~22                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~27                         ; |alu|afficheur:AffichLEDS|HEXS~27                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~28                         ; |alu|afficheur:AffichLEDS|HEXS~28                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~29                         ; |alu|afficheur:AffichLEDS|HEXS~29                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~34                         ; |alu|afficheur:AffichLEDS|HEXS~34                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~35                         ; |alu|afficheur:AffichLEDS|HEXS~35                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~36                         ; |alu|afficheur:AffichLEDS|HEXS~36                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~41                         ; |alu|afficheur:AffichLEDS|HEXS~41                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~42                         ; |alu|afficheur:AffichLEDS|HEXS~42                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~43                         ; |alu|afficheur:AffichLEDS|HEXS~43                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~50                         ; |alu|afficheur:AffichLEDS|HEXS~50                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~57                         ; |alu|afficheur:AffichLEDS|HEXS~57                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~64                         ; |alu|afficheur:AffichLEDS|HEXS~64                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~71                         ; |alu|afficheur:AffichLEDS|HEXS~71                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~78                         ; |alu|afficheur:AffichLEDS|HEXS~78                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~85                         ; |alu|afficheur:AffichLEDS|HEXS~85                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~92                         ; |alu|afficheur:AffichLEDS|HEXS~92                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEX[0]                          ; |alu|afficheur:AffichLEDS|HEX[0]                          ; out              ;
+; |alu|Add0~0                                               ; |alu|Add0~0                                               ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal1~0                        ; |alu|afficheur:AffichLEDS|Equal1~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal3~0                        ; |alu|afficheur:AffichLEDS|Equal3~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal4~0                        ; |alu|afficheur:AffichLEDS|Equal4~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal5~0                        ; |alu|afficheur:AffichLEDS|Equal5~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal8~0                        ; |alu|afficheur:AffichLEDS|Equal8~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal9~0                        ; |alu|afficheur:AffichLEDS|Equal9~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal10~0                       ; |alu|afficheur:AffichLEDS|Equal10~0                       ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal11~0                       ; |alu|afficheur:AffichLEDS|Equal11~0                       ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal12~0                       ; |alu|afficheur:AffichLEDS|Equal12~0                       ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal13~0                       ; |alu|afficheur:AffichLEDS|Equal13~0                       ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal15~0                       ; |alu|afficheur:AffichLEDS|Equal15~0                       ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~1 ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~17             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~17             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~5              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~5              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~13             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~13             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; out0             ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                 ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; Node Name                                                 ; Output Port Name                                          ; Output Port Type ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+; |alu|HEX0[0]                                              ; |alu|HEX0[0]                                              ; pin_out          ;
+; |alu|afficheur:AffichLEDS|HEXS~8                          ; |alu|afficheur:AffichLEDS|HEXS~8                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~9                          ; |alu|afficheur:AffichLEDS|HEXS~9                          ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~14                         ; |alu|afficheur:AffichLEDS|HEXS~14                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~15                         ; |alu|afficheur:AffichLEDS|HEXS~15                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~20                         ; |alu|afficheur:AffichLEDS|HEXS~20                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~21                         ; |alu|afficheur:AffichLEDS|HEXS~21                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~22                         ; |alu|afficheur:AffichLEDS|HEXS~22                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~27                         ; |alu|afficheur:AffichLEDS|HEXS~27                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~28                         ; |alu|afficheur:AffichLEDS|HEXS~28                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~29                         ; |alu|afficheur:AffichLEDS|HEXS~29                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~34                         ; |alu|afficheur:AffichLEDS|HEXS~34                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~35                         ; |alu|afficheur:AffichLEDS|HEXS~35                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~36                         ; |alu|afficheur:AffichLEDS|HEXS~36                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~41                         ; |alu|afficheur:AffichLEDS|HEXS~41                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~42                         ; |alu|afficheur:AffichLEDS|HEXS~42                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~43                         ; |alu|afficheur:AffichLEDS|HEXS~43                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~50                         ; |alu|afficheur:AffichLEDS|HEXS~50                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~57                         ; |alu|afficheur:AffichLEDS|HEXS~57                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~64                         ; |alu|afficheur:AffichLEDS|HEXS~64                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~71                         ; |alu|afficheur:AffichLEDS|HEXS~71                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~78                         ; |alu|afficheur:AffichLEDS|HEXS~78                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~85                         ; |alu|afficheur:AffichLEDS|HEXS~85                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEXS~92                         ; |alu|afficheur:AffichLEDS|HEXS~92                         ; out              ;
+; |alu|afficheur:AffichLEDS|HEX[0]                          ; |alu|afficheur:AffichLEDS|HEX[0]                          ; out              ;
+; |alu|afficheur:AffichLEDS|Equal1~0                        ; |alu|afficheur:AffichLEDS|Equal1~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal3~0                        ; |alu|afficheur:AffichLEDS|Equal3~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal4~0                        ; |alu|afficheur:AffichLEDS|Equal4~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal5~0                        ; |alu|afficheur:AffichLEDS|Equal5~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal8~0                        ; |alu|afficheur:AffichLEDS|Equal8~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal9~0                        ; |alu|afficheur:AffichLEDS|Equal9~0                        ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal10~0                       ; |alu|afficheur:AffichLEDS|Equal10~0                       ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal11~0                       ; |alu|afficheur:AffichLEDS|Equal11~0                       ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal12~0                       ; |alu|afficheur:AffichLEDS|Equal12~0                       ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal13~0                       ; |alu|afficheur:AffichLEDS|Equal13~0                       ; out0             ;
+; |alu|afficheur:AffichLEDS|Equal15~0                       ; |alu|afficheur:AffichLEDS|Equal15~0                       ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; out0             ;
+; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~1 ; |alu|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~17             ; |alu|lpm_mux:Mux2|mux_7qc:auto_generated|_~17             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; out0             ;
+; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; |alu|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; out0             ;
+; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; |alu|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; out0             ;
++-----------------------------------------------------------+-----------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Wed Jul 15 22:37:33 2015
+Info: Command: quartus_sim --simulation_results_format=VWF alu -c alu
+Info (324025): Using vector source file "C:/Users/juantorres/TOTAL/QUARTUS/E1 ALU/AluSimulation.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      74.38 %
+Info (328052): Number of transitions in simulation is 693
+Info (324045): Vector file alu.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 317 megabytes
+    Info: Processing ended: Wed Jul 15 22:37:36 2015
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1480315192 source:c:\users\juantorres\total\codeblock\projets c\projet_staticvariable_non\main.cpp
+	<iostream>
+	"Base.h"
+
+1480313701 c:\users\juantorres\total\codeblock\projets c\projet_staticvariable_non\include\base.h
+
+1480313851 source:c:\users\juantorres\total\codeblock\projets c\projet_staticvariable_non\src\base.cpp
+	<iostream>
+	"Base.h"
+
+1480281080 source:c:\users\juantorres\total\codeblock\projets c\projet_staticvariable_non\main2.cpp
+	<iostream>
+

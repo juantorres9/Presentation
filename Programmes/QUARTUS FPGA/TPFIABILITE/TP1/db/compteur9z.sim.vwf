@@ -1,0 +1,688 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 1000.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("GPIO_1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("GPIO_1[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "GPIO_1";
+}
+
+SIGNAL("GPIO_1[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "GPIO_1";
+}
+
+SIGNAL("iCLK_50")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("compt10")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 4;
+	LSB_INDEX = 0;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("compt10[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "compt10";
+}
+
+SIGNAL("compt10[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "compt10";
+}
+
+SIGNAL("compt10[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "compt10";
+}
+
+SIGNAL("compt10[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "compt10";
+}
+
+SIGNAL("x")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("oHEX0_D[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("oHEX0_D[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("oHEX0_D[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("oHEX0_D[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("oHEX0_D[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("oHEX0_D[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("oHEX0_D[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("oLEDG[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("oLEDG[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("altera_reserved_tdo")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("GPIO_1[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("GPIO_1[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 272.5;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 330.0;
+		LEVEL 1 FOR 177.5;
+	}
+}
+
+TRANSITION_LIST("iCLK_50")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 200;
+			LEVEL 0 FOR 2.5;
+			LEVEL 1 FOR 2.5;
+		}
+	}
+}
+
+TRANSITION_LIST("compt10[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 437.5;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 440.0;
+		LEVEL 1 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("compt10[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 217.5;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 330.0;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("compt10[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 107.5;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("compt10[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 52.5;
+		NODE
+		{
+			REPEAT = 8;
+			LEVEL 1 FOR 55.0;
+			LEVEL 0 FOR 55.0;
+		}
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("x")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 272.5;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 330.0;
+		LEVEL 1 FOR 177.5;
+	}
+}
+
+TRANSITION_LIST("oHEX0_D[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 52.5;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 330.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 177.5;
+	}
+}
+
+TRANSITION_LIST("oHEX0_D[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 272.5;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 440.0;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 67.5;
+	}
+}
+
+TRANSITION_LIST("oHEX0_D[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 107.5;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 495.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 287.5;
+	}
+}
+
+TRANSITION_LIST("oHEX0_D[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 52.5;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 55.0;
+			LEVEL 0 FOR 110.0;
+		}
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 165.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 55.0;
+			LEVEL 0 FOR 110.0;
+		}
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("oHEX0_D[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 52.5;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 55.0;
+		LEVEL 1 FOR 165.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 55.0;
+			LEVEL 1 FOR 55.0;
+		}
+		LEVEL 0 FOR 55.0;
+		LEVEL 1 FOR 165.0;
+		LEVEL 0 FOR 55.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("oHEX0_D[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 52.5;
+		LEVEL 1 FOR 165.0;
+		LEVEL 0 FOR 165.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 165.0;
+		LEVEL 1 FOR 165.0;
+		LEVEL 0 FOR 165.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("oHEX0_D[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 107.5;
+		LEVEL 0 FOR 275.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 110.0;
+		LEVEL 0 FOR 275.0;
+		LEVEL 1 FOR 55.0;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("oLEDG[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 272.5;
+		LEVEL 1 FOR 220.0;
+		LEVEL 0 FOR 330.0;
+		LEVEL 1 FOR 177.5;
+	}
+}
+
+TRANSITION_LIST("oLEDG[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("altera_reserved_tdo")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "GPIO_1";
+	EXPAND_STATUS = EXPANDED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+	CHILDREN = 1, 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "GPIO_1[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "GPIO_1[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "compt10";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 0;
+	CHILDREN = 4, 5, 6, 7;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "compt10[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "compt10[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "compt10[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "compt10[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "iCLK_50";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "x";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oHEX0_D[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oHEX0_D[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oHEX0_D[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oHEX0_D[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oHEX0_D[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oHEX0_D[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oHEX0_D[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oLEDG[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "oLEDG[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "altera_reserved_tdo";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 0;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

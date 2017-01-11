@@ -1,0 +1,3 @@
+TP1 et TP1 Additionneur sont partie du premier  TP de manceau 
+TP2 font partie du deuxieme TP de manceau
+Pour courrir le systeme dans une PC du LABO  il faudras garder tous  dans une fichier et l'executer 

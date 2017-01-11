@@ -1,0 +1,30 @@
+#include <avr/io.h>
+
+
+
+ int main(void)
+  //
+  {
+SFIO &=~(1<<PUD);//Pull Up enable for all Inputs
+//SFIO |=(1<<PUD);//Pull Up disable for all Inputs
+DDRA=0xF0;  
+                    //DDRA=1111 0000--1=OUTPUT  0=INPUT
+PORTA=(1<<PORTA0)|(1<<PORTA1) ; //PORTA=0000 0011--0=NO PULLUP   1=PULLUP(EN ENTREE UNIQUEMENT)
+
+  while(1)
+  {
+    
+	
+	  if ((PINA&0X03)==0X03)
+	  {
+	    PORTA |=(1<<PINA7); // PORTA= 1000 0011
+	  } 
+	  else
+	  {
+	    PORTA &=~(1<<PINA7);// PORTA= 0000 0011
+	  }
+	  
+	  
+	
+  }
+  }

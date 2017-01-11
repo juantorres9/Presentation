@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1480151798 source:c:\users\juantorres\total\codeblock\projets c\refetpointeurprojet\src\base.cpp
+	"Base.h"
+
+1480151798 c:\users\juantorres\total\codeblock\projets c\refetpointeurprojet\include\base.h
+
+1480162275 source:c:\users\juantorres\total\codeblock\projets c\refetpointeurprojet\main.cpp
+	<iostream>
+	<cstddef>
+
+1480174920 source:c:\users\juantorres\total\codeblock\projets c\refetpointeurprojet\main2.cpp
+	<iostream>
+	<cstddef>
+

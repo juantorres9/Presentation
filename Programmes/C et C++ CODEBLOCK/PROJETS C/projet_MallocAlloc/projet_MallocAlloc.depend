@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1480590474 source:c:\users\juantorres\total\codeblock\projets c\projet_mallocalloc\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,37 @@
+***************************************
+tester que l'USBASP est presente :avrdude -c usbasp -p m32 -F -v
+verifier que le USBASP et le atmega32 sont reconnus par la pc: avrdude -c usbasp -p m32
+
+lecture de fuse Low et High: -U hfuse:r:m
+
+Acceder mode terminal avrdude
+avrdude -p m32 -c usbasp -t
+depuis mode terminal
+lecture highfuse
+d hfuse
+d lfuse
+
+sortir de  mode terminal
+quit
+
+
+
+
+
+
+
+PAGE REFERENCE ATMEGA
+UCSZ0 Taille de Tramme a envoyer: PAGE 161
+GLOBAL INTERRUPT:10
+
+BAUDRATE   PAGE:141
+
+USART :138
+
+TIMER 0 CONFIG REG :78 
+TIMER 1 CONFIG REG 16 Bit:108-85
+TIMER INTERRUPT:80-83
+
+TOUTES REGISTER INDEX :299
+
+EXTERNAL INTERRUPT/64

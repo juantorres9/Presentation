@@ -1,0 +1,349 @@
+Simulator report for afficheur
+Mon Jun 29 10:51:52 2015
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 125 nodes    ;
+; Simulation Coverage         ;      64.00 % ;
+; Total Number of Transitions ; 216          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                             ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                              ;               ;
+; Vector input source                                                                        ; C:/Users/Carlos/TOTAL/QUARTUS/E1 AFFICHEUR/AfficheurWaveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                               ; On            ;
+; Check outputs                                                                              ; Off                                                              ; Off           ;
+; Report simulation coverage                                                                 ; On                                                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                              ; Off           ;
+; Detect glitches                                                                            ; Off                                                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                             ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      64.00 % ;
+; Total nodes checked                                 ; 125          ;
+; Total output ports checked                          ; 125          ;
+; Total output ports with complete 1/0-value coverage ; 80           ;
+; Total output ports with no 1/0-value coverage       ; 45           ;
+; Total output ports with no 1-value coverage         ; 45           ;
+; Total output ports with no 0-value coverage         ; 45           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                    ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |afficheur|HEXS~0    ; |afficheur|HEXS~0    ; out              ;
+; |afficheur|HEXS~1    ; |afficheur|HEXS~1    ; out              ;
+; |afficheur|HEXS~2    ; |afficheur|HEXS~2    ; out              ;
+; |afficheur|HEXS~4    ; |afficheur|HEXS~4    ; out              ;
+; |afficheur|HEXS~5    ; |afficheur|HEXS~5    ; out              ;
+; |afficheur|HEXS~6    ; |afficheur|HEXS~6    ; out              ;
+; |afficheur|HEXS~9    ; |afficheur|HEXS~9    ; out              ;
+; |afficheur|HEXS~10   ; |afficheur|HEXS~10   ; out              ;
+; |afficheur|HEXS~11   ; |afficheur|HEXS~11   ; out              ;
+; |afficheur|HEXS~14   ; |afficheur|HEXS~14   ; out              ;
+; |afficheur|HEXS~15   ; |afficheur|HEXS~15   ; out              ;
+; |afficheur|HEXS~16   ; |afficheur|HEXS~16   ; out              ;
+; |afficheur|HEXS~20   ; |afficheur|HEXS~20   ; out              ;
+; |afficheur|HEXS~21   ; |afficheur|HEXS~21   ; out              ;
+; |afficheur|HEXS~22   ; |afficheur|HEXS~22   ; out              ;
+; |afficheur|HEXS~23   ; |afficheur|HEXS~23   ; out              ;
+; |afficheur|HEXS~27   ; |afficheur|HEXS~27   ; out              ;
+; |afficheur|HEXS~28   ; |afficheur|HEXS~28   ; out              ;
+; |afficheur|HEXS~29   ; |afficheur|HEXS~29   ; out              ;
+; |afficheur|HEXS~30   ; |afficheur|HEXS~30   ; out              ;
+; |afficheur|HEXS~34   ; |afficheur|HEXS~34   ; out              ;
+; |afficheur|HEXS~35   ; |afficheur|HEXS~35   ; out              ;
+; |afficheur|HEXS~36   ; |afficheur|HEXS~36   ; out              ;
+; |afficheur|HEXS~37   ; |afficheur|HEXS~37   ; out              ;
+; |afficheur|HEXS~41   ; |afficheur|HEXS~41   ; out              ;
+; |afficheur|HEXS~42   ; |afficheur|HEXS~42   ; out              ;
+; |afficheur|HEXS~43   ; |afficheur|HEXS~43   ; out              ;
+; |afficheur|HEXS~44   ; |afficheur|HEXS~44   ; out              ;
+; |afficheur|HEXS~48   ; |afficheur|HEXS~48   ; out              ;
+; |afficheur|HEXS~49   ; |afficheur|HEXS~49   ; out              ;
+; |afficheur|HEXS~50   ; |afficheur|HEXS~50   ; out              ;
+; |afficheur|HEXS~51   ; |afficheur|HEXS~51   ; out              ;
+; |afficheur|HEXS~55   ; |afficheur|HEXS~55   ; out              ;
+; |afficheur|HEXS~56   ; |afficheur|HEXS~56   ; out              ;
+; |afficheur|HEXS~57   ; |afficheur|HEXS~57   ; out              ;
+; |afficheur|HEXS~58   ; |afficheur|HEXS~58   ; out              ;
+; |afficheur|HEXS~62   ; |afficheur|HEXS~62   ; out              ;
+; |afficheur|HEXS~63   ; |afficheur|HEXS~63   ; out              ;
+; |afficheur|HEXS~64   ; |afficheur|HEXS~64   ; out              ;
+; |afficheur|HEXS~65   ; |afficheur|HEXS~65   ; out              ;
+; |afficheur|HEXS~69   ; |afficheur|HEXS~69   ; out              ;
+; |afficheur|HEXS~70   ; |afficheur|HEXS~70   ; out              ;
+; |afficheur|HEXS~71   ; |afficheur|HEXS~71   ; out              ;
+; |afficheur|HEXS~72   ; |afficheur|HEXS~72   ; out              ;
+; |afficheur|HEXS~76   ; |afficheur|HEXS~76   ; out              ;
+; |afficheur|HEXS~77   ; |afficheur|HEXS~77   ; out              ;
+; |afficheur|HEXS~78   ; |afficheur|HEXS~78   ; out              ;
+; |afficheur|HEXS~79   ; |afficheur|HEXS~79   ; out              ;
+; |afficheur|HEXS~80   ; |afficheur|HEXS~80   ; out              ;
+; |afficheur|HEXS~82   ; |afficheur|HEXS~82   ; out              ;
+; |afficheur|HEXS~83   ; |afficheur|HEXS~83   ; out              ;
+; |afficheur|HEXS~84   ; |afficheur|HEXS~84   ; out              ;
+; |afficheur|HEXS~85   ; |afficheur|HEXS~85   ; out              ;
+; |afficheur|HEXS~86   ; |afficheur|HEXS~86   ; out              ;
+; |afficheur|HEXS~87   ; |afficheur|HEXS~87   ; out              ;
+; |afficheur|HEXS~88   ; |afficheur|HEXS~88   ; out              ;
+; |afficheur|HEXS~89   ; |afficheur|HEXS~89   ; out              ;
+; |afficheur|HEXS~90   ; |afficheur|HEXS~90   ; out              ;
+; |afficheur|HEXS~91   ; |afficheur|HEXS~91   ; out              ;
+; |afficheur|HEXS~92   ; |afficheur|HEXS~92   ; out              ;
+; |afficheur|HEXS~93   ; |afficheur|HEXS~93   ; out              ;
+; |afficheur|HEXS~94   ; |afficheur|HEXS~94   ; out              ;
+; |afficheur|HEXS~95   ; |afficheur|HEXS~95   ; out              ;
+; |afficheur|HEXS~96   ; |afficheur|HEXS~96   ; out              ;
+; |afficheur|HEXS~97   ; |afficheur|HEXS~97   ; out              ;
+; |afficheur|SW[0]     ; |afficheur|SW[0]     ; out              ;
+; |afficheur|SW[1]     ; |afficheur|SW[1]     ; out              ;
+; |afficheur|SW[2]     ; |afficheur|SW[2]     ; out              ;
+; |afficheur|SW[3]     ; |afficheur|SW[3]     ; out              ;
+; |afficheur|HEX[0]    ; |afficheur|HEX[0]    ; pin_out          ;
+; |afficheur|HEX[1]    ; |afficheur|HEX[1]    ; pin_out          ;
+; |afficheur|HEX[2]    ; |afficheur|HEX[2]    ; pin_out          ;
+; |afficheur|HEX[3]    ; |afficheur|HEX[3]    ; pin_out          ;
+; |afficheur|HEX[4]    ; |afficheur|HEX[4]    ; pin_out          ;
+; |afficheur|HEX[5]    ; |afficheur|HEX[5]    ; pin_out          ;
+; |afficheur|HEX[6]    ; |afficheur|HEX[6]    ; pin_out          ;
+; |afficheur|Equal0~0  ; |afficheur|Equal0~0  ; out0             ;
+; |afficheur|Equal1~0  ; |afficheur|Equal1~0  ; out0             ;
+; |afficheur|Equal2~0  ; |afficheur|Equal2~0  ; out0             ;
+; |afficheur|Equal15~0 ; |afficheur|Equal15~0 ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------+
+; Missing 1-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |afficheur|HEXS~3    ; |afficheur|HEXS~3    ; out              ;
+; |afficheur|HEXS~7    ; |afficheur|HEXS~7    ; out              ;
+; |afficheur|HEXS~8    ; |afficheur|HEXS~8    ; out              ;
+; |afficheur|HEXS~12   ; |afficheur|HEXS~12   ; out              ;
+; |afficheur|HEXS~13   ; |afficheur|HEXS~13   ; out              ;
+; |afficheur|HEXS~17   ; |afficheur|HEXS~17   ; out              ;
+; |afficheur|HEXS~18   ; |afficheur|HEXS~18   ; out              ;
+; |afficheur|HEXS~19   ; |afficheur|HEXS~19   ; out              ;
+; |afficheur|HEXS~24   ; |afficheur|HEXS~24   ; out              ;
+; |afficheur|HEXS~25   ; |afficheur|HEXS~25   ; out              ;
+; |afficheur|HEXS~26   ; |afficheur|HEXS~26   ; out              ;
+; |afficheur|HEXS~31   ; |afficheur|HEXS~31   ; out              ;
+; |afficheur|HEXS~32   ; |afficheur|HEXS~32   ; out              ;
+; |afficheur|HEXS~33   ; |afficheur|HEXS~33   ; out              ;
+; |afficheur|HEXS~38   ; |afficheur|HEXS~38   ; out              ;
+; |afficheur|HEXS~39   ; |afficheur|HEXS~39   ; out              ;
+; |afficheur|HEXS~40   ; |afficheur|HEXS~40   ; out              ;
+; |afficheur|HEXS~45   ; |afficheur|HEXS~45   ; out              ;
+; |afficheur|HEXS~46   ; |afficheur|HEXS~46   ; out              ;
+; |afficheur|HEXS~47   ; |afficheur|HEXS~47   ; out              ;
+; |afficheur|HEXS~52   ; |afficheur|HEXS~52   ; out              ;
+; |afficheur|HEXS~53   ; |afficheur|HEXS~53   ; out              ;
+; |afficheur|HEXS~54   ; |afficheur|HEXS~54   ; out              ;
+; |afficheur|HEXS~59   ; |afficheur|HEXS~59   ; out              ;
+; |afficheur|HEXS~60   ; |afficheur|HEXS~60   ; out              ;
+; |afficheur|HEXS~61   ; |afficheur|HEXS~61   ; out              ;
+; |afficheur|HEXS~66   ; |afficheur|HEXS~66   ; out              ;
+; |afficheur|HEXS~67   ; |afficheur|HEXS~67   ; out              ;
+; |afficheur|HEXS~68   ; |afficheur|HEXS~68   ; out              ;
+; |afficheur|HEXS~73   ; |afficheur|HEXS~73   ; out              ;
+; |afficheur|HEXS~74   ; |afficheur|HEXS~74   ; out              ;
+; |afficheur|HEXS~75   ; |afficheur|HEXS~75   ; out              ;
+; |afficheur|HEXS~81   ; |afficheur|HEXS~81   ; out              ;
+; |afficheur|Equal3~0  ; |afficheur|Equal3~0  ; out0             ;
+; |afficheur|Equal4~0  ; |afficheur|Equal4~0  ; out0             ;
+; |afficheur|Equal5~0  ; |afficheur|Equal5~0  ; out0             ;
+; |afficheur|Equal6~0  ; |afficheur|Equal6~0  ; out0             ;
+; |afficheur|Equal7~0  ; |afficheur|Equal7~0  ; out0             ;
+; |afficheur|Equal8~0  ; |afficheur|Equal8~0  ; out0             ;
+; |afficheur|Equal9~0  ; |afficheur|Equal9~0  ; out0             ;
+; |afficheur|Equal10~0 ; |afficheur|Equal10~0 ; out0             ;
+; |afficheur|Equal11~0 ; |afficheur|Equal11~0 ; out0             ;
+; |afficheur|Equal12~0 ; |afficheur|Equal12~0 ; out0             ;
+; |afficheur|Equal13~0 ; |afficheur|Equal13~0 ; out0             ;
+; |afficheur|Equal14~0 ; |afficheur|Equal14~0 ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------+
+; Missing 0-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |afficheur|HEXS~3    ; |afficheur|HEXS~3    ; out              ;
+; |afficheur|HEXS~7    ; |afficheur|HEXS~7    ; out              ;
+; |afficheur|HEXS~8    ; |afficheur|HEXS~8    ; out              ;
+; |afficheur|HEXS~12   ; |afficheur|HEXS~12   ; out              ;
+; |afficheur|HEXS~13   ; |afficheur|HEXS~13   ; out              ;
+; |afficheur|HEXS~17   ; |afficheur|HEXS~17   ; out              ;
+; |afficheur|HEXS~18   ; |afficheur|HEXS~18   ; out              ;
+; |afficheur|HEXS~19   ; |afficheur|HEXS~19   ; out              ;
+; |afficheur|HEXS~24   ; |afficheur|HEXS~24   ; out              ;
+; |afficheur|HEXS~25   ; |afficheur|HEXS~25   ; out              ;
+; |afficheur|HEXS~26   ; |afficheur|HEXS~26   ; out              ;
+; |afficheur|HEXS~31   ; |afficheur|HEXS~31   ; out              ;
+; |afficheur|HEXS~32   ; |afficheur|HEXS~32   ; out              ;
+; |afficheur|HEXS~33   ; |afficheur|HEXS~33   ; out              ;
+; |afficheur|HEXS~38   ; |afficheur|HEXS~38   ; out              ;
+; |afficheur|HEXS~39   ; |afficheur|HEXS~39   ; out              ;
+; |afficheur|HEXS~40   ; |afficheur|HEXS~40   ; out              ;
+; |afficheur|HEXS~45   ; |afficheur|HEXS~45   ; out              ;
+; |afficheur|HEXS~46   ; |afficheur|HEXS~46   ; out              ;
+; |afficheur|HEXS~47   ; |afficheur|HEXS~47   ; out              ;
+; |afficheur|HEXS~52   ; |afficheur|HEXS~52   ; out              ;
+; |afficheur|HEXS~53   ; |afficheur|HEXS~53   ; out              ;
+; |afficheur|HEXS~54   ; |afficheur|HEXS~54   ; out              ;
+; |afficheur|HEXS~59   ; |afficheur|HEXS~59   ; out              ;
+; |afficheur|HEXS~60   ; |afficheur|HEXS~60   ; out              ;
+; |afficheur|HEXS~61   ; |afficheur|HEXS~61   ; out              ;
+; |afficheur|HEXS~66   ; |afficheur|HEXS~66   ; out              ;
+; |afficheur|HEXS~67   ; |afficheur|HEXS~67   ; out              ;
+; |afficheur|HEXS~68   ; |afficheur|HEXS~68   ; out              ;
+; |afficheur|HEXS~73   ; |afficheur|HEXS~73   ; out              ;
+; |afficheur|HEXS~74   ; |afficheur|HEXS~74   ; out              ;
+; |afficheur|HEXS~75   ; |afficheur|HEXS~75   ; out              ;
+; |afficheur|HEXS~81   ; |afficheur|HEXS~81   ; out              ;
+; |afficheur|Equal3~0  ; |afficheur|Equal3~0  ; out0             ;
+; |afficheur|Equal4~0  ; |afficheur|Equal4~0  ; out0             ;
+; |afficheur|Equal5~0  ; |afficheur|Equal5~0  ; out0             ;
+; |afficheur|Equal6~0  ; |afficheur|Equal6~0  ; out0             ;
+; |afficheur|Equal7~0  ; |afficheur|Equal7~0  ; out0             ;
+; |afficheur|Equal8~0  ; |afficheur|Equal8~0  ; out0             ;
+; |afficheur|Equal9~0  ; |afficheur|Equal9~0  ; out0             ;
+; |afficheur|Equal10~0 ; |afficheur|Equal10~0 ; out0             ;
+; |afficheur|Equal11~0 ; |afficheur|Equal11~0 ; out0             ;
+; |afficheur|Equal12~0 ; |afficheur|Equal12~0 ; out0             ;
+; |afficheur|Equal13~0 ; |afficheur|Equal13~0 ; out0             ;
+; |afficheur|Equal14~0 ; |afficheur|Equal14~0 ; out0             ;
++----------------------+----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jun 29 10:51:45 2015
+Info: Command: quartus_sim --simulation_results_format=VWF afficheur -c afficheur
+Info (324025): Using vector source file "C:/Users/Carlos/TOTAL/QUARTUS/E1 AFFICHEUR/AfficheurWaveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      64.00 %
+Info (328052): Number of transitions in simulation is 216
+Info (324045): Vector file afficheur.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 326 megabytes
+    Info: Processing ended: Mon Jun 29 10:51:52 2015
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:03
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jun 29 10:51:45 2015
+Info: Command: quartus_sim --simulation_results_format=VWF afficheur -c afficheur
+Info (324025): Using vector source file "C:/Users/Carlos/TOTAL/QUARTUS/E1 AFFICHEUR/AfficheurWaveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      64.00 %
+Info (328052): Number of transitions in simulation is 216
+Info (324045): Vector file afficheur.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 326 megabytes
+    Info: Processing ended: Mon Jun 29 10:51:52 2015
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:03
+
+

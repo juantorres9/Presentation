@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1437754512 source:c:\users\juantorres\total\codeblock\brico\variable\testvariable\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+

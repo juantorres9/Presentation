@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="compteur59">
+		<CBX_INST_ENTRY INSTANCE_NAME="|compteur59|lpm_mux:Mux0" CBX_FILE_NAME="mux_7qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|compteur59|lpm_mux:Mux1" CBX_FILE_NAME="mux_7qc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

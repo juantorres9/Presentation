@@ -1,0 +1,74 @@
+   1               		.file	"gpio1.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	timer0_init
+  18               	timer0_init:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 83B7      		in r24,83-32
+  25 0002 8560      		ori r24,lo8(5)
+  26 0004 83BF      		out 83-32,r24
+  27               	/* epilogue start */
+  28               	.LM3:
+  29 0006 0895      		ret
+  30               	.LFE6:
+  32               	.global	main
+  34               	main:
+  35               	.LFB7:
+  36               	.LM4:
+  37               	/* prologue: function */
+  38               	/* frame size = 0 */
+  39               	.LM5:
+  40 0008 8FE0      		ldi r24,lo8(15)
+  41 000a 8ABB      		out 58-32,r24
+  42               	.LM6:
+  43 000c 81E0      		ldi r24,lo8(1)
+  44 000e 87BB      		out 55-32,r24
+  45               	.LM7:
+  46 0010 1BBA      		out 59-32,__zero_reg__
+  47               	.LM8:
+  48 0012 18BA      		out 56-32,__zero_reg__
+  49               	.LBB4:
+  50               	.LBB5:
+  51               	.LM9:
+  52 0014 83B7      		in r24,83-32
+  53 0016 8560      		ori r24,lo8(5)
+  54 0018 83BF      		out 83-32,r24
+  55               	.LBE5:
+  56               	.LBE4:
+  57               	.LM10:
+  58 001a 91E0      		ldi r25,lo8(1)
+  59               	.L8:
+  60               	.LM11:
+  61 001c 82B7      		in r24,82-32
+  62 001e 853F      		cpi r24,lo8(-11)
+  63 0020 00F0      		brlo .L8
+  64               	.LM12:
+  65 0022 12BE      		out 82-32,__zero_reg__
+  66               	.LM13:
+  67 0024 88B3      		in r24,56-32
+  68 0026 8927      		eor r24,r25
+  69 0028 88BB      		out 56-32,r24
+  70 002a 00C0      		rjmp .L8
+  71               	.LFE7:
+ 105               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 gpio1.c
+C:\Users\JUANTO~1\AppData\Local\Temp/ccuhJUBh.s:2      *ABS*:0000003f __SREG__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccuhJUBh.s:3      *ABS*:0000003e __SP_H__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccuhJUBh.s:4      *ABS*:0000003d __SP_L__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccuhJUBh.s:5      *ABS*:00000034 __CCP__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccuhJUBh.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccuhJUBh.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\JUANTO~1\AppData\Local\Temp/ccuhJUBh.s:18     .text:00000000 timer0_init
+C:\Users\JUANTO~1\AppData\Local\Temp/ccuhJUBh.s:34     .text:00000008 main
+
+NO UNDEFINED SYMBOLS
