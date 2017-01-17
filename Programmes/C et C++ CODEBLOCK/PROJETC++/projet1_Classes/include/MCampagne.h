@@ -10,10 +10,9 @@ class MCampagne :public Maison
         virtual ~MCampagne();
         void decrireMaison();
     protected:
-
-
     private:
         bool m_fenceOurs;
 };
 
 #endif // MCAMPAGNE_H
+

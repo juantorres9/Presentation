@@ -21,3 +21,5 @@ void MCampagne::decrireMaison(){
     Maison::decrireMaison();
     cout<<"Maison de type Campagne , inclus fence ours="<<m_fenceOurs<<endl;
 }
+
+
