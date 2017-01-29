@@ -12,6 +12,11 @@ class Maison
         Maison(std::string,double,int);
         //Methodes
         void decrireMaison();
+
+        //variable static
+        static int nombreMaison;
+        //fonction static
+        static int showMaisonCompte();
     protected:
     private:
         std::string m_ville;

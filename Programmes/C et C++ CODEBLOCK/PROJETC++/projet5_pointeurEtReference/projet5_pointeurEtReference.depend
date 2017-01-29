@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1485424797 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet5_pointeuretreference\main.cpp
+	<iostream>
+	"Personne.h"
+
+1485425331 c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet5_pointeuretreference\include\personne.h
+
+1485425657 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet5_pointeuretreference\src\personne.cpp
+	<iostream>
+	"Personne.h"
+	<string>
+

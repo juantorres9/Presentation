@@ -20,5 +20,14 @@ int main()
     m2->decrireMaison();
     mc2->decrireMaison();
 
+    Maison::showMaisonCompte();
+    //Appelle attribut statique
+    cout<<"variables statiques"<<Maison::nombreMaison<<endl;
+    cout<<"variables statiques"<<m1.nombreMaison<<endl;
+
+    Maison::nombreMaison+=1;
+    cout<<"variables statiques"<<Maison::nombreMaison<<endl;
+
+
     return 0;
 }

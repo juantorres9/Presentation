@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1484662743 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet1_classes\src\maison.cpp
+1485365809 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet1_classes\src\maison.cpp
 	<iostream>
 	"Maison.h"
 
-1484662743 c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet1_classes\include\maison.h
+1484688257 c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet1_classes\include\maison.h
 
 1484663541 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet1_classes\src\mcampagne.cpp
 	<iostream>
@@ -12,4 +12,9 @@
 1484663541 c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet1_classes\include\mcampagne.h
 	<string>
 	"Maison.h"
+
+1485365434 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet1_classes\main.cpp
+	<iostream>
+	"Maison.h"
+	"MCampagne.h"
 

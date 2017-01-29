@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1485552280 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet3_polymorphysme\main.cpp
+	<iostream>
+	"Mere.h"
+
+1485552140 c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet3_polymorphysme\include\mere.h
+	<string>
+
+1485548863 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet3_polymorphysme\src\fille.cpp
+	"Fille.h"
+
+1485548863 c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet3_polymorphysme\include\fille.h
+
+1485552208 source:c:\users\juantorres\documents\presentation\programmes\c et c++ codeblock\projetc++\projet3_polymorphysme\src\mere.cpp
+	<iostream>
+	"Mere.h"
+
